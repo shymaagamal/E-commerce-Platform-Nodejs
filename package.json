@@ -1,0 +1,22 @@
+{
+  "name": "e-commerce-platform-nodejs",
+  "version": "1.0.0",
+  "description": "This project simulates a real-life e-commerce platform where users can browse books, add them to a cart, and place orders. It covers all the topics taught in the course and introduces additional concepts for students to research independently.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shymaagamal/E-commerce-Platform-Nodejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shymaagamal/E-commerce-Platform-Nodejs/issues"
+  },
+  "homepage": "https://github.com/shymaagamal/E-commerce-Platform-Nodejs#readme"
+}
