@@ -82,7 +82,7 @@ This project simulates a real-life e-commerce platform where users can browse bo
 
 ## General Remarks
   - Any pagination needs to be server-side pagination.
-  - Good UI. 
+  - Good UI.
   - Think about model relations.
   - Think about what needs to be indexed in your models.
   - Use github, show the world.
@@ -90,11 +90,9 @@ This project simulates a real-life e-commerce platform where users can browse bo
   - Share your work on Linkedin, brand yourself.
   - Lint your projects.
 
-
 ## BONUS
   - Use idP. (register, login with google and Facebook).
   - In-App Notification.
-
 
 ---
 
@@ -116,7 +114,6 @@ This project simulates a real-life e-commerce platform where users can browse bo
 
 5. **WebSockets**
    - Use WebSockets to implement real-time features (e.g., notify admins when a new order is placed).
-
 
 ---
 

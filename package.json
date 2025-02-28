@@ -1,22 +1,35 @@
 {
   "name": "e-commerce-platform-nodejs",
+  "type": "module",
   "version": "1.0.0",
   "description": "This project simulates a real-life e-commerce platform where users can browse books, add them to a cart, and place orders. It covers all the topics taught in the course and introduces additional concepts for students to research independently.",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/shymaagamal/E-commerce-Platform-Nodejs#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shymaagamal/E-commerce-Platform-Nodejs.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/shymaagamal/E-commerce-Platform-Nodejs/issues"
   },
-  "homepage": "https://github.com/shymaagamal/E-commerce-Platform-Nodejs#readme"
+  "keywords": [],
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "lint": "eslint . --ext .js",
+    "lint:fix": "eslint . --ext .js --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "dotnet": "^1.1.4",
+    "eslint": "^9.21.0",
+    "express": "^4.21.2",
+    "mongodb": "^6.14.0",
+    "mongoose": "^8.11.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.3.0"
+  }
 }
