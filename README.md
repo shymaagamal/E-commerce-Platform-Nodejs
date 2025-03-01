@@ -54,8 +54,6 @@ This project simulates a real-life e-commerce platform where users can browse bo
 
 ---
 
-
-
 ## General Remarks
   - Any pagination needs to be server-side pagination.
   - Good UI.
