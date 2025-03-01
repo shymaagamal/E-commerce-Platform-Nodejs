@@ -99,14 +99,10 @@ This project simulates a real-life e-commerce platform where users can browse bo
    - Proper error handling and validation.
    - Git repository with clear commit history. (make sure every commit has a clear message, everyones should contribute to the project)
 
-2. **Frontend**
-   - A responsive and user-friendly Angular application.
-   - Proper state management (e.g., using Angular services or NgRx).
-   - Git repository with clear commit history. (make sure every commit has a clear message, everyones should contribute to the project)
 
-3. **Documentation**
+2. **Documentation**
    - A README file explaining how to set up and run the project.
- 4. **Presentation**
+3. **Presentation**
    - A presentation demonstrating the project features and discussing the technologies used.
    - A demo of the application with a walkthrough of the codebase.
 
@@ -116,7 +112,6 @@ This project simulates a real-life e-commerce platform where users can browse bo
 - Web servers, HTTP/HTTPS, and RESTful APIs.
 - Node.js, Express.js, and MongoDB.
 - Authentication, authorization, and error handling.
-- Frontend development with Angular.
 - Advanced topics like payment integration, email notifications, and deployment.
 
 ---
