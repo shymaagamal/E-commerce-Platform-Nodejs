@@ -1,6 +1,3 @@
-import asyncWrapper from '../middleware/asyncWrapper';
-import httpStatusText, {ERROR} from '../utils/httpStatusText';
-
 // const getUsers=asyncWrapper((req,res,next)=>{
 
 // const users= await userModel.find({});
