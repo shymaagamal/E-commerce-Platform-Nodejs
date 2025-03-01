@@ -1,0 +1,13 @@
+  {"level":"\u001b[32minfo\u001b[39m","message":"Server is running on port http://localhost:3000","timestamp":"2025-02-28T22:12:35.785Z"}
+{"level":"\u001b[31merror\u001b[39m","message":"Users:","timestamp":"2025-02-28T22:12:37.582Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on port http://localhost:3000","timestamp":"2025-02-28T22:12:54.394Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Users:","timestamp":"2025-02-28T22:12:55.931Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on port http://localhost:3000","timestamp":"2025-02-28T22:13:03.712Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Users:","timestamp":"2025-02-28T22:13:05.849Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on port http://localhost:3000","timestamp":"2025-02-28T22:13:35.217Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Users:","timestamp":"2025-02-28T22:13:37.031Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on port http://localhost:3000","timestamp":"2025-02-28T22:13:40.771Z"}
+{"0":{"_id":"59b99db4cfa9a34dcd7885b6","email":"sean_bean@gameofthron.es","name":"Ned Stark","password":"$2b$12$UREFwsRUoyF0CRqGNK0LzO0HM/jLhgUCNNIJ9RJAqMUQ74crlJ1Vu"},"level":"\u001b[32minfo\u001b[39m","message":"Users:","timestamp":"2025-02-28T22:13:42.484Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"Server is running on port http://localhost:3000","timestamp":"2025-02-28T22:14:16.239Z"}
+{"0":{"_id":"59b99db4cfa9a34dcd7885b6","email":"sean_bean@gameofthron.es","name":"Ned Stark","password":"$2b$12$UREFwsRUoyF0CRqGNK0LzO0HM/jLhgUCNNIJ9RJAqMUQ74crlJ1Vu"},"level":"\u001b[31merror\u001b[39m","message":"Users:","timestamp":"2025-02-28T22:14:17.871Z"}
+{"level":"\u001b[32minfo\u001b[39m","message":"::1 - - [28/Feb/2025:22:14:53 +0000] \"GET /jj HTTP/1.1\" 404 57 \"-\" \"PostmanRuntime/7.43.0\"\n","timestamp":"2025-02-28T22:14:53.579Z"}
