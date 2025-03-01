@@ -54,31 +54,7 @@ This project simulates a real-life e-commerce platform where users can browse bo
 
 ---
 
-### Frontend (Angular)
-1. **User Interface**
-   - Home page: Display a list of books with search and filter options.
-   - Book details page: Show book details, allow users to add the book to their cart, and display reviews.
-   - Cart page: Display items in the cart and allow users to proceed to checkout.
-   - Order history page: Display past orders for logged-in users.
 
-2. **Authentication**
-   - Implement login and registration forms.
-   - Use Angular services to manage JWT tokens and user sessions.
-
-3. **API Integration**
-   - Use Angular's `HttpClient` to interact with the backend API.
-   - Handle errors and display appropriate messages to the user.
-
-4. **Review System**
-   - Add a review form on the book details page for users who have purchased the book.
-   - Display all reviews for a book on the book details page.
-   - Allow users to edit or delete their reviews.
-
-5. **Advanced Features**
-   - Implement lazy loading for Angular modules to optimize performance.
-   - Use Angular Material or Bootstrap for a responsive and modern UI.
-
----
 
 ## General Remarks
   - Any pagination needs to be server-side pagination.
