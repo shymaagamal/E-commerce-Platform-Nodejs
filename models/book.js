@@ -1,13 +1,12 @@
 import mongoose from 'node:mongoose';
 
 const bookSchema = new mongoose.Schema({
-  title: {type: String, required: true},
-  author: {type: String, required: true},
-  price: {type: Number, required: true},
-  description: {type: String},
+  title: {type: String, required: true, trim: true},
+  author: {type: String, required: true, trim: true},
+  price: {type: Number, required: true, min: 0},
+  description: {type: String, trim: true},
   stock: {type: Number, required: true, min: 0},
-  image: {type: String},
-  reviews: [{type: mongoose.Schema.Types.ObjectId, ref: 'Review'}]
+  image: {type: String}
 }, {timestamps: true});
 
 const Book = mongoose.model('Book', bookSchema);
