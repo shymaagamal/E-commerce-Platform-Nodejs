@@ -14,7 +14,7 @@ const app = express();
 const logger = createLogger('main-service');
 app.use(express.json());
 app.use('/user', userRouter);
-app.use('/books', bookRouter);
+app.use('/book', bookRouter);
 
 app.use(errorHandler);
 app.use(morganMiddleware);
