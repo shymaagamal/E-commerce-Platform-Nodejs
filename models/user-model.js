@@ -1,6 +1,7 @@
 import bcrypt from 'bcrypt';
 import mongoose from 'mongoose';
 import validator from 'validator';
+import {userRoles} from '../utils/user-roles.js'
 const userSchema = new mongoose.Schema(
   {
     name: {type: String, required: [true, 'Username is required'], trim: true},
@@ -20,7 +21,7 @@ const userSchema = new mongoose.Schema(
       required: [true, 'Password is required'],
       minlength: [8, 'Password must be at least 8 characters']
     },
-    role: {type: String, enum: ['user', 'admin'], default: 'user'},
+    role: {type: String, enum: [userRoles.ADMIN, userRoles.USER], default: userRoles.USER},
     token: {type: String}
   },
   {timestamps: true}

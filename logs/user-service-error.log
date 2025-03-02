@@ -42,3 +42,14 @@
 [2025-03-02 22:12:42] ERROR: ❌ Authentication failed: User with email "shaimaa@example.com" not found.
 [2025-03-02 22:13:02] ERROR: ❌ Authentication failed: User with email shaimaa@example.com not found.
 [2025-03-02 22:13:17] ERROR: ❌ Access denied: No valid authentication token provided.
+[2025-03-02 22:26:06] ERROR: New data doesn't follow schema
+[2025-03-02 22:33:34] ERROR: ⚠️ Registration error: Email is already in use.
+[2025-03-02 22:59:10] ERROR: ❌ Unauthorized role update attempt by "${req.user.email}
+[2025-03-02 23:11:56] ERROR: New data doesn't follow schema
+[2025-03-02 23:12:04] ERROR: New data doesn't follow schema
+[2025-03-02 23:12:18] ERROR: New data doesn't follow schema
+[2025-03-02 23:13:03] ERROR: New data doesn't follow schema
+[2025-03-02 23:14:17] ERROR: ⚠️ Registration error: Email is already in use.
+[2025-03-02 23:16:01] ERROR: ⚠️ Registration error: Email is already in use.
+[2025-03-02 23:19:59] ERROR: ❌ Authentication failed: User with email salem5@example.com not found.
+[2025-03-02 23:26:27] ERROR: ⚠️ Registration error: Email is already in use.

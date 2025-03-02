@@ -105,3 +105,26 @@
 [2025-03-02 22:13:17] ERROR: ❌ Access denied: No valid authentication token provided.
 [2025-03-02 22:13:39] INFO: 📝 Update request received for user shaimaa@example.com
 [2025-03-02 22:13:54] INFO: 📝 Update request received for user shaimaa@example.com
+[2025-03-02 22:26:06] ERROR: New data doesn't follow schema
+[2025-03-02 22:33:34] ERROR: ⚠️ Registration error: Email is already in use.
+[2025-03-02 22:33:50] INFO: 🎉 User login successful.
+[2025-03-02 22:33:54] INFO: 📝 Update request received for user shaimaa@example.com
+[2025-03-02 22:58:47] INFO: 📝 User "shaimaa@example.com" updated successfully by "shaimaa@example.com"
+[2025-03-02 22:59:10] ERROR: ❌ Unauthorized role update attempt by "${req.user.email}
+[2025-03-02 23:11:56] ERROR: New data doesn't follow schema
+[2025-03-02 23:12:04] ERROR: New data doesn't follow schema
+[2025-03-02 23:12:18] ERROR: New data doesn't follow schema
+[2025-03-02 23:13:03] ERROR: New data doesn't follow schema
+[2025-03-02 23:13:51] INFO: ✅ New user registered successfully.
+[2025-03-02 23:14:17] ERROR: ⚠️ Registration error: Email is already in use.
+[2025-03-02 23:14:27] INFO: ✅ New user registered successfully.
+[2025-03-02 23:16:01] ERROR: ⚠️ Registration error: Email is already in use.
+[2025-03-02 23:16:13] INFO: ✅ New user registered successfully.
+[2025-03-02 23:19:09] INFO: 🎉 New user registered successfully.
+[2025-03-02 23:19:59] ERROR: ❌ Authentication failed: User with email salem5@example.com not found.
+[2025-03-02 23:20:29] INFO: 🎉 User login successful.
+[2025-03-02 23:21:35] INFO: 🎉 User login successful.
+[2025-03-02 23:22:53] INFO: 📝 User "salem20@example.com" updated successfully by "salem20@example.com"
+[2025-03-02 23:26:20] INFO: 📝 User "salem20@example.com" updated successfully by "salem20@example.com"
+[2025-03-02 23:26:27] ERROR: ⚠️ Registration error: Email is already in use.
+[2025-03-02 23:26:35] INFO: 🎉 New user registered successfully.

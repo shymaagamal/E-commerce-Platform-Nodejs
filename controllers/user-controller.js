@@ -4,6 +4,7 @@ import {UserModel} from '../models/user-model.js';
 import {generateJWT,checkPassword} from '../utils/auth-utils.js';
 import httpStatusText from '../utils/http-status-text.js';
 import createLogger from '../utils/logger.js';
+import { userRoles } from '../utils/user-roles.js';
 
 const userLogger = createLogger('user-service');
 
@@ -27,12 +28,11 @@ export const UserRegister = asyncWrapper(async (req, res, next) => {
     return next(error);
   }
   const addedUser = await UserModel.create(req.body);
-  const  token = generateJWT({role: addedUser.role ,email: addedUser.email,id :addedUser._id})
+  const  token = generateJWT({role: addedUser.role ,email: addedUser.email,id :addedUser._id});
   addedUser.token=token;
-  userLogger.info('✅ New user registered successfully.');
+  userLogger.info('🎉 New user registered successfully.');
   return res.status(200).json({status: httpStatusText.SUCCESS, data: addedUser});
 });
-
 
 
 
@@ -72,25 +72,25 @@ export const UserLogin=asyncWrapper(async (req, res, next) => {
 
 export const UserUpdateProfile=asyncWrapper(async (req, res, next) => {
         const email=req.params.email;
-        if(req.user.email !==email)
-        {
-          userLogger.error('❌ Access denied: No valid authentication token provided.')
-          const error = new Error('❌ Access denied: No valid authentication token provided.');
-          error.status = 400;
-          error.httpStatusText=httpStatusText.FAIL;
-          return next(error);
-        }
         const dataToUpdate=req.body;
+        if(dataToUpdate.role && req.user.role !== userRoles.ADMIN)
+          {
+            userLogger.error('❌ Unauthorized role update attempt by "${req.user.email}')
+            const error = new Error('❌ You are not allowed to change roles.');
+            error.status = 400;
+            error.httpStatusText=httpStatusText.ERROR;
+            return next(error);
+          }
         const isUserExist= await UserModel.findOneAndUpdate({email:email},{$set: dataToUpdate},{new:true,runValidators: true});
         if(!isUserExist)
         {
-          userLogger.error('❌ User does not exist.')
+          userLogger.error(`❌ User not found: "${email}"`)
           const error = new Error('❌ User does not exist.');
           error.status = 400;
           error.httpStatusText=httpStatusText.FAIL;
           return next(error);
         }
-        userLogger.info(`📝 Update request received for user ${email}`);
+        userLogger.info(`📝 User "${email}" updated successfully by "${req.user.email}"`);
         res.status(200).json({status:httpStatusText.SUCCESS, data: isUserExist});
 
 })
