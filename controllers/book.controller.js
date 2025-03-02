@@ -1,5 +1,5 @@
-import {asyncWrapper} from '../middleware/asyncWrapper.js';
-import Book from '../models/book.js';
+import Book from '../models/book.model.js';
+import {asyncWrapper} from '../utils/asyncWrapper.js';
 import httpStatusText from '../utils/httpStatusText.js';
 
 // GET all books with pagination and filtering
