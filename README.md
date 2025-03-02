@@ -97,7 +97,6 @@ This project simulates a real-life e-commerce platform where users can browse bo
    - Proper error handling and validation.
    - Git repository with clear commit history. (make sure every commit has a clear message, everyones should contribute to the project)
 
-
 2. **Documentation**
    - A README file explaining how to set up and run the project.
 3. **Presentation**

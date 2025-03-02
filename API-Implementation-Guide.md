@@ -70,7 +70,6 @@ This project is the backend for an online bookstore, providing RESTful APIs for 
 
 ✅ Full-text search
 
-
 🔹 Filtering Example:
 
 👉 /api/books?author=J.K.Rowling&price[lte]=500&category=Fiction&page=2&limit=10
@@ -113,8 +112,7 @@ This project is the backend for an online bookstore, providing RESTful APIs for 
 
 ✅ Admin updates order status
 
-✅ Payment gateway (Stripe/PayPal) 
-
+✅ Payment gateway (Stripe/PayPal)
 
 | Method | Endpoint           | Description |
 |--------|-------------------|-------------|
@@ -141,7 +139,7 @@ This project is the backend for an online bookstore, providing RESTful APIs for 
 | PUT    | /api/reviews/:id   | Update a review |
 | DELETE | /api/reviews/:id   | Delete a review |
 
-### 6. Payment Integration 
+### 6. Payment Integration
 
 🔹 Features:
 
@@ -154,9 +152,7 @@ This project is the backend for an online bookstore, providing RESTful APIs for 
 | POST   | /api/payments/checkout | Create payment session (Stripe/PayPal) |
 | GET   | /api/payments/status | Check payment status |
 
-
-
-### 7. Notifications 
+### 7. Notifications
 
 🔹 Features:
 
@@ -170,8 +166,6 @@ This project is the backend for an online bookstore, providing RESTful APIs for 
 |--------|-------------------|-------------|
 | POST   | /api/notifications | Get all notifications (User/Admin) |
 | GET   | /api/notifications/send | Send notification (Admin) |
-
-
 
 ## 🔹 Important Considerations
 ✅ Security:
@@ -194,10 +188,6 @@ Log requests using Winston or Morgan.
 Store secrets in .env file (DB URL, JWT Secret).
 Deploy on Heroku, AWS, or Vercel.
 Use MongoDB Atlas for production.
-
-
-
-
 
 ## Middleware Implemented
 - **JWT Authentication Middleware** (Protects routes from unauthorized access)
@@ -239,9 +229,3 @@ npm run dev
 
 ---
 This backend is designed to work efficiently and securely. Feel free to contribute and improve!
-
-
-
-
-
-

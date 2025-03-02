@@ -1,206 +1,206 @@
 {
-	"info": {
-		"_postman_id": "37fc9706-495d-4a39-b5b3-87e29196d8fa",
-		"name": "ITI_NodeJS_Project",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
-		"_exporter_id": "42547995"
-	},
-	"item": [
-		{
-			"name": "Users",
-			"item": [
-				{
-					"name": "Register",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"url": "{{base_url}}/user/register"
-					},
-					"response": []
-				},
-				{
-					"name": "Login",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"url": "{{base_url}}/user/login"
-					},
-					"response": []
-				},
-				{
-					"name": "Update Profile",
-					"request": {
-						"method": "PATCH",
-						"header": [],
-						"url": "{{base_url}}/user/id"
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "Books",
-			"item": [
-				{
-					"name": "Add Book",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"url": "{{base_url}}/book"
-					},
-					"response": []
-				},
-				{
-					"name": "Get All",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "{{base_url}}/book"
-					},
-					"response": []
-				},
-				{
-					"name": "Get Book By ID",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "{{base_url}}/book/id"
-					},
-					"response": []
-				},
-				{
-					"name": "Update Book",
-					"request": {
-						"method": "PATCH",
-						"header": [],
-						"url": "{{base_url}}/book/id"
-					},
-					"response": []
-				},
-				{
-					"name": "Delete Book",
-					"request": {
-						"method": "DELETE",
-						"header": [],
-						"url": "{{base_url}}/book/id"
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "Cart",
-			"item": [
-				{
-					"name": "Add Book",
-					"request": {
-						"method": "PATCH",
-						"header": [],
-						"url": "{{base_url}}/cart/id"
-					},
-					"response": []
-				},
-				{
-					"name": "Remove Book",
-					"request": {
-						"method": "DELETE",
-						"header": [],
-						"url": "{{base_url}}/cart/id"
-					},
-					"response": []
-				},
-				{
-					"name": "View All",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "{{base_url}}/cart"
-					},
-					"response": []
-				},
-				{
-					"name": "View By ID",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "{{base_url}}/cart/id"
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "Orders",
-			"item": [
-				{
-					"name": "Add/Place",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"url": "{{base_url}}/order"
-					},
-					"response": []
-				},
-				{
-					"name": "View History",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "{{base_url}}/order"
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "Reviews",
-			"item": [
-				{
-					"name": "Submit",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"url": "{{base_url}}/review"
-					},
-					"response": []
-				},
-				{
-					"name": "View All",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "{{base_url}}/review"
-					},
-					"response": []
-				},
-				{
-					"name": "View By ID",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "{{base_url}}/review/id"
-					},
-					"response": []
-				},
-				{
-					"name": "Update",
-					"request": {
-						"method": "PATCH",
-						"header": [],
-						"url": "{{base_url}}/review/id"
-					},
-					"response": []
-				},
-				{
-					"name": "Delete",
-					"request": {
-						"method": "DELETE",
-						"header": [],
-						"url": "{{base_url}}/review/id"
-					},
-					"response": []
-				}
-			]
-		}
-	]
+  "info": {
+    "_postman_id": "37fc9706-495d-4a39-b5b3-87e29196d8fa",
+    "name": "ITI_NodeJS_Project",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+    "_exporter_id": "42547995"
+  },
+  "item": [
+    {
+      "name": "Users",
+      "item": [
+        {
+          "name": "Register",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{base_url}}/user/register"
+          },
+          "response": []
+        },
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{base_url}}/user/login"
+          },
+          "response": []
+        },
+        {
+          "name": "Update Profile",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": "{{base_url}}/user/id"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Books",
+      "item": [
+        {
+          "name": "Add Book",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{base_url}}/book"
+          },
+          "response": []
+        },
+        {
+          "name": "Get All",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url}}/book"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Book By ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url}}/book/id"
+          },
+          "response": []
+        },
+        {
+          "name": "Update Book",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": "{{base_url}}/book/id"
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Book",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{base_url}}/book/id"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Cart",
+      "item": [
+        {
+          "name": "Add Book",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": "{{base_url}}/cart/id"
+          },
+          "response": []
+        },
+        {
+          "name": "Remove Book",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{base_url}}/cart/id"
+          },
+          "response": []
+        },
+        {
+          "name": "View All",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url}}/cart"
+          },
+          "response": []
+        },
+        {
+          "name": "View By ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url}}/cart/id"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Orders",
+      "item": [
+        {
+          "name": "Add/Place",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{base_url}}/order"
+          },
+          "response": []
+        },
+        {
+          "name": "View History",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url}}/order"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Reviews",
+      "item": [
+        {
+          "name": "Submit",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": "{{base_url}}/review"
+          },
+          "response": []
+        },
+        {
+          "name": "View All",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url}}/review"
+          },
+          "response": []
+        },
+        {
+          "name": "View By ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "{{base_url}}/review/id"
+          },
+          "response": []
+        },
+        {
+          "name": "Update",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "url": "{{base_url}}/review/id"
+          },
+          "response": []
+        },
+        {
+          "name": "Delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": "{{base_url}}/review/id"
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
 }
