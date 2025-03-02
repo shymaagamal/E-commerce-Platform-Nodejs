@@ -30,3 +30,15 @@
 [2025-03-02 19:36:03] ERROR: Email already exists
 [2025-03-02 19:36:07] ERROR: Email already exists
 [2025-03-02 19:46:49] ERROR: Email already exists
+[2025-03-02 21:17:52] ERROR: ❌ User does not exist.
+[2025-03-02 21:18:37] ERROR: ❌ User does not exist.
+[2025-03-02 21:18:59] ERROR: ❌ User does not exist.
+[2025-03-02 21:24:38] ERROR: ❌ User does not exist.
+[2025-03-02 21:29:33] ERROR: ❌ User does not exist.
+[2025-03-02 21:34:11] ERROR: ❌ User does not exist.
+[2025-03-02 22:06:56] ERROR: ❌ Access denied: No valid authentication token provided.
+[2025-03-02 22:08:08] ERROR: ❌ Authentication failed: Incorrect password.
+[2025-03-02 22:12:26] ERROR: ❌ Authentication failed: User with email "shaimaa@example.com" not found.
+[2025-03-02 22:12:42] ERROR: ❌ Authentication failed: User with email "shaimaa@example.com" not found.
+[2025-03-02 22:13:02] ERROR: ❌ Authentication failed: User with email shaimaa@example.com not found.
+[2025-03-02 22:13:17] ERROR: ❌ Access denied: No valid authentication token provided.

@@ -31,17 +31,18 @@ app.use(morganMiddleware);
 
 // Handle requests to undefined routes by returning a 404 JSON response
 app.all('*', (req, res) => {
+  logger.error(`❌ 404 | Resource not found: ${req.method} ${req.originalUrl}`);
   res.status(404).json({status: httpStatusText.ERROR, message: 'This resource is not found.'});
 });
 
 // Start the server
 app.listen(process.env.PORT, () => {
-  logger.info(`Server is running on port http://localhost:${process.env.PORT} `);
+  logger.info(`🚀 Server is running at: http://localhost:${process.env.PORT}`);
 });
 
 // Connect to our MongoDB 
 mongoose.connect(process.env.MONGO_URL)
   .then(async () => {
-    logger.info('Connected to MongoDB');
+    logger.info('✅ Successfully connected to MongoDB.');
   })
-  .catch((err) => logger.error('Could not connect to MongoDB', err));
+  .catch((err) => logger.error(`❌ Failed to connect to MongoDB: ${err.message}`));

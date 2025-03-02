@@ -27,3 +27,30 @@ export const validateUser = [
     .isIn(['user', 'admin'])
     .withMessage('Invalid role, must be either user or admin')
 ];
+
+
+
+export const validateUserUpdate = [
+  body('name')
+    .optional() 
+    .trim()
+    .isLength({ min: 3 })
+    .withMessage('Username must be at least 3 characters'),
+
+  body('email')
+    .optional()
+    .trim()
+    .isEmail()
+    .withMessage('Invalid email format')
+    .normalizeEmail(),
+
+  body('password')
+    .optional()
+    .isLength({ min: 8 })
+    .withMessage('Password must be at least 8 characters'),
+
+  body('role')
+    .optional()
+    .isIn(['user', 'admin'])
+    .withMessage('Invalid role, must be either user or admin')
+];

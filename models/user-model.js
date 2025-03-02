@@ -1,6 +1,6 @@
 import bcrypt from 'bcrypt';
 import mongoose from 'mongoose';
-
+import validator from 'validator';
 const userSchema = new mongoose.Schema(
   {
     name: {type: String, required: [true, 'Username is required'], trim: true},
@@ -10,10 +10,10 @@ const userSchema = new mongoose.Schema(
       trim: true,
       unique: true,
       lowercase: true,
-      match: [
-        /^[\w.%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i,
-        'Invalid email format'
-      ]
+      validate: {
+        validator: validator.isEmail,
+        message: 'Invalid email address'
+      }
     },
     password: {
       type: String,
@@ -25,15 +25,26 @@ const userSchema = new mongoose.Schema(
   },
   {timestamps: true}
 );
-userSchema.index({email: 1}, {unique: true});
-
+userSchema.methods.comparePasswords = function (password) {
+  return bcrypt.compareSync(password, this.password);
+};
 userSchema.pre('save', function (next) {
   this.password = bcrypt.hashSync(this.password, 10);
   next();
 });
+userSchema.pre('findOneAndUpdate', function (next) {
+  const updatedData = this.getUpdate();
+  if (updatedData.$set.password) {
+    try {
+      const hashedPassword = bcrypt.hashSync(updatedData.$set.password, 10);
+      updatedData.password = hashedPassword;
+      this.setUpdate(updatedData);
+    } catch (err) {
+      return next(err);
+    }
+  }
+  next();
+});
 
-userSchema.methods.comparePasswords = function (password) {
-  return bcrypt.compareSync(password, this.password);
-};
 export const UserModel = mongoose.model('User', userSchema);
 

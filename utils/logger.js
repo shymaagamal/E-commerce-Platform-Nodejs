@@ -16,7 +16,12 @@ const createLogger = (serviceName) => {
     defaultMeta: {service: serviceName},
     transports: [
       new winston.transports.Console({
-        format: winston.format.combine(winston.format.colorize(), logFormat)
+        level: 'info',
+        format: winston.format.combine(winston.format.colorize(),
+        winston.format.printf(({ timestamp, level, message }) => {
+          return `${level}: ${message}`; 
+        })
+      )
       }),
       new winston.transports.File({filename: `logs/${serviceName}-combined.log`}),
       new winston.transports.File({filename: `logs/${serviceName}-error.log`, level: 'error'})
