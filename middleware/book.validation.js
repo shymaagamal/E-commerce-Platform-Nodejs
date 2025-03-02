@@ -2,7 +2,7 @@ import {body, validationResult} from 'express-validator';
 import httpStatusText from '../utils/httpStatusText.js';
 import createLogger from '../utils/logger.js';
 
-const logger = createLogger('validation-service');
+const logger = createLogger('Book-validation-service');
 
 // Validation rules for creating a book
 export const validateCreateBook = [
