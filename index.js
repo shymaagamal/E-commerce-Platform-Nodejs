@@ -1,11 +1,12 @@
 import process from 'node:process';
 import express from 'express';
 import mongoose from 'mongoose';
-import {errorHandler} from './middleware/errorHandler.js';
-import {morganMiddleware} from './middleware/morganMiddleware.js';
-import bookRouter from './routes/books.routes.js';
-import {userRouter} from './routes/users.routes.js';
-import httpStatusText from './utils/httpStatusText.js';
+import {errorHandler} from './middleware/error-handler.js';
+import {morganMiddleware} from './middleware/morgan-middleware.js';
+import bookRouter from './routes/books-routes.js';
+import {userRouter} from './routes/users-routes.js';
+import orderRouter from './routes/orders-routes.js'
+import httpStatusText from './utils/http-status-text.js';
 import createLogger from './utils/logger.js';
 import 'dotenv/config';
 

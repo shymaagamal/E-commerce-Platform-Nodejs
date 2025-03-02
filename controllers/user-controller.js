@@ -1,7 +1,7 @@
 import {validationResult} from 'express-validator';
-import {asyncWrapper} from '../middleware/asyncWrapper.js';
+import {asyncWrapper} from '../utils/async-wrapper.js';
 import {UserModel} from '../models/user-model.js';
-import {generateJWT} from '../utils/authentication.js';
+import {generateJWT,checkPassword} from '../utils/auth-utils.js';
 import httpStatusText from '../utils/http-status-text.js';
 import createLogger from '../utils/logger.js';
 
@@ -40,8 +40,18 @@ export const UserRegister = asyncWrapper(async (req, res, next) => {
 //        user login
 // ==========================================================================
 export const UserLogin=asyncWrapper(async (req, res, next) => {
-  
-
-
+  const loggedinUser = await UserModel.findOne({email:req.body.email})
+  console.log(req.body.password)
+  const matchedPassword=await checkPassword(loggedinUser,req.body.password);
+  if(!matchedPassword)
+    {
+      const error = new Error('Password doesn\'t match');
+      error.status = 400;
+      error.httpStatusText=httpStatusText.FAIL;
+      return next(error);
+    }
+    const  token = generateJWT({role: loggedinUser.role ,email: loggedinUser.email,id :loggedinUser._id})
+    loggedinUser.token = token;
+    res.status(200).json({status:httpStatusText.SUCCESS, data: loggedinUser});
 })
 

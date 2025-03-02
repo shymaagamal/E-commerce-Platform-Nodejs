@@ -1,4 +1,4 @@
-import mongoose from 'node:mongoose';
+import mongoose from 'mongoose';
 
 const bookSchema = new mongoose.Schema({
   title: {type: String, required: true, trim: true},
@@ -9,5 +9,4 @@ const bookSchema = new mongoose.Schema({
   image: {type: String}
 }, {timestamps: true});
 
-const Book = mongoose.model('Book', bookSchema);
-module.exports = Book;
+export const Book = mongoose.model('Book', bookSchema);

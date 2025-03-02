@@ -1,6 +1,6 @@
-import Book from '../models/book.model.js';
-import {asyncWrapper} from '../utils/asyncWrapper.js';
-import httpStatusText from '../utils/httpStatusText.js';
+import {Book} from '../models/book-model.js';
+import {asyncWrapper} from '../utils/async-wrapper.js';
+import httpStatusText from '../utils/http-status-text.js';
 
 // GET all books with pagination and filtering
 // If No Filter Provided Will Fetch All Books
