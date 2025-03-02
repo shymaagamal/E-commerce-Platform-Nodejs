@@ -42,3 +42,25 @@ export const createBook = asyncWrapper(async (req, res) => {
   const book = await Book.create({title, author, price, description, stock, image});
   res.status(201).json({status: httpStatusText.SUCCESS, book});
 });
+
+// UPDATE a book (Admin only)
+export const updateBook = asyncWrapper(async (req, res) => {
+  const book = await Book.findByIdAndUpdate(req.params.id, req.body);
+
+  if (!book) {
+    return res.status(404).json({status: httpStatusText.FAIL, message: 'Book not found'});
+  }
+
+  res.status(200).json({status: httpStatusText.SUCCESS, book});
+});
+
+// DELETE a book (Admin only)
+export const deleteBook = asyncWrapper(async (req, res) => {
+  const book = await Book.findByIdAndDelete(req.params.id);
+
+  if (!book) {
+    return res.status(404).json({status: httpStatusText.FAIL, message: 'Book not found'});
+  }
+
+  res.status(200).json({status: httpStatusText.SUCCESS, message: 'Book deleted successfully'});
+});

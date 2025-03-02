@@ -13,10 +13,10 @@ const app = express();
 const logger = createLogger('main-service');
 app.use(express.json());
 app.use('/user', userRouter);
+app.use('/book', bookRouter);
 
 app.use(errorHandler);
 app.use(morganMiddleware);
-
 
 app.all('*', (req, res) => {
   res.status(404).json({status: httpStatusText.ERROR, message: 'This resource is not found'});
