@@ -84,3 +84,555 @@
 [2025-03-01 02:01:26] INFO: Server is running on port http://localhost:5000
 [2025-03-01 02:01:27] INFO: Connected to MongoDB
 [2025-03-01 02:01:27] INFO: [object Object]
+[2025-03-02 11:22:47] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:22:49] INFO: Connected to MongoDB
+[2025-03-02 11:23:13] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:23:18] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:23:19] INFO: Connected to MongoDB
+[2025-03-02 11:23:23] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:23:25] INFO: Connected to MongoDB
+[2025-03-02 11:23:42] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:23:49] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:23:53] INFO: Connected to MongoDB
+[2025-03-02 11:23:55] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:24:01] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:24:03] INFO: Connected to MongoDB
+[2025-03-02 11:24:15] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:24:17] INFO: Connected to MongoDB
+[2025-03-02 11:24:25] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:24:27] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:24:29] INFO: Connected to MongoDB
+[2025-03-02 11:24:43] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:24:45] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:24:47] INFO: Connected to MongoDB
+[2025-03-02 11:25:24] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:25:30] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:25:34] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:25:37] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:25:40] INFO: Connected to MongoDB
+[2025-03-02 11:25:42] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:25:46] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:25:48] INFO: Connected to MongoDB
+[2025-03-02 11:25:59] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:26:01] INFO: Connected to MongoDB
+[2025-03-02 11:26:07] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:26:08] INFO: Connected to MongoDB
+[2025-03-02 11:26:13] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:26:15] INFO: Connected to MongoDB
+[2025-03-02 11:26:30] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:26:31] INFO: Connected to MongoDB
+[2025-03-02 11:26:42] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:26:45] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:26:47] INFO: Connected to MongoDB
+[2025-03-02 11:27:02] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:27:04] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:27:06] INFO: Connected to MongoDB
+[2025-03-02 11:29:09] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:29:11] INFO: Connected to MongoDB
+[2025-03-02 11:29:43] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:29:45] INFO: Connected to MongoDB
+[2025-03-02 11:29:57] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:29:58] INFO: Connected to MongoDB
+[2025-03-02 11:29:58] ERROR: Could not connect to MongoDB User is not defined
+[2025-03-02 11:30:05] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:30:07] INFO: Connected to MongoDB
+[2025-03-02 11:30:07] ERROR: Could not connect to MongoDB User is not defined
+[2025-03-02 11:32:06] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:32:08] INFO: Connected to MongoDB
+[2025-03-02 11:32:09] INFO: Users inserted successfully:
+[2025-03-02 11:32:23] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:32:25] INFO: Connected to MongoDB
+[2025-03-02 11:32:26] ERROR: Could not connect to MongoDB E11000 duplicate key error collection: sample_mflix.users index: email_1 dup key: { email: "alice@example.com" }
+[2025-03-02 11:32:45] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:32:46] INFO: Connected to MongoDB
+[2025-03-02 11:32:47] ERROR: Could not connect to MongoDB E11000 duplicate key error collection: sample_mflix.users index: email_1 dup key: { email: "alice@example.com" }
+[2025-03-02 11:34:19] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:34:20] INFO: Connected to MongoDB
+[2025-03-02 11:34:23] INFO: Server is running on port http://localhost:5000
+[2025-03-02 11:34:25] INFO: Connected to MongoDB
+[2025-03-02 11:34:26] ERROR: Could not connect to MongoDB E11000 duplicate key error collection: sample_mflix.users index: email_1 dup key: { email: "alice@example.com" }
+[2025-03-02 11:34:35] INFO: Server is running on port http://localhost:5000 || 5001
+[2025-03-02 11:34:36] INFO: Connected to MongoDB
+[2025-03-02 11:34:37] ERROR: Could not connect to MongoDB E11000 duplicate key error collection: sample_mflix.users index: email_1 dup key: { email: "alice@example.com" }
+[2025-03-02 11:37:12] INFO: Server is running on port http://localhost:5000 || 5001
+[2025-03-02 11:37:14] INFO: Connected to MongoDB
+[2025-03-02 11:38:01] INFO: Server is running on port http://localhost:5000 || 5001
+[2025-03-02 11:38:03] INFO: Connected to MongoDB
+[2025-03-02 11:41:52] INFO: Server is running on port http://localhost:5000 || 5001
+[2025-03-02 11:41:54] INFO: Connected to MongoDB
+[2025-03-02 11:41:54] ERROR: Could not connect to MongoDB bcrypt is not defined
+[2025-03-02 11:42:06] INFO: Server is running on port http://localhost:5000 || 5001
+[2025-03-02 11:42:08] INFO: Connected to MongoDB
+[2025-03-02 11:42:09] ERROR: Could not connect to MongoDB E11000 duplicate key error collection: BookStore.users index: email_1 dup key: { email: "alice@example.com" }
+[2025-03-02 11:42:44] INFO: Server is running on port http://localhost:5000 || 5001
+[2025-03-02 11:42:47] INFO: Connected to MongoDB
+[2025-03-02 11:42:48] ERROR: Could not connect to MongoDB E11000 duplicate key error collection: BookStore.users index: email_1 dup key: { email: "charlie@example.com" }
+[2025-03-02 11:43:11] INFO: Server is running on port http://localhost:5000 || 5001
+[2025-03-02 11:43:14] INFO: Connected to MongoDB
+[2025-03-02 11:43:14] ERROR: Could not connect to MongoDB E11000 duplicate key error collection: BookStore.users index: email_1 dup key: { email: "charlie@example.com" }
+[2025-03-02 11:43:24] INFO: Server is running on port http://localhost:5000 || 5001
+[2025-03-02 11:43:26] INFO: Connected to MongoDB
+[2025-03-02 11:43:27] ERROR: Could not connect to MongoDB E11000 duplicate key error collection: BookStore.users index: email_1 dup key: { email: "charlie@example.com" }
+[2025-03-02 11:43:54] INFO: Server is running on port http://localhost:5000 || 5001
+[2025-03-02 11:43:56] INFO: Connected to MongoDB
+[2025-03-02 11:45:03] INFO: Server is running on port http://localhost:5000 || 5001
+[2025-03-02 11:45:05] INFO: Connected to MongoDB
+[2025-03-02 11:45:10] INFO: Server is running on port http://localhost:5000 || 5001
+[2025-03-02 11:45:12] INFO: Connected to MongoDB
+[2025-03-02 11:45:47] INFO: Server is running on port http://localhost:5000 || 5001
+[2025-03-02 11:45:50] ERROR: Could not connect to MongoDB E11000 duplicate key error collection: BookStore.users index: email_1 dup key: { email: "alice@example.com" }
+[2025-03-02 11:45:53] INFO: Server is running on port http://localhost:5000 || 5001
+[2025-03-02 11:45:55] INFO: Connected to MongoDB
+[2025-03-02 11:45:56] ERROR: Could not connect to MongoDB E11000 duplicate key error collection: BookStore.users index: email_1 dup key: { email: "alice@example.com" }
+[2025-03-02 11:46:29] INFO: Server is running on port http://localhost:1000 || 5001
+[2025-03-02 11:46:31] INFO: Connected to MongoDB
+[2025-03-02 11:46:32] ERROR: Could not connect to MongoDB E11000 duplicate key error collection: BookStore.users index: email_1 dup key: { email: "alice@example.com" }
+[2025-03-02 11:46:42] INFO: Server is running on port http://localhost:1000 
+[2025-03-02 11:46:46] INFO: Server is running on port http://localhost:1000 
+[2025-03-02 11:46:48] INFO: Connected to MongoDB
+[2025-03-02 11:46:49] ERROR: Could not connect to MongoDB E11000 duplicate key error collection: BookStore.users index: email_1 dup key: { email: "alice@example.com" }
+[2025-03-02 11:48:26] INFO: Server is running on port http://localhost:1000 
+[2025-03-02 11:48:28] INFO: Connected to MongoDB
+[2025-03-02 11:48:49] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:48:51] INFO: Connected to MongoDB
+[2025-03-02 11:48:53] ERROR: Could not connect to MongoDB E11000 duplicate key error collection: BookStore.users index: email_1 dup key: { email: "david@example.com" }
+[2025-03-02 11:49:33] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:49:35] INFO: Connected to MongoDB
+[2025-03-02 11:50:05] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:50:07] INFO: Connected to MongoDB
+[2025-03-02 11:50:10] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:50:11] INFO: Connected to MongoDB
+[2025-03-02 11:50:28] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:50:29] INFO: Connected to MongoDB
+[2025-03-02 11:50:43] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:50:46] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:50:47] INFO: Connected to MongoDB
+[2025-03-02 11:51:00] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:51:02] INFO: Connected to MongoDB
+[2025-03-02 11:51:08] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:51:11] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:51:13] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:51:15] INFO: Connected to MongoDB
+[2025-03-02 11:51:20] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:51:21] INFO: Connected to MongoDB
+[2025-03-02 11:51:30] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:51:33] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:51:35] INFO: Connected to MongoDB
+[2025-03-02 11:51:39] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:51:44] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:51:50] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:51:51] INFO: Connected to MongoDB
+[2025-03-02 11:51:59] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:52:03] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:52:07] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:52:08] INFO: Connected to MongoDB
+[2025-03-02 11:52:10] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:52:12] INFO: Connected to MongoDB
+[2025-03-02 11:52:15] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:52:16] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:52:18] INFO: Connected to MongoDB
+[2025-03-02 11:52:21] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:52:22] INFO: Connected to MongoDB
+[2025-03-02 11:52:25] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:52:30] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:52:33] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:52:34] INFO: Connected to MongoDB
+[2025-03-02 11:52:53] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:52:55] INFO: Connected to MongoDB
+[2025-03-02 11:53:13] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:53:14] INFO: Connected to MongoDB
+[2025-03-02 11:53:33] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:53:34] INFO: Connected to MongoDB
+[2025-03-02 11:53:55] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:53:56] INFO: Connected to MongoDB
+[2025-03-02 11:54:02] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:54:04] INFO: Connected to MongoDB
+[2025-03-02 11:54:08] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:54:09] INFO: Connected to MongoDB
+[2025-03-02 11:54:14] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:54:15] INFO: Connected to MongoDB
+[2025-03-02 11:54:18] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:54:22] INFO: Connected to MongoDB
+[2025-03-02 11:54:46] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:54:48] INFO: Connected to MongoDB
+[2025-03-02 11:55:07] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:55:08] INFO: Connected to MongoDB
+[2025-03-02 11:55:11] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:55:13] INFO: Connected to MongoDB
+[2025-03-02 11:55:30] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:55:32] INFO: Connected to MongoDB
+[2025-03-02 11:55:41] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:55:43] INFO: Connected to MongoDB
+[2025-03-02 11:56:10] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:56:13] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:56:18] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:56:20] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:56:23] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:56:24] INFO: Connected to MongoDB
+[2025-03-02 11:56:30] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:56:31] INFO: Connected to MongoDB
+[2025-03-02 11:56:35] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:56:38] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:56:40] INFO: Connected to MongoDB
+[2025-03-02 11:56:52] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:56:54] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:56:58] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:57:03] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:57:04] INFO: Connected to MongoDB
+[2025-03-02 11:57:10] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:57:13] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:57:18] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:57:19] INFO: Connected to MongoDB
+[2025-03-02 11:57:27] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:57:29] INFO: Connected to MongoDB
+[2025-03-02 11:58:07] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:58:09] INFO: Connected to MongoDB
+[2025-03-02 11:58:11] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:58:13] INFO: Connected to MongoDB
+[2025-03-02 11:58:16] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:58:17] INFO: Connected to MongoDB
+[2025-03-02 11:58:29] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:58:33] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:58:36] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:58:38] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:58:40] INFO: Connected to MongoDB
+[2025-03-02 11:58:42] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:58:43] INFO: Connected to MongoDB
+[2025-03-02 11:58:45] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:58:47] INFO: Connected to MongoDB
+[2025-03-02 11:58:59] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:59:01] INFO: Connected to MongoDB
+[2025-03-02 11:59:05] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:59:06] INFO: Connected to MongoDB
+[2025-03-02 11:59:10] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:59:12] INFO: Connected to MongoDB
+[2025-03-02 11:59:16] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:59:19] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:59:22] INFO: Connected to MongoDB
+[2025-03-02 11:59:24] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:59:27] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:59:29] INFO: Connected to MongoDB
+[2025-03-02 11:59:34] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:59:37] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:59:39] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 11:59:41] INFO: Connected to MongoDB
+[2025-03-02 12:03:07] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:03:08] INFO: Connected to MongoDB
+[2025-03-02 12:05:06] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:05:07] INFO: Connected to MongoDB
+[2025-03-02 12:05:21] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:05:22] INFO: Connected to MongoDB
+[2025-03-02 12:05:25] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:05:26] INFO: Connected to MongoDB
+[2025-03-02 12:10:06] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:10:08] INFO: Connected to MongoDB
+[2025-03-02 12:19:50] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:19:51] INFO: Connected to MongoDB
+[2025-03-02 12:20:06] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:20:08] INFO: Connected to MongoDB
+[2025-03-02 12:20:32] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:20:35] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:20:37] INFO: Connected to MongoDB
+[2025-03-02 12:21:37] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:21:38] INFO: Connected to MongoDB
+[2025-03-02 12:21:42] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:21:43] INFO: Connected to MongoDB
+[2025-03-02 12:21:48] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:21:52] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:21:54] INFO: Connected to MongoDB
+[2025-03-02 12:22:13] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:22:14] INFO: Connected to MongoDB
+[2025-03-02 12:22:22] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:22:23] INFO: Connected to MongoDB
+[2025-03-02 12:22:27] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:22:29] INFO: Connected to MongoDB
+[2025-03-02 12:23:05] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:23:06] INFO: Connected to MongoDB
+[2025-03-02 12:24:02] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:24:04] INFO: Connected to MongoDB
+[2025-03-02 12:24:42] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:24:43] INFO: Connected to MongoDB
+[2025-03-02 12:24:52] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:24:53] INFO: Connected to MongoDB
+[2025-03-02 12:25:02] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:25:08] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:25:09] INFO: Connected to MongoDB
+[2025-03-02 12:25:16] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:25:17] INFO: Connected to MongoDB
+[2025-03-02 12:25:20] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:25:21] INFO: Connected to MongoDB
+[2025-03-02 12:25:26] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:25:28] INFO: Connected to MongoDB
+[2025-03-02 12:25:32] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:25:38] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:25:40] INFO: Connected to MongoDB
+[2025-03-02 12:26:13] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:26:14] INFO: Connected to MongoDB
+[2025-03-02 12:28:08] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:28:10] INFO: Connected to MongoDB
+[2025-03-02 12:32:00] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:32:02] INFO: Connected to MongoDB
+[2025-03-02 12:32:32] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:32:33] INFO: Connected to MongoDB
+[2025-03-02 12:33:54] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:33:55] INFO: Connected to MongoDB
+[2025-03-02 12:34:19] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:34:20] INFO: Connected to MongoDB
+[2025-03-02 12:35:13] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:35:28] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:35:30] INFO: Connected to MongoDB
+[2025-03-02 12:36:04] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:36:06] INFO: Connected to MongoDB
+[2025-03-02 12:36:24] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:36:27] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:36:29] INFO: Connected to MongoDB
+[2025-03-02 12:37:11] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:37:13] INFO: Connected to MongoDB
+[2025-03-02 12:37:26] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:37:28] INFO: Connected to MongoDB
+[2025-03-02 12:37:30] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:37:32] INFO: Connected to MongoDB
+[2025-03-02 12:38:07] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:38:09] INFO: Connected to MongoDB
+[2025-03-02 12:39:13] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:39:16] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:39:17] INFO: Connected to MongoDB
+[2025-03-02 12:39:18] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:39:20] INFO: Connected to MongoDB
+[2025-03-02 12:39:27] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:39:28] INFO: Connected to MongoDB
+[2025-03-02 12:39:31] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:39:32] INFO: Connected to MongoDB
+[2025-03-02 12:40:19] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:40:20] INFO: Connected to MongoDB
+[2025-03-02 12:40:23] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:40:24] INFO: Connected to MongoDB
+[2025-03-02 12:40:35] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:40:37] INFO: Connected to MongoDB
+[2025-03-02 12:40:40] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:40:42] INFO: Connected to MongoDB
+[2025-03-02 12:40:51] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:40:53] INFO: Connected to MongoDB
+[2025-03-02 12:40:55] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:40:57] INFO: Connected to MongoDB
+[2025-03-02 12:41:32] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:41:35] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:41:36] INFO: Connected to MongoDB
+[2025-03-02 12:41:40] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:41:42] INFO: Connected to MongoDB
+[2025-03-02 12:41:45] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:41:48] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:41:49] INFO: Connected to MongoDB
+[2025-03-02 12:41:52] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:44:32] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:44:34] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:44:35] INFO: Connected to MongoDB
+[2025-03-02 12:44:37] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:44:38] INFO: Connected to MongoDB
+[2025-03-02 12:44:46] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:44:48] INFO: Connected to MongoDB
+[2025-03-02 12:44:54] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:44:56] INFO: Connected to MongoDB
+[2025-03-02 12:45:39] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:45:41] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:45:43] INFO: Connected to MongoDB
+[2025-03-02 12:46:02] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:46:03] INFO: Connected to MongoDB
+[2025-03-02 12:46:06] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:46:08] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:46:09] INFO: Connected to MongoDB
+[2025-03-02 12:46:12] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:46:14] INFO: Connected to MongoDB
+[2025-03-02 12:46:23] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:46:24] INFO: Connected to MongoDB
+[2025-03-02 12:47:04] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:47:06] INFO: Connected to MongoDB
+[2025-03-02 12:47:09] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:47:10] INFO: Connected to MongoDB
+[2025-03-02 12:48:08] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:48:10] INFO: Connected to MongoDB
+[2025-03-02 12:48:15] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:48:17] INFO: Connected to MongoDB
+[2025-03-02 12:48:19] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:48:21] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:48:24] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:48:26] INFO: Connected to MongoDB
+[2025-03-02 12:48:31] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:48:33] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:48:35] INFO: Connected to MongoDB
+[2025-03-02 12:48:41] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:48:42] INFO: Connected to MongoDB
+[2025-03-02 12:48:45] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:48:46] INFO: Connected to MongoDB
+[2025-03-02 12:49:10] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:49:12] INFO: Connected to MongoDB
+[2025-03-02 12:51:44] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:51:45] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:51:47] INFO: Connected to MongoDB
+[2025-03-02 12:51:51] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:51:52] INFO: Connected to MongoDB
+[2025-03-02 12:52:31] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:52:33] INFO: Connected to MongoDB
+[2025-03-02 12:53:40] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:53:43] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:53:45] INFO: Connected to MongoDB
+[2025-03-02 12:56:22] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:56:24] INFO: Connected to MongoDB
+[2025-03-02 12:56:26] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:56:27] INFO: Connected to MongoDB
+[2025-03-02 12:56:43] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:56:45] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:56:47] INFO: Connected to MongoDB
+[2025-03-02 12:57:03] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:57:06] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:57:07] INFO: Connected to MongoDB
+[2025-03-02 12:57:12] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:57:13] INFO: Connected to MongoDB
+[2025-03-02 12:57:15] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:57:17] INFO: Connected to MongoDB
+[2025-03-02 12:57:22] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:57:24] INFO: Connected to MongoDB
+[2025-03-02 12:57:26] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:57:27] INFO: Connected to MongoDB
+[2025-03-02 12:57:28] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:57:30] INFO: Connected to MongoDB
+[2025-03-02 12:57:34] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:57:35] INFO: Connected to MongoDB
+[2025-03-02 12:57:45] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:57:47] INFO: Connected to MongoDB
+[2025-03-02 12:57:51] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:57:53] INFO: Connected to MongoDB
+[2025-03-02 12:58:20] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:58:21] INFO: Connected to MongoDB
+[2025-03-02 12:58:29] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:58:31] INFO: Connected to MongoDB
+[2025-03-02 12:58:41] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:58:42] INFO: Connected to MongoDB
+[2025-03-02 12:58:56] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:58:57] INFO: Connected to MongoDB
+[2025-03-02 12:58:59] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:59:01] INFO: Connected to MongoDB
+[2025-03-02 12:59:15] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:59:16] INFO: Connected to MongoDB
+[2025-03-02 12:59:28] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 12:59:30] INFO: Connected to MongoDB
+[2025-03-02 13:01:32] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:01:33] INFO: Connected to MongoDB
+[2025-03-02 13:01:38] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:01:40] INFO: Connected to MongoDB
+[2025-03-02 13:01:42] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:01:43] INFO: Connected to MongoDB
+[2025-03-02 13:02:03] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:02:04] INFO: Connected to MongoDB
+[2025-03-02 13:02:29] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:02:31] INFO: Connected to MongoDB
+[2025-03-02 13:02:37] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:02:39] INFO: Connected to MongoDB
+[2025-03-02 13:02:50] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:02:51] INFO: Connected to MongoDB
+[2025-03-02 13:04:21] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:04:22] INFO: Connected to MongoDB
+[2025-03-02 13:04:47] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:04:48] INFO: Connected to MongoDB
+[2025-03-02 13:04:57] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:04:58] INFO: Connected to MongoDB
+[2025-03-02 13:05:08] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:05:09] INFO: Connected to MongoDB
+[2025-03-02 13:05:36] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:05:55] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:05:57] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:05:58] INFO: Connected to MongoDB
+[2025-03-02 13:06:05] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:06:06] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:06:10] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:06:13] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:06:15] INFO: Connected to MongoDB
+[2025-03-02 13:06:21] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:06:23] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:06:24] INFO: Connected to MongoDB
+[2025-03-02 13:06:32] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:06:39] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:06:41] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:06:43] INFO: Connected to MongoDB
+[2025-03-02 13:06:46] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:06:48] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:06:50] INFO: Connected to MongoDB
+[2025-03-02 13:06:55] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:06:56] INFO: Connected to MongoDB
+[2025-03-02 13:07:02] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:07:03] INFO: Connected to MongoDB
+[2025-03-02 13:07:05] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:07:07] INFO: Connected to MongoDB
+[2025-03-02 13:07:56] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:07:58] INFO: Connected to MongoDB
+[2025-03-02 13:08:01] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:08:02] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:08:04] INFO: Connected to MongoDB
+[2025-03-02 13:08:18] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:08:19] INFO: Connected to MongoDB
+[2025-03-02 13:08:56] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:08:58] INFO: Connected to MongoDB
+[2025-03-02 13:09:10] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:09:14] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:09:19] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:09:21] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:09:22] INFO: Connected to MongoDB
+[2025-03-02 13:09:55] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:09:59] INFO: Connected to MongoDB
+[2025-03-02 13:10:23] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:10:25] INFO: Connected to MongoDB
+[2025-03-02 13:11:36] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:11:38] INFO: Connected to MongoDB
+[2025-03-02 13:11:46] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:11:48] INFO: Connected to MongoDB
+[2025-03-02 13:12:29] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:12:32] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:12:34] INFO: Connected to MongoDB
+[2025-03-02 13:12:54] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:12:56] INFO: Connected to MongoDB
+[2025-03-02 13:15:22] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:15:24] INFO: Connected to MongoDB
+[2025-03-02 13:15:56] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:15:58] INFO: Connected to MongoDB
+[2025-03-02 13:16:20] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:16:23] INFO: Connected to MongoDB
+[2025-03-02 13:16:50] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:16:52] INFO: Connected to MongoDB
+[2025-03-02 13:17:40] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:17:42] INFO: Connected to MongoDB
+[2025-03-02 13:18:24] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:18:26] INFO: Connected to MongoDB
+[2025-03-02 13:20:00] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:20:02] INFO: Connected to MongoDB
+[2025-03-02 13:20:23] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:20:28] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:20:30] INFO: Connected to MongoDB
+[2025-03-02 13:21:19] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:21:25] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:21:31] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:21:32] INFO: Connected to MongoDB
+[2025-03-02 13:22:48] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:22:50] INFO: Connected to MongoDB
+[2025-03-02 13:23:36] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:23:37] INFO: Connected to MongoDB
+[2025-03-02 13:23:48] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:23:50] INFO: Connected to MongoDB
+[2025-03-02 13:23:53] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:23:55] INFO: Connected to MongoDB
+[2025-03-02 13:24:18] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:24:20] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:24:21] INFO: Connected to MongoDB
+[2025-03-02 13:24:23] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:24:24] INFO: Connected to MongoDB
+[2025-03-02 13:24:50] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:24:53] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:24:55] INFO: Connected to MongoDB
+[2025-03-02 13:24:58] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:25:00] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:25:01] INFO: Connected to MongoDB
+[2025-03-02 13:25:09] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:25:10] INFO: Connected to MongoDB
+[2025-03-02 13:25:19] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:25:20] INFO: Connected to MongoDB
+[2025-03-02 13:25:36] INFO: Server is running on port http://localhost:5000 
+[2025-03-02 13:25:38] INFO: Connected to MongoDB

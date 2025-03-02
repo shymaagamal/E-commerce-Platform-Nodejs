@@ -2,3 +2,19 @@
 [2025-03-01 01:40:04] INFO: [object Object]
 [2025-03-01 01:40:06] INFO: Server is running on port http://localhost:3000
 [2025-03-01 01:40:07] INFO: [object Object]
+[2025-03-02 11:29:58] ERROR: Could not connect to MongoDB User is not defined
+[2025-03-02 11:30:07] ERROR: Could not connect to MongoDB User is not defined
+[2025-03-02 11:32:26] ERROR: Could not connect to MongoDB E11000 duplicate key error collection: sample_mflix.users index: email_1 dup key: { email: "alice@example.com" }
+[2025-03-02 11:32:47] ERROR: Could not connect to MongoDB E11000 duplicate key error collection: sample_mflix.users index: email_1 dup key: { email: "alice@example.com" }
+[2025-03-02 11:34:26] ERROR: Could not connect to MongoDB E11000 duplicate key error collection: sample_mflix.users index: email_1 dup key: { email: "alice@example.com" }
+[2025-03-02 11:34:37] ERROR: Could not connect to MongoDB E11000 duplicate key error collection: sample_mflix.users index: email_1 dup key: { email: "alice@example.com" }
+[2025-03-02 11:41:54] ERROR: Could not connect to MongoDB bcrypt is not defined
+[2025-03-02 11:42:09] ERROR: Could not connect to MongoDB E11000 duplicate key error collection: BookStore.users index: email_1 dup key: { email: "alice@example.com" }
+[2025-03-02 11:42:48] ERROR: Could not connect to MongoDB E11000 duplicate key error collection: BookStore.users index: email_1 dup key: { email: "charlie@example.com" }
+[2025-03-02 11:43:14] ERROR: Could not connect to MongoDB E11000 duplicate key error collection: BookStore.users index: email_1 dup key: { email: "charlie@example.com" }
+[2025-03-02 11:43:27] ERROR: Could not connect to MongoDB E11000 duplicate key error collection: BookStore.users index: email_1 dup key: { email: "charlie@example.com" }
+[2025-03-02 11:45:50] ERROR: Could not connect to MongoDB E11000 duplicate key error collection: BookStore.users index: email_1 dup key: { email: "alice@example.com" }
+[2025-03-02 11:45:56] ERROR: Could not connect to MongoDB E11000 duplicate key error collection: BookStore.users index: email_1 dup key: { email: "alice@example.com" }
+[2025-03-02 11:46:32] ERROR: Could not connect to MongoDB E11000 duplicate key error collection: BookStore.users index: email_1 dup key: { email: "alice@example.com" }
+[2025-03-02 11:46:49] ERROR: Could not connect to MongoDB E11000 duplicate key error collection: BookStore.users index: email_1 dup key: { email: "alice@example.com" }
+[2025-03-02 11:48:53] ERROR: Could not connect to MongoDB E11000 duplicate key error collection: BookStore.users index: email_1 dup key: { email: "david@example.com" }
