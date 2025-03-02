@@ -9,5 +9,4 @@ const bookSchema = new mongoose.Schema({
   image: {type: String}
 }, {timestamps: true});
 
-const Book = mongoose.model('Book', bookSchema);
-export default Book;
+export const Book = mongoose.model('Book', bookSchema);

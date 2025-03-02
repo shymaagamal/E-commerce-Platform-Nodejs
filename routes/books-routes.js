@@ -1,6 +1,6 @@
 import express from 'express';
 import {createBook, deleteBook, getBookById, getBooks, updateBook} from '../controllers/book-controller.js';
-import {authorizeAdmin} from '../middleware/auth-middleware.js';
+import {authorizeAdmin} from '../middleware/auth-Middleware.js';
 import {validateCreateBook, validateUpdateBook} from '../middleware/book-validation.js';
 
 export const bookRouter = express.Router();

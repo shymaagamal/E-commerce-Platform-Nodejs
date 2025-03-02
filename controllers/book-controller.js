@@ -1,4 +1,4 @@
-import Book from '../models/book-model.js';
+import {Book} from '../models/book-model.js';
 import {asyncWrapper} from '../utils/async-wrapper.js';
 import httpStatusText from '../utils/http-status-text.js';
 
