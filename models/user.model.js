@@ -1,4 +1,5 @@
-import mongoose from 'node:mongoose';
+import bcrypt from 'bcrypt';
+import mongoose from 'mongoose';
 
 const userSchema = new mongoose.Schema(
   {
@@ -19,10 +20,18 @@ const userSchema = new mongoose.Schema(
       required: [true, 'Password is required'],
       minlength: [8, 'Password must be at least 8 characters']
     },
-    role: {type: String, enum: ['user', 'admin'], default: 'user'},
-    isVerified: {type: Boolean, default: false}
+    role: {type: String, enum: ['user', 'admin'], default: 'user'}
   },
   {timestamps: true}
 );
+userSchema.index({email: 1}, {unique: true});
 
+userSchema.pre('save', function (next) {
+  this.password = bcrypt.hashSync(this.password, 10);
+  next();
+});
 export const UserModel = mongoose.model('User', userSchema);
+
+userSchema.methods.comparePasswords = function (password) {
+  return bcrypt.compareSync(password, this.password);
+};

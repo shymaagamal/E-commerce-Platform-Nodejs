@@ -34,3 +34,11 @@ export const getBookById = asyncWrapper(async (req, res) => {
   }
   res.status(200).json({status: httpStatusText.SUCCESS, book});
 });
+
+// CREATE a new book (Admin only)
+export const createBook = asyncWrapper(async (req, res) => {
+  const {title, author, price, description, stock, image} = req.body;
+
+  const book = await Book.create({title, author, price, description, stock, image});
+  res.status(201).json({status: httpStatusText.SUCCESS, book});
+});
