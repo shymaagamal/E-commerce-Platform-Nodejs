@@ -1,5 +1,8 @@
 import {body, validationResult} from 'express-validator';
 import httpStatusText from '../utils/httpStatusText.js';
+import createLogger from '../utils/logger.js';
+
+const logger = createLogger('validation-service');
 
 // Validation rules for creating a book
 export const validateCreateBook = [
@@ -44,6 +47,7 @@ export const validateCreateBook = [
   (req, res, next) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
+      logger.error(`Validation failed: ${JSON.stringify(errors.array())}`); // Log errors
       return res.status(400).json({status: httpStatusText.FAIL, errors: errors.array()});
     }
     next();
@@ -89,6 +93,7 @@ export const validateUpdateBook = [
   (req, res, next) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
+      logger.error(`Validation failed: ${JSON.stringify(errors.array())}`);
       return res.status(400).json({status: httpStatusText.FAIL, errors: errors.array()});
     }
     next();
