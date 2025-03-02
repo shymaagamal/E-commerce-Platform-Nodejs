@@ -26,9 +26,9 @@ app.listen(process.env.PORT, () => {
 mongoose.connect(process.env.MONGO_URL)
   .then(async () => {
     logger.info('Connected to MongoDB');
-    const collName = mongoose.connection.db.collection('users');
-    const users = await collName.find({name: 'Ned Stark'}).toArray();
+    // const collName = mongoose.connection.db.collection('users');
+    // const users = await collName.find({name: 'Ned Stark'}).toArray();
 
-    logger.info({status: httpStatusText.SUCCESS, data: {users}});
+    // logger.info({status: httpStatusText.SUCCESS, data: {users}});
   })
   .catch((err) => logger.error('Could not connect to MongoDB', err));
