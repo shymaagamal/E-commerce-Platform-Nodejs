@@ -1,6 +1,6 @@
 import {validationResult} from 'express-validator';
-import {asyncWrapper} from '../middleware/asyncWrapper.js';
 import {UserModel} from '../models/user-model.js';
+import {asyncWrapper} from '../utils/async-wrapper.js';
 import {generateJWT} from '../utils/authentication.js';
 import httpStatusText from '../utils/http-status-text.js';
 import createLogger from '../utils/logger.js';

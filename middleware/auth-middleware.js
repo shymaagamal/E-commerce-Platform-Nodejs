@@ -1,4 +1,4 @@
-import httpStatusText from '../utils/httpStatusText.js';
+import httpStatusText from '../utils/http-status-text.js';
 
 export const authorizeAdmin = (req, res, next) => {
   if (req.user.role !== 'admin') {

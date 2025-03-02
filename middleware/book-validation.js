@@ -1,5 +1,5 @@
 import {body, validationResult} from 'express-validator';
-import httpStatusText from '../utils/httpStatusText.js';
+import httpStatusText from '../utils/http-status-text.js';
 import createLogger from '../utils/logger.js';
 
 const logger = createLogger('Book-validation-service');
