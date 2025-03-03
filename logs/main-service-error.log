@@ -20,3 +20,8 @@
 [2025-03-02 11:48:53] ERROR: Could not connect to MongoDB E11000 duplicate key error collection: BookStore.users index: email_1 dup key: { email: "david@example.com" }
 [2025-03-02 23:01:31] ERROR: ❌ Failed to connect to MongoDB: Server selection timed out after 30000 ms
 [2025-03-02 23:04:47] ERROR: ❌ 404 | Resource not found: POST //order
+[2025-03-03 17:23:19] ERROR: ❌ 404 | Resource not found: GET /order
+[2025-03-03 19:14:01] ERROR: ❌ Failed to connect to MongoDB: Server selection timed out after 30000 ms
+[2025-03-03 20:06:23] ERROR: ❌ Failed to connect to MongoDB: Socket 'secureConnect' timed out after 30145ms (connectTimeoutMS: 30000)
+[2025-03-03 20:10:34] ERROR: ❌ Failed to connect to MongoDB: Socket 'secureConnect' timed out after 30150ms (connectTimeoutMS: 30000)
+[2025-03-03 20:16:16] ERROR: ❌ Failed to connect to MongoDB: Server selection timed out after 30000 ms
