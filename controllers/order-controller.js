@@ -3,7 +3,7 @@ import {asyncWrapper} from "../utils/async-wrapper.js";
 import httpStatusText from "../utils/http-status-text.js";
 import createLogger from "../utils/logger.js";
 
-const orderLogger = createLogger('user-service');
+const orderLogger = createLogger('order-service');
 
 // Store either the success or error message
 let msg = "" ;
@@ -16,7 +16,7 @@ export const getOrderHistory = asyncWrapper ( async (req, res , next) => {
     const orders = await Order.find() .populate({
         path: "books.bookId",
         select: "title price" // Fetch only title and price from Book collection
-    }) .sort({ createdAt: -1 }); // Sort by most recent orders
+    }) .sort({ createdAt: -1 }); // Sort by most recent orders ( Descending )
  
 
     // If no orders found
@@ -24,16 +24,17 @@ export const getOrderHistory = asyncWrapper ( async (req, res , next) => {
     {
         msg = "No orders history found for this user." ;
         orderLogger.error(msg) ;
-        return res.status(404).json({ success: httpStatusText.FAIL, message: msg });
+        return res.status(404).json({ status: httpStatusText.FAIL, message: msg });
     }
 
-    msg = "Order history is retrieved successfully." ; 
+    msg = "Full Orders history is retrieved successfully." ; 
     orderLogger.info(msg) ;
     // Return orders
-    return res.status(200).json({ success: httpStatusText.SUCCESS, message: msg, formattedOrders });
+    return res.status(200).json({ status: httpStatusText.SUCCESS, message: msg, orders });
 });
 
-/***************************** Different Ids Clarification found in the returned response from "getOrderHistory" function
+
+/******* Different Ids Clarification found in the returned response from "getOrderHistory" function
 Sample Output : 
 
     "success": "success",
@@ -54,4 +55,38 @@ Sample Output :
                 }],
             ...
         }]
-********************************************************************************************************************/
+*******/
+
+
+/***************************** Get/View Order History By ID For the logged-in user *****************************/
+
+export const getOrderById = asyncWrapper(async (req, res, next) => {
+
+    // Get orderId from request parameters
+    const { id: orderId } = req.params;
+    
+
+    // Find the order by ID and populate book details
+    const order = await Order.findById(orderId).populate({
+        path: "books.bookId",
+        select: "title price" // Fetch only title and price from Book collection
+    })
+           
+    // If order not found
+    if (!order) 
+    {
+        msg = "Order not found for this user." ;
+        orderLogger.error(msg) ;
+        return res.status(404).json({ status: httpStatusText.FAIL, message: msg });
+    }
+
+    // Remove _id from books array manually
+    order.books = order.books.map(({ _id, bookId, quantity }) => ({
+        bookId, // Keep populated book details
+        quantity
+    }));
+
+    msg = "Order is retrieved successfully." ;
+    orderLogger.info(msg) ;
+    return res.status(200).json({ status: httpStatusText.SUCCESS, message: msg, order });
+});
