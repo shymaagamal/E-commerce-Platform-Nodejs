@@ -1,6 +1,9 @@
 import {Book} from '../models/book-model.js';
 import {asyncWrapper} from '../utils/async-wrapper.js';
 import httpStatusText from '../utils/http-status-text.js';
+import {createLogger} from '../utils/logger.js';
+
+const bookLogger = createLogger('book-service');
 
 // GET all books with pagination and filtering
 // If No Filter Provided Will Fetch All Books
@@ -30,8 +33,10 @@ export const getBooks = asyncWrapper(async (req, res) => {
 export const getBookById = asyncWrapper(async (req, res) => {
   const book = await Book.findById(req.params.id);
   if (!book) {
+    bookLogger.error('Book is not found');
     return res.status(404).json({status: httpStatusText.FAIL, message: 'Book not found'});
   }
+  bookLogger.info('Book is sent successfully');
   res.status(200).json({status: httpStatusText.SUCCESS, book});
 });
 

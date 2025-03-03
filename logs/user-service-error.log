@@ -53,3 +53,5 @@
 [2025-03-02 23:16:01] ERROR: ⚠️ Registration error: Email is already in use.
 [2025-03-02 23:19:59] ERROR: ❌ Authentication failed: User with email salem5@example.com not found.
 [2025-03-02 23:26:27] ERROR: ⚠️ Registration error: Email is already in use.
+[2025-03-02 23:29:08] ERROR: ❌ User not found: "salem28@example.com"
+[2025-03-02 23:29:25] ERROR: ❌ User not found: "salem28@example.com"

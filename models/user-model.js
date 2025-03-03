@@ -1,7 +1,8 @@
 import bcrypt from 'bcrypt';
 import mongoose from 'mongoose';
 import validator from 'validator';
-import {userRoles} from '../utils/user-roles.js'
+import {userRoles} from '../utils/user-roles.js';
+
 const userSchema = new mongoose.Schema(
   {
     name: {type: String, required: [true, 'Username is required'], trim: true},
@@ -48,4 +49,3 @@ userSchema.pre('findOneAndUpdate', function (next) {
 });
 
 export const UserModel = mongoose.model('User', userSchema);
-

@@ -4,9 +4,9 @@ import express from 'express';
 const cartRouter = express.Router();
 
 // Cart Routes
-cartRouter.get('/', viewAllCarts);
-cartRouter.get('/:id', viewCartById);
-cartRouter.patch('/:id', AddBook);
-cartRouter.delete('/:id', removeBook);
+// cartRouter.get('/', viewAllCarts);
+// cartRouter.get('/:id', viewCartById);
+// cartRouter.patch('/:id', AddBook);
+// cartRouter.delete('/:id', removeBook);
 
 export default cartRouter;

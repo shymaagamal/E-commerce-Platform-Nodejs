@@ -160,3 +160,7 @@
 [2025-03-02 23:26:27] INFO: POST /user/register 400 - 151.180 ms
 [2025-03-02 23:26:35] INFO: POST /user/register 200 - 365.026 ms
 [2025-03-02 23:26:48] INFO: PATCH /user/salem28@example.com 400 - 1.321 ms
+[2025-03-02 23:28:45] INFO: PATCH /user/salem28@example.com 200 - 242.173 ms
+[2025-03-02 23:29:08] INFO: PATCH /user/salem28@example.com 400 - 209.853 ms
+[2025-03-02 23:29:25] INFO: PATCH /user/salem28@example.com 400 - 205.576 ms
+[2025-03-02 23:30:02] INFO: PATCH /user/salem5@example.com 200 - 224.301 ms
