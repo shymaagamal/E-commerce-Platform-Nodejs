@@ -1137,6 +1137,7 @@
 [2025-03-02 22:12:55] INFO: ✅ Successfully connected to MongoDB.
 [2025-03-02 22:13:01] INFO: 🚀 Server is running at: http://localhost:5000
 [2025-03-02 22:13:02] INFO: ✅ Successfully connected to MongoDB.
+<<<<<<< HEAD
 [2025-03-02 22:21:34] INFO: 🚀 Server is running at: http://localhost:5000
 [2025-03-02 22:21:36] INFO: ✅ Successfully connected to MongoDB.
 [2025-03-02 22:21:43] INFO: 🚀 Server is running at: http://localhost:5000

@@ -1,10 +1,11 @@
 import express from 'express';
-// import  from "../controllers/.js" ;
+import {getOrderHistory} from '../controllers/order-controller.js';
 
 const orderRouter = express.Router();
 
-// Books Routes
-// orderRouter.post('/', addOrder);
-// orderRouter.get('/', getHistory);
+// Orders Routes
+// orderRouter.post('/', placeOrder);
+orderRouter.get('/', getOrderHistory);
+// orderRouter.get('/:id', getOrderById);
 
 export default orderRouter;

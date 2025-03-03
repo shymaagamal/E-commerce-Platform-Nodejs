@@ -18,3 +18,5 @@
 [2025-03-02 11:46:32] ERROR: Could not connect to MongoDB E11000 duplicate key error collection: BookStore.users index: email_1 dup key: { email: "alice@example.com" }
 [2025-03-02 11:46:49] ERROR: Could not connect to MongoDB E11000 duplicate key error collection: BookStore.users index: email_1 dup key: { email: "alice@example.com" }
 [2025-03-02 11:48:53] ERROR: Could not connect to MongoDB E11000 duplicate key error collection: BookStore.users index: email_1 dup key: { email: "david@example.com" }
+[2025-03-02 23:01:31] ERROR: ❌ Failed to connect to MongoDB: Server selection timed out after 30000 ms
+[2025-03-02 23:04:47] ERROR: ❌ 404 | Resource not found: POST //order
