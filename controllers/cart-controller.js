@@ -105,8 +105,23 @@ export const addBookToCart = asyncWrapper(async (req, res, next) => {
   return res.status(200).json({status: httpStatusText.SUCCESS, sessionID: req.sessionID, data: req.session.cart});
 });
 
-export const removeBookFromCart = asyncWrapper((req, res, next) => {
+export const removeBookFromCart = asyncWrapper(async(req, res, next) => {
+  if (req.user.id !== req.session.userID) {
+    const sessionCollection = mongoose.connection.collection('sessions');
+    const sessionDoc = await sessionCollection.findOne({session: {$regex: `"userID":"${req.user.id}"`}});
+    if (!sessionDoc) {
+      cartLogger.error('❌ logged-in user doesnt have data');
+      const error = new Error('❌ logged-in user doesnt have data');
+      error.status = 400;
+      error.httpStatusText = httpStatusText.FAIL;
+      return next(error);
+    }
 
+    const sessionData = JSON.parse(sessionDoc.session.cart);
+
+    // cartLogger.info('🎉 Retrived data from database successfully');
+    // return res.status(200).json({status: httpStatusText.SUCCESS, data: sessionData.cart});
+  }
 });
 
 export const viewUserCart = asyncWrapper(async (req, res, next) => {

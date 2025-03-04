@@ -83,3 +83,11 @@ export const UserUpdateProfile = asyncWrapper(async (req, res, next) => {
   userLogger.info(`📝 User "${email}" updated successfully by "${req.user.email}"`);
   res.status(200).json({status: httpStatusText.SUCCESS, data: isUserExist});
 });
+
+// ========================================================================
+//                        user logout
+// ==========================================================================
+
+export const UserLogOut = asyncWrapper(async (req, res, next) => {
+
+});
