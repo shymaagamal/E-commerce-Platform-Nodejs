@@ -209,3 +209,8 @@
 [2025-03-04 02:46:17] INFO: 🎉 User login successful.
 [2025-03-04 02:46:28] INFO: 🎉 User login successful.
 [2025-03-04 02:48:11] INFO: 🎉 User login successful.
+[2025-03-04 13:25:04] ERROR: New data doesn't follow schema
+[2025-03-04 13:26:02] ERROR: New data doesn't follow schema
+[2025-03-04 13:26:23] INFO: 🎉 New user registered successfully.
+[2025-03-04 13:26:41] INFO: 🎉 User login successful.
+[2025-03-04 14:15:54] INFO: 🎉 User login successful.

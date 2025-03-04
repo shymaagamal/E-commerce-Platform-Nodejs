@@ -10,10 +10,13 @@ let msg = "" ;
 
 /***************************** Get/View All Orders History For the logged-in user *****************************/
 
-export const getOrderHistory = asyncWrapper ( async (req, res , next) => {
+export const getOrdersHistory = asyncWrapper ( async (req, res , next) => {
+ 
+    const userId = req.user?.id; // Ensure req.user exists
+
 
     // Fetch orders related to the user and populate/fetch book details for more readability
-    const orders = await Order.find() .populate({
+    const orders = await Order.find( {userId}) .populate({
         path: "books.bookId",
         select: "title price" // Fetch only title and price from Book collection
     }) .sort({ createdAt: -1 }); // Sort by most recent orders ( Descending )
@@ -62,12 +65,15 @@ Sample Output :
 
 export const getOrderById = asyncWrapper(async (req, res, next) => {
 
+    // Extract the logged-in user's ID
+    const userId = req.user.id
+
     // Get orderId from request parameters
     const { id: orderId } = req.params;
     
 
     // Find the order by ID and populate book details
-    const order = await Order.findById(orderId).populate({
+    const order = await Order.findById({ _id: orderId, userId }).populate({
         path: "books.bookId",
         select: "title price" // Fetch only title and price from Book collection
     })
