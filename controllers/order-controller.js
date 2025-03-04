@@ -12,7 +12,8 @@ let msg = "" ;
 
 export const getOrdersHistory = asyncWrapper ( async (req, res , next) => {
  
-    const userId = req.user?.id; // Ensure req.user exists
+    // Extract the logged-in user's ID
+    const userId = req.user.id; 
 
 
     // Fetch orders related to the user and populate/fetch book details for more readability
@@ -48,7 +49,7 @@ Sample Output :
             "userId": "67c437bdcf712dcb576a083f",  ---> UserId
             "books": [
                 {
-                    "_id": "67c5df2c67aed148cca1b4dc",  ---> Object Entry ID for thie book object ( so wil remove it from output )
+                    "_id": "67c5df2c67aed148cca1b4dc",  ---> Object Entry ID for thie book object
                     "bookId": {
                         "_id": "67c476526cd9d8ce879a21c0",  ---> BookId
                         "title": "Design Patterns",
@@ -66,31 +67,37 @@ Sample Output :
 export const getOrderById = asyncWrapper(async (req, res, next) => {
 
     // Extract the logged-in user's ID
-    const userId = req.user.id
+    const UserId = req.user.id
 
     // Get orderId from request parameters
-    const { id: orderId } = req.params;
+    const orderId = req.params.id ;
+
     
 
     // Find the order by ID and populate book details
-    const order = await Order.findById({ _id: orderId, userId }).populate({
+    const order = await Order.findById({ _id: orderId}).populate({
         path: "books.bookId",
         select: "title price" // Fetch only title and price from Book collection
     })
-           
-    // If order not found
-    if (!order) 
+
+
+     // If order not found
+     if (!order) 
     {
         msg = "Order not found for this user." ;
         orderLogger.error(msg) ;
         return res.status(404).json({ status: httpStatusText.FAIL, message: msg });
     }
 
-    // Remove _id from books array manually
-    order.books = order.books.map(({ _id, bookId, quantity }) => ({
-        bookId, // Keep populated book details
-        quantity
-    }));
+
+    // If order retrieved isn't owned/placed by the same user logged in 
+    if ( order.userId != UserId )
+    {
+        msg = "You aren't authorized to view this order as it isn't yours." ;
+        orderLogger.error(msg) ;
+        return res.status(404).json({ status: httpStatusText.FAIL, message: msg });
+    }
+
 
     msg = "Order is retrieved successfully." ;
     orderLogger.info(msg) ;
