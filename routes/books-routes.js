@@ -1,6 +1,6 @@
 import express from 'express';
 import {createBook, deleteBook, getBookById, getBooks, updateBook} from '../controllers/book-controller.js';
-import {authorizeAdmin, verifyToken} from '../middleware/auth-middleware.js';
+import {verifyToken} from '../middleware/auth-middleware.js';
 import {validateCreateBook, validateUpdateBook} from '../middleware/book-validation.js';
 import {allowedTo} from '../middleware/role-access.js';
 import {userRoles} from '../utils/user-roles.js';
@@ -8,13 +8,13 @@ import {userRoles} from '../utils/user-roles.js';
 export const bookRouter = express.Router();
 
 // Book Routes
-bookRouter.get('/', getBooks);
-bookRouter.get('/:id', getBookById);
+bookRouter.get('/', verifyToken, getBooks);
+bookRouter.get('/:id', verifyToken, getBookById);
 
 // Admin Only
-bookRouter.post('/', authorizeAdmin, validateCreateBook, createBook);
-bookRouter.patch('/:id', authorizeAdmin, validateUpdateBook, updateBook);
-bookRouter.delete('/:id', authorizeAdmin, deleteBook);
+bookRouter.post('/', verifyToken, allowedTo([userRoles.ADMIN]), validateCreateBook, createBook);
+bookRouter.patch('/:id', verifyToken, allowedTo([userRoles.ADMIN]), validateUpdateBook, updateBook);
+bookRouter.delete('/:id', verifyToken, allowedTo([userRoles.ADMIN]), deleteBook);
 
 // bookRouter.delete('/:id', verifyToken, allowedTo[userRoles.ADMIN], deleteBook);
 
