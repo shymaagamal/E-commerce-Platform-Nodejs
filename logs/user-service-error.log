@@ -30,3 +30,33 @@
 [2025-03-02 19:36:03] ERROR: Email already exists
 [2025-03-02 19:36:07] ERROR: Email already exists
 [2025-03-02 19:46:49] ERROR: Email already exists
+[2025-03-02 21:17:52] ERROR: ❌ User does not exist.
+[2025-03-02 21:18:37] ERROR: ❌ User does not exist.
+[2025-03-02 21:18:59] ERROR: ❌ User does not exist.
+[2025-03-02 21:24:38] ERROR: ❌ User does not exist.
+[2025-03-02 21:29:33] ERROR: ❌ User does not exist.
+[2025-03-02 21:34:11] ERROR: ❌ User does not exist.
+[2025-03-02 22:06:56] ERROR: ❌ Access denied: No valid authentication token provided.
+[2025-03-02 22:08:08] ERROR: ❌ Authentication failed: Incorrect password.
+[2025-03-02 22:12:26] ERROR: ❌ Authentication failed: User with email "shaimaa@example.com" not found.
+[2025-03-02 22:12:42] ERROR: ❌ Authentication failed: User with email "shaimaa@example.com" not found.
+[2025-03-02 22:13:02] ERROR: ❌ Authentication failed: User with email shaimaa@example.com not found.
+[2025-03-02 22:13:17] ERROR: ❌ Access denied: No valid authentication token provided.
+[2025-03-02 22:26:06] ERROR: New data doesn't follow schema
+[2025-03-02 22:33:34] ERROR: ⚠️ Registration error: Email is already in use.
+[2025-03-02 22:59:10] ERROR: ❌ Unauthorized role update attempt by "${req.user.email}
+[2025-03-02 23:11:56] ERROR: New data doesn't follow schema
+[2025-03-02 23:12:04] ERROR: New data doesn't follow schema
+[2025-03-02 23:12:18] ERROR: New data doesn't follow schema
+[2025-03-02 23:13:03] ERROR: New data doesn't follow schema
+[2025-03-02 23:14:17] ERROR: ⚠️ Registration error: Email is already in use.
+[2025-03-02 23:16:01] ERROR: ⚠️ Registration error: Email is already in use.
+[2025-03-02 23:19:59] ERROR: ❌ Authentication failed: User with email salem5@example.com not found.
+[2025-03-02 23:26:27] ERROR: ⚠️ Registration error: Email is already in use.
+[2025-03-02 23:29:08] ERROR: ❌ User not found: "salem28@example.com"
+[2025-03-02 23:29:25] ERROR: ❌ User not found: "salem28@example.com"
+[2025-03-03 23:26:01] ERROR: ⚠️ Registration error: Email is already in use.
+[2025-03-04 01:20:47] ERROR: ⚠️ Registration error: Email is already in use.
+[2025-03-04 01:26:14] ERROR: ⚠️ Registration error: Email is already in use.
+[2025-03-04 01:30:54] ERROR: ⚠️ Registration error: Email is already in use.
+[2025-03-04 01:47:17] ERROR: ⚠️ Registration error: Email is already in use.

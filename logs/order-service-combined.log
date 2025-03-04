@@ -1,0 +1,19 @@
+[2025-03-03 16:54:40] INFO: Order is placed successfully!
+[2025-03-03 16:58:02] ERROR: You cannot initialize the status of the order. It is handled automatically by the system.
+[2025-03-03 17:25:11] ERROR: You cannot initialize the status of the order. It is handled automatically by the system.
+[2025-03-03 20:00:07] INFO: Full Orders history is retrieved successfully.
+[2025-03-03 20:01:46] INFO: Full Orders history is retrieved successfully.
+[2025-03-03 20:02:22] INFO: Full Orders history is retrieved successfully.
+[2025-03-03 20:02:31] ERROR: Order not found for this user.
+[2025-03-03 20:03:11] ERROR: Order not found for this user.
+[2025-03-03 20:03:48] ERROR: Order not found for this user.
+[2025-03-03 20:04:10] ERROR: Order not found for this user.
+[2025-03-03 20:07:59] ERROR: Order not found for this user.
+[2025-03-03 20:11:05] ERROR: Order is retrieved successfully.
+[2025-03-03 20:12:13] INFO: Order is retrieved successfully.
+[2025-03-03 20:14:59] INFO: Full Orders history is retrieved successfully.
+[2025-03-03 20:15:07] INFO: Full Orders history is retrieved successfully.
+[2025-03-03 20:15:12] INFO: Order is retrieved successfully.
+[2025-03-03 20:16:27] INFO: Order is retrieved successfully.
+[2025-03-03 20:29:26] INFO: Order is retrieved successfully.
+[2025-03-03 20:31:01] INFO: Full Orders history is retrieved successfully.
