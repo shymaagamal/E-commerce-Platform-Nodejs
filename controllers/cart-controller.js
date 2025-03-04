@@ -1,118 +1,123 @@
+import mongoose from 'mongoose';
 import {bookModel} from '../models/book-model.js';
 import {asyncWrapper} from '../utils/async-wrapper.js';
 import httpStatusText from '../utils/http-status-text.js';
 import createLogger from '../utils/logger.js';
-import mongoose from 'mongoose';
 
 const cartLogger = createLogger('cart-service');
-
 
 // ========================================================================================
 //                          helper Function (generate new session)
 // ===========================================================================================
-const fetchRequiredBook=async (req,res,next)=>{
-    const id = req.params.id;
-    const requiredBook = await bookModel.findOne({_id: id}, {title: 1, _id: 1, price: 1, stock: 1});
-    if (!requiredBook) {
-        cartLogger.error('❌ Book not found');
-        const error = new Error('❌ Book not found');
-        error.status = 400;
-        error.httpStatusText = httpStatusText.FAIL;
-        return next(error);
-    }
-    cartLogger.info(`📚 Book found in the database: ${requiredBook.title}`);
+const fetchRequiredBook = async (req, res, next) => {
+  const id = req.params.id;
+  const requiredBook = await bookModel.findOne({_id: id}, {title: 1, _id: 1, price: 1, stock: 1});
+  if (!requiredBook) {
+    cartLogger.error('❌ Book not found');
+    const error = new Error('❌ Book not found');
+    error.status = 400;
+    error.httpStatusText = httpStatusText.FAIL;
+    return next(error);
+  }
+  cartLogger.info(`📚 Book found in the database: ${requiredBook.title}`);
 
-    return requiredBook;
+  return requiredBook;
 };
 
 const addToCartSession = asyncWrapper(async (req, res, next) => {
-    const requiredBook = await fetchRequiredBook(req, res, next);
-    const sessionCollection = mongoose.connection.collection('sessions');
-    const userIdString = req.user?.id?.toString();
+  const requiredBook = await fetchRequiredBook(req, res, next);
+  const sessionCollection = mongoose.connection.collection('sessions');
+  const sessionDoc = await sessionCollection.findOne({session: {$regex: `"userID":"${req.user.id}"`}});
 
-    let sessionDoc = await sessionCollection.findOne({ "session": { $regex: `"userID":"${userIdString}"` } });
+  if (sessionDoc) {
+    try {
+      // convert session object in document that  has UserID matched with current loggenin user to javascript object
+      const sessionData = JSON.parse(sessionDoc.session);
 
-    if (sessionDoc) {
-        try {
-            const sessionData = JSON.parse(sessionDoc.session);
+      sessionData.cart = sessionData.cart || [];
+      sessionData.cart.push(requiredBook);
 
-            sessionData.cart = sessionData.cart || [];
-            sessionData.cart.push(requiredBook);
+      const result = await sessionCollection.updateOne({_id: sessionDoc._id},{$set: {session: JSON.stringify(sessionData)}});
 
-            const result = await sessionCollection.updateOne(
-                { _id: sessionDoc._id }, 
-                { $set: { session: JSON.stringify(sessionData) } }
-            );
+      if (result.modifiedCount === 0) {
+        cartLogger.error('❌ Session found, but nothing was modified.');
+        return next(new Error('❌ Session found, but nothing was modified.'));
+      }
 
-            if (result.modifiedCount === 0) {
-                cartLogger.error("❌ Session found, but nothing was modified.");
-                return next(new Error("❌ Session found, but nothing was modified."));
-            }
+      cartLogger.info('🎉 Item successfully added to the existing cart!');
+      return res.status(200).json({status: httpStatusText.SUCCESS, data: sessionData.cart});
+    } catch (error) {
+      cartLogger.error('❌ Error parsing session data:', error);
+      return next(new Error('❌ Failed to parse session data'));
+    }
+  }
 
-            cartLogger.info("🎉 Item successfully added to the existing cart!");
-            return res.status(200).json({ status: httpStatusText.SUCCESS, data: sessionData.cart });
+  cartLogger.info('⚠️ No session found for this user. Creating a new session...');
 
-        } catch (error) {
-            cartLogger.error("❌ Error parsing session data:", error);
-            return next(new Error("❌ Failed to parse session data"));
-        }
+  req.session.regenerate(async (err) => {
+    if (err) {
+      cartLogger.error('🚨 Session regeneration failed', {error: err});
+      return next(new Error('🚨 Session regeneration failed'));
     }
 
-    cartLogger.info("⚠️ No session found for this user. Creating a new session...");
+    req.session.userID = req.user.id;
+    req.session.cart = [requiredBook];
 
-    req.session.regenerate(async (err) => {
-        if (err) {
-            cartLogger.error("🚨 Session regeneration failed", { error: err });
-            return next(new Error("🚨 Session regeneration failed"));
-        }
-
-        req.session.userID = userIdString;
-        req.session.cart = [requiredBook];
-
-        await sessionCollection.insertOne({
-            session: JSON.stringify({
-                userID: userIdString,
-                cart: [requiredBook],
-            }),
-        });
-
-        cartLogger.info("🎉 New session created and book added to cart!");
-        return res.status(200).json({ status: httpStatusText.SUCCESS, sessionID: req.sessionID, data: req.session.cart });
+    await sessionCollection.insertOne({
+      session: JSON.stringify({
+        userID: req.user.id,
+        cart: [requiredBook]
+      })
     });
+
+    cartLogger.info('🎉 New session created and book added to cart!');
+    return res.status(200).json({status: httpStatusText.SUCCESS, sessionID: req.sessionID, data: req.session.cart});
+  });
 });
+
+// ========================================================================================
+//                          Add book to cart
+// ===========================================================================================
+
+// - When a logged-in user places an order, a session is created (if not already active),
+//   and their cart data is stored in the session. This session is then persisted in MongoDB
+//   until it expires.
+//
+// - If a different user logs in and the current session does not belong to them,
+//   they are redirected to the `addToCart` function. This function checks whether
+//   the user has an existing session in the database:
+//   - If a session exists, it is restored, and items are added to their cart.
+//   - If no session is found, a new session is generated, stored in the database,
+//     and linked to the user’s ID.
 
 
 export const addBookToCart = asyncWrapper(async (req, res, next) => {
+  if (req.session.userID !== req.user.id) {
+    return addToCartSession(req, res, next);
+  }
 
-    if (req.session.userID !== req.user.id) {
-         return addToCartSession(req, res, next);
-    }
-    if (!req.session.cart) {
-        req.session.userID = req.user.id;
-        req.session.cart = [];
-    }
- 
-    const requiredBook= await fetchRequiredBook(req, res, next);
-    req.session.cart.push(requiredBook);
-    req.session.save((err) => {
-        if (err) {
-            cartLogger.error("❌ Failed to save session:", err);
-            return next(new Error("❌ Failed to save session"));
-        }
+  // sessionMiddleware should not generate a new cookie on every request unless: Session is not being reused
+  // so i set here req.session.userID for req.user.id
 
-        cartLogger.info('🎉 Book added to cart successfully!');
-        return res.status(200).json({ status: httpStatusText.SUCCESS, sessionID: req.sessionID, data: req.session.cart });
-    });
+  req.session.userID = req.user.id;
+  if (!req.session.cart) {
+    req.session.cart = [];
+  }
+
+  const requiredBook = await fetchRequiredBook(req, res, next);
+  req.session.cart.push(requiredBook);
+  return res.status(200).json({status: httpStatusText.SUCCESS, sessionID: req.sessionID, data: req.session.cart});
 });
-
-
-
-
 
 export const removeBookFromCart = asyncWrapper((req, res, next) => {
 
 });
 
-export const viewUserCart = asyncWrapper((req, res, next) => {
+export const viewUserCart = asyncWrapper(async (req, res, next) => {
+//   if (req.user.id !== req.session.userID) {
 
+  //   }
+  console.log('Shaimaaaaaaaaaaaaaaaaaaa');
+  const cartData = req.session.cart;
+  console.log(req.session);
 });

@@ -10,11 +10,11 @@ const sessionMiddleware = session({
   store: MongoStore.create({
     mongoUrl: process.env.MONGO_URL,
     collectionName: 'sessions',
-    ttl: 60
+    ttl: 3600
   }),
   cookie: {
-    secure: false, 
-    httpOnly: true, 
+    secure: false,
+    httpOnly: true,
     maxAge: 1000 * 60 * 60 // 1h
   }
 });
