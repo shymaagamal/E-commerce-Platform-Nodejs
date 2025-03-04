@@ -10,19 +10,18 @@ let msg = '';
 
 /** *************************** Get/View All Orders History For the logged-in user */
 
-export const getOrderHistory = asyncWrapper (async (req, res, next) => {
-  // Fetch orders related to the user and populate/fetch book details for more readability
-  const orders = await Order.find().populate({
-    path: 'books.bookId',
-    select: 'title price' // Fetch only title and price from Book collection
-  }).sort({createdAt: -1}); // Sort by most recent orders ( Descending )
+export const getOrdersHistory = asyncWrapper ( async (req, res , next) => {
+ 
+    // Extract the logged-in user's ID
+    const userId = req.user.id; 
 
-  // If no orders found
-  if (!orders.length) {
-    msg = 'No orders history found for this user.';
-    orderLogger.error(msg);
-    return res.status(404).json({status: httpStatusText.FAIL, message: msg});
-  }
+
+    // Fetch orders related to the user and populate/fetch book details for more readability
+    const orders = await Order.find( {userId}) .populate({
+        path: "books.bookId",
+        select: "title price" // Fetch only title and price from Book collection
+    }) .sort({ createdAt: -1 }); // Sort by most recent orders ( Descending )
+ 
 
   msg = 'Full Orders history is retrieved successfully.';
   orderLogger.info(msg);
@@ -42,7 +41,7 @@ Sample Output :
             "userId": "67c437bdcf712dcb576a083f",  ---> UserId
             "books": [
                 {
-                    "_id": "67c5df2c67aed148cca1b4dc",  ---> Object Entry ID for thie book object ( so wil remove it from output )
+                    "_id": "67c5df2c67aed148cca1b4dc",  ---> Object Entry ID for thie book object
                     "bookId": {
                         "_id": "67c476526cd9d8ce879a21c0",  ---> BookId
                         "title": "Design Patterns",
@@ -61,6 +60,7 @@ export const getOrderById = asyncWrapper(async (req, res, next) => {
   // Get orderId from request parameters
   const {id: orderId} = req.params;
 
+<<<<<<< HEAD
   // Find the order by ID and populate book details
   const order = await Order.findById(orderId).populate({
     path: 'books.bookId',
@@ -79,6 +79,40 @@ export const getOrderById = asyncWrapper(async (req, res, next) => {
     bookId, // Keep populated book details
     quantity
   }));
+=======
+    // Extract the logged-in user's ID
+    const UserId = req.user.id
+
+    // Get orderId from request parameters
+    const orderId = req.params.id ;
+
+    
+
+    // Find the order by ID and populate book details
+    const order = await Order.findById({ _id: orderId}).populate({
+        path: "books.bookId",
+        select: "title price" // Fetch only title and price from Book collection
+    })
+
+
+     // If order not found
+     if (!order) 
+    {
+        msg = "Order not found for this user." ;
+        orderLogger.error(msg) ;
+        return res.status(404).json({ status: httpStatusText.FAIL, message: msg });
+    }
+
+
+    // If order retrieved isn't owned/placed by the same user logged in 
+    if ( order.userId != UserId )
+    {
+        msg = "You aren't authorized to view this order as it isn't yours." ;
+        orderLogger.error(msg) ;
+        return res.status(404).json({ status: httpStatusText.FAIL, message: msg });
+    }
+
+>>>>>>> a6e1feb8d3cfe9d7100a85b6dbd83b302672599f
 
   msg = 'Order is retrieved successfully.';
   orderLogger.info(msg);

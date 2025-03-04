@@ -209,24 +209,8 @@
 [2025-03-04 02:46:17] INFO: 🎉 User login successful.
 [2025-03-04 02:46:28] INFO: 🎉 User login successful.
 [2025-03-04 02:48:11] INFO: 🎉 User login successful.
-[2025-03-04 22:44:20] INFO: 🎉 New user registered successfully.
-[2025-03-04 22:44:34] INFO: 🎉 User login successful.
-[2025-03-04 22:44:56] INFO: 🎉 User login successful.
-[2025-03-04 22:45:26] INFO: 🎉 User login successful.
-[2025-03-04 22:50:48] INFO: 🎉 New user registered successfully.
-[2025-03-04 22:54:41] INFO: 🎉 New user registered successfully.
-[2025-03-04 22:55:28] INFO: 🎉 New user registered successfully.
-[2025-03-04 22:55:51] INFO: 🎉 User login successful.
-[2025-03-04 22:58:25] INFO: 🎉 User login successful.
-[2025-03-04 22:59:11] INFO: 🎉 User login successful.
-[2025-03-04 23:00:33] INFO: 🎉 User login successful.
-[2025-03-04 23:00:44] INFO: 🎉 User login successful.
-[2025-03-04 23:12:54] INFO: 🎉 User login successful.
-[2025-03-04 23:13:09] INFO: 🎉 User login successful.
-[2025-03-04 23:14:34] INFO: 🎉 User login successful.
-[2025-03-04 23:14:51] INFO: 🎉 User login successful.
-[2025-03-04 23:15:24] ERROR: ❌ Authentication failed: User with email salma95@example.com not found.
-[2025-03-04 23:15:45] ERROR: ❌ Authentication failed: User with email salma92@example.com not found.
-[2025-03-04 23:15:58] ERROR: ❌ Authentication failed: User with email salma90@example.com not found.
-[2025-03-04 23:16:03] INFO: 🎉 New user registered successfully.
-[2025-03-04 23:16:26] INFO: 🎉 User login successful.
+[2025-03-04 13:25:04] ERROR: New data doesn't follow schema
+[2025-03-04 13:26:02] ERROR: New data doesn't follow schema
+[2025-03-04 13:26:23] INFO: 🎉 New user registered successfully.
+[2025-03-04 13:26:41] INFO: 🎉 User login successful.
+[2025-03-04 14:15:54] INFO: 🎉 User login successful.

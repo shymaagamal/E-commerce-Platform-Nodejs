@@ -11,18 +11,72 @@
 			"item": [
 				{
 					"name": "Register",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"JWT\", pm.response.json().data.token);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{JWT}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Nagham\" ,\r\n    \"email\" : \"naghammo@example.com\",\r\n    \"password\" : \"#123456#\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": "{{base_url}}user/register"
 					},
 					"response": []
 				},
 				{
 					"name": "Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"JWT\", pm.response.json().data.token);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{JWT}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Nagham\" ,\r\n    \"email\" : \"nagham@example.com\",\r\n    \"password\" : \"#123456#\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": "{{base_url}}user/login"
 					},
 					"response": []
@@ -136,10 +190,16 @@
 					"name": "Add/Place",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{JWT}}",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"books\" :\r\n    [\r\n        {\r\n            \"bookId\" : \"67c4a54c22dbbed8e3b5c80f\" ,\r\n            \"quantity\" : 2\r\n        },\r\n        {\r\n            \"bookId\" : \"67c476c26cd9d8ce879a21dc\" ,\r\n            \"quantity\" : 1\r\n        }\r\n    ]\r\n}\r\n",
+							"raw": "{\r\n    \"userId\" : \"67c428a81118a1f6f0391f96\" ,\r\n    \"books\" :\r\n    [\r\n        {\r\n            \"bookId\" : \"67c4a54c22dbbed8e3b5c80f\" ,\r\n            \"quantity\" : 2\r\n        },\r\n        {\r\n            \"bookId\" : \"67c476c26cd9d8ce879a21dc\" ,\r\n            \"quantity\" : 1\r\n        }\r\n    ],\r\n    \"status\" : \"pending\"\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -151,11 +211,44 @@
 					"response": []
 				},
 				{
-					"name": "View History",
+					"name": "View All History of the logged in user",
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{JWT}}",
+								"type": "text"
+							}
+						],
 						"url": "{{base_url}}order"
+					},
+					"response": []
+				},
+				{
+					"name": "View Order of the logged in user By Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{JWT}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}order/67c497c56cd9d8ce879a2abd"
 					},
 					"response": []
 				}
