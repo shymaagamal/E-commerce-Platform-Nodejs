@@ -5,8 +5,7 @@ import { verifyToken } from '../middleware/auth-middleware.js';
 const orderRouter = express.Router();
 
 // Orders Routes
-// orderRouter.post('/', placeOrder);
 orderRouter.get('/', verifyToken , getOrdersHistory);
-orderRouter.get('/', verifyToken , getOrderById);
+orderRouter.get('/:id', verifyToken , getOrderById);
 
 export default orderRouter;
