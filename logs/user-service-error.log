@@ -60,3 +60,6 @@
 [2025-03-04 01:26:14] ERROR: ⚠️ Registration error: Email is already in use.
 [2025-03-04 01:30:54] ERROR: ⚠️ Registration error: Email is already in use.
 [2025-03-04 01:47:17] ERROR: ⚠️ Registration error: Email is already in use.
+[2025-03-04 23:15:24] ERROR: ❌ Authentication failed: User with email salma95@example.com not found.
+[2025-03-04 23:15:45] ERROR: ❌ Authentication failed: User with email salma92@example.com not found.
+[2025-03-04 23:15:58] ERROR: ❌ Authentication failed: User with email salma90@example.com not found.

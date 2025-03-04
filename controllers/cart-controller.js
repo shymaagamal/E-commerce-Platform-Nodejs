@@ -27,17 +27,19 @@ const fetchRequiredBook = async (req, res, next) => {
 const addToCartSession = asyncWrapper(async (req, res, next) => {
   const requiredBook = await fetchRequiredBook(req, res, next);
   const sessionCollection = mongoose.connection.collection('sessions');
-  const sessionDoc = await sessionCollection.findOne({session: {$regex: `"userID":"${req.user.id}"`}});
 
+  // This searches for a session where the "userID" field matches the logged-in user's ID using a regex pattern.
+  // i used regex pattern becouse connect-mongo  stores sessions as strings in MongoDB
+  const sessionDoc = await sessionCollection.findOne({session: {$regex: `"userID":"${req.user.id}"`}});
   if (sessionDoc) {
     try {
-      // convert session object in document that  has UserID matched with current loggenin user to javascript object
+      // Parse the stored session data (JSON string) into a JavaScript object
       const sessionData = JSON.parse(sessionDoc.session);
 
       sessionData.cart = sessionData.cart || [];
       sessionData.cart.push(requiredBook);
 
-      const result = await sessionCollection.updateOne({_id: sessionDoc._id},{$set: {session: JSON.stringify(sessionData)}});
+      const result = await sessionCollection.updateOne({_id: sessionDoc._id}, {$set: {session: JSON.stringify(sessionData)}});
 
       if (result.modifiedCount === 0) {
         cartLogger.error('❌ Session found, but nothing was modified.');
@@ -63,12 +65,7 @@ const addToCartSession = asyncWrapper(async (req, res, next) => {
     req.session.userID = req.user.id;
     req.session.cart = [requiredBook];
 
-    await sessionCollection.insertOne({
-      session: JSON.stringify({
-        userID: req.user.id,
-        cart: [requiredBook]
-      })
-    });
+    await sessionCollection.insertOne({session: JSON.stringify({userID: req.user.id, cart: [requiredBook]})});
 
     cartLogger.info('🎉 New session created and book added to cart!');
     return res.status(200).json({status: httpStatusText.SUCCESS, sessionID: req.sessionID, data: req.session.cart});
@@ -89,7 +86,6 @@ const addToCartSession = asyncWrapper(async (req, res, next) => {
 //   - If a session exists, it is restored, and items are added to their cart.
 //   - If no session is found, a new session is generated, stored in the database,
 //     and linked to the user’s ID.
-
 
 export const addBookToCart = asyncWrapper(async (req, res, next) => {
   if (req.session.userID !== req.user.id) {
@@ -114,10 +110,20 @@ export const removeBookFromCart = asyncWrapper((req, res, next) => {
 });
 
 export const viewUserCart = asyncWrapper(async (req, res, next) => {
-//   if (req.user.id !== req.session.userID) {
-
-  //   }
-  console.log('Shaimaaaaaaaaaaaaaaaaaaa');
-  const cartData = req.session.cart;
-  console.log(req.session);
+  if (req.user.id !== req.session.userID) {
+    const sessionCollection = mongoose.connection.collection('sessions');
+    const sessionDoc = await sessionCollection.findOne({session: {$regex: `"userID":"${req.user.id}"`}});
+    if (!sessionDoc) {
+      cartLogger.error('❌ logged-in user doesnt have data');
+      const error = new Error('❌ logged-in user doesnt have data');
+      error.status = 400;
+      error.httpStatusText = httpStatusText.FAIL;
+      return next(error);
+    }
+    cartLogger.info('🎉 Retrived data from database successfully');
+    const sessionData = JSON.parse(sessionDoc.session);
+    return res.status(200).json({status: httpStatusText.SUCCESS, data: sessionData.cart});
+  }
+  cartLogger.info('🎉 Retrived data successfully');
+  return res.status(200).json({status: httpStatusText.SUCCESS, data: req.session.cart});
 });

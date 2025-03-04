@@ -463,3 +463,59 @@
 [2025-03-04 02:48:03] INFO: 🎉 Book added to cart successfully!
 [2025-03-04 02:48:14] INFO: 📚 Book found in the database: The Pragmatic Programmer
 [2025-03-04 02:48:14] INFO: 🎉 Book added to cart successfully!
+[2025-03-04 22:44:06] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-04 22:44:06] INFO: ⚠️ No session found for this user. Creating a new session...
+[2025-03-04 22:44:06] INFO: 🎉 New session created and book added to cart!
+[2025-03-04 22:44:12] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-04 22:44:29] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-04 22:44:29] INFO: ⚠️ No session found for this user. Creating a new session...
+[2025-03-04 22:44:29] INFO: 🎉 New session created and book added to cart!
+[2025-03-04 22:44:31] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-04 22:44:36] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-04 22:44:36] INFO: ⚠️ No session found for this user. Creating a new session...
+[2025-03-04 22:44:36] INFO: 🎉 New session created and book added to cart!
+[2025-03-04 22:44:38] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-04 22:44:58] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-04 22:45:29] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-04 22:45:29] INFO: ⚠️ No session found for this user. Creating a new session...
+[2025-03-04 22:45:29] INFO: 🎉 New session created and book added to cart!
+[2025-03-04 22:55:16] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-04 22:55:16] INFO: ⚠️ No session found for this user. Creating a new session...
+[2025-03-04 22:55:16] INFO: 🎉 New session created and book added to cart!
+[2025-03-04 22:55:18] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-04 22:55:20] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-04 22:55:32] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-04 22:55:32] INFO: ⚠️ No session found for this user. Creating a new session...
+[2025-03-04 22:55:32] INFO: 🎉 New session created and book added to cart!
+[2025-03-04 22:55:34] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-04 22:55:54] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-04 22:55:55] INFO: ⚠️ No session found for this user. Creating a new session...
+[2025-03-04 22:55:55] INFO: 🎉 New session created and book added to cart!
+[2025-03-04 22:58:14] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-04 22:58:17] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-04 22:58:27] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-04 22:58:27] INFO: ⚠️ No session found for this user. Creating a new session...
+[2025-03-04 22:58:27] INFO: 🎉 New session created and book added to cart!
+[2025-03-04 22:58:29] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-04 22:59:03] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-04 22:59:13] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-04 22:59:13] INFO: ⚠️ No session found for this user. Creating a new session...
+[2025-03-04 22:59:13] INFO: 🎉 New session created and book added to cart!
+[2025-03-04 23:00:23] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-04 23:00:35] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-04 23:00:35] INFO: 🎉 Item successfully added to the existing cart!
+[2025-03-04 23:00:37] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-04 23:00:37] INFO: 🎉 Item successfully added to the existing cart!
+[2025-03-04 23:00:47] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-04 23:00:50] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-04 23:12:41] INFO: 🎉 Retrived data successfully
+[2025-03-04 23:12:58] ERROR: ❌ logged-in user doesnt have data
+[2025-03-04 23:14:36] INFO: 🎉 Retrived data successfully
+[2025-03-04 23:16:09] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-04 23:16:10] INFO: ⚠️ No session found for this user. Creating a new session...
+[2025-03-04 23:16:10] INFO: 🎉 New session created and book added to cart!
+[2025-03-04 23:16:13] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-04 23:16:14] INFO: 🎉 Item successfully added to the existing cart!
+[2025-03-04 23:16:15] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-04 23:16:16] INFO: 🎉 Item successfully added to the existing cart!
+[2025-03-04 23:17:18] INFO: 🎉 Retrived data from database successfully
