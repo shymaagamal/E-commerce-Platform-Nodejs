@@ -3,6 +3,7 @@ import {createBook, deleteBook, getBookById, getBooks, updateBook} from '../cont
 import {verifyToken} from '../middleware/auth-middleware.js';
 import {validateCreateBook, validateUpdateBook} from '../middleware/book-validation.js';
 import {allowedTo} from '../middleware/role-access.js';
+import upload from '../middleware/uploadMiddleware.js';
 import {userRoles} from '../utils/user-roles.js';
 
 export const bookRouter = express.Router();
@@ -12,7 +13,7 @@ bookRouter.get('/', verifyToken, getBooks);
 bookRouter.get('/:id', verifyToken, getBookById);
 
 // Admin Only
-bookRouter.post('/', verifyToken, allowedTo([userRoles.ADMIN]), validateCreateBook, createBook);
+bookRouter.post('/', verifyToken, allowedTo([userRoles.ADMIN]), validateCreateBook, upload.single('coverImage'), createBook);
 bookRouter.patch('/:id', verifyToken, allowedTo([userRoles.ADMIN]), validateUpdateBook, updateBook);
 bookRouter.delete('/:id', verifyToken, allowedTo([userRoles.ADMIN]), deleteBook);
 

@@ -42,9 +42,13 @@ export const getBookById = asyncWrapper(async (req, res) => {
 
 // CREATE a new book (Admin only)
 export const createBook = asyncWrapper(async (req, res) => {
-  const {title, author, price, description, stock, image} = req.body;
+  const {title, author, price, description, stock} = req.body;
 
-  const book = await bookModel.create({title, author, price, description, stock, image});
+  // Cloudinary automatically stores the image and returns a URL
+  const coverImage = req.file ? req.file.path : null;
+
+  const book = await bookModel.create({title, author, price, description, stock, image: coverImage});
+  bookLogger.info(`New book created: ${book.title}`);
   res.status(201).json({status: httpStatusText.SUCCESS, book});
 });
 
