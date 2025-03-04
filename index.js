@@ -3,13 +3,12 @@ import express from 'express';
 import mongoose from 'mongoose';
 import {errorHandler} from './middleware/error-handler.js';
 import {morganMiddleware} from './middleware/morgan-middleware.js';
-import bookRouter from './routes/books-routes.js';
+import {bookRouter} from './routes/books-routes.js';
+import orderRouter from './routes/orders-routes.js';
 import {userRouter} from './routes/users-routes.js';
-import orderRouter from './routes/orders-routes.js'
 import httpStatusText from './utils/http-status-text.js';
 import createLogger from './utils/logger.js';
 import 'dotenv/config';
-
 
 // Creates an Express app for building the REST APIs
 const app = express();
@@ -23,7 +22,7 @@ app.use(express.json());
 // Defining API Routes Handlers
 app.use('/user', userRouter);
 app.use('/book', bookRouter);
-app.use('/order' , orderRouter);
+app.use('/order', orderRouter);
 
 // Use Middlewares
 app.use(errorHandler);
@@ -39,7 +38,7 @@ app.listen(process.env.PORT, () => {
   logger.info(`Server is running on port http://localhost:${process.env.PORT} `);
 });
 
-// Connect to our MongoDB 
+// Connect to our MongoDB
 mongoose.connect(process.env.MONGO_URL)
   .then(async () => {
     logger.info('Connected to MongoDB');
