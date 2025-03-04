@@ -249,3 +249,9 @@
 [2025-03-04 02:46:17] INFO: POST /user/login 200 - 200.925 ms
 [2025-03-04 02:46:29] INFO: POST /user/login 200 - 202.919 ms
 [2025-03-04 02:48:11] INFO: POST /user/login 200 - 203.939 ms
+[2025-03-04 13:25:04] INFO: POST /user/register 400 - 32.856 ms
+[2025-03-04 13:26:02] INFO: POST /user/register 400 - 3.932 ms
+[2025-03-04 13:26:23] INFO: POST /user/register 200 - 4989.471 ms
+[2025-03-04 13:26:41] INFO: POST /user/login 200 - 546.894 ms
+[2025-03-04 14:15:54] INFO: POST /user/login 200 - 506.530 ms
+[2025-03-04 14:38:33] INFO: GET /order/67c497c56cd9d8ce879a2al 404 - 9.870 ms
