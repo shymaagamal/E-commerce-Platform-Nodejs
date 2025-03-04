@@ -5,4 +5,11 @@
 [2025-03-03 20:03:48] ERROR: Order not found for this user.
 [2025-03-03 20:04:10] ERROR: Order not found for this user.
 [2025-03-03 20:07:59] ERROR: Order not found for this user.
-[2025-03-03 20:11:05] ERROR: Order is retrieved successfully.
+[2025-03-03 20:11:05] ERROR: Order is retrieved successfully.[2025-03-04 19:42:56] ERROR: No orders history found for this user.
+[2025-03-04 19:46:17] ERROR: No orders history found for this user.
+[2025-03-04 19:47:11] ERROR: No orders history found for this user.
+[2025-03-04 20:15:12] ERROR: You aren't authorized to view this order as it isn't yours.
+[2025-03-04 20:15:22] ERROR: No orders history found for this user.
+[2025-03-04 20:19:01] ERROR: You aren't authorized to view this order as it isn't yours.
+[2025-03-04 20:19:50] ERROR: You aren't authorized to view this order as it isn't yours.
+[2025-03-04 20:26:15] ERROR: You aren't authorized to view this order as it isn't yours.

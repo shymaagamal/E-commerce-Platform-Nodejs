@@ -255,3 +255,9 @@
 [2025-03-04 13:26:41] INFO: POST /user/login 200 - 546.894 ms
 [2025-03-04 14:15:54] INFO: POST /user/login 200 - 506.530 ms
 [2025-03-04 14:38:33] INFO: GET /order/67c497c56cd9d8ce879a2al 404 - 9.870 ms
+[2025-03-04 19:42:17] INFO: POST /user/register 400 - 275.084 ms
+[2025-03-04 19:42:31] INFO: POST /user/register 200 - 552.638 ms
+[2025-03-04 19:43:04] INFO: GET /order/67c497c56cd9d8ce879a2al 404 - 3.101 ms
+[2025-03-04 19:44:21] INFO: GET /order/67c497c56cd9d8ce879a2abd 404 - 1.111 ms
+[2025-03-04 19:46:08] INFO: POST /user/login 200 - 229.406 ms
+[2025-03-04 19:48:06] INFO: POST /user/login 200 - 233.190 ms

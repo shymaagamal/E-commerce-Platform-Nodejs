@@ -16,4 +16,26 @@
 [2025-03-03 20:15:12] INFO: Order is retrieved successfully.
 [2025-03-03 20:16:27] INFO: Order is retrieved successfully.
 [2025-03-03 20:29:26] INFO: Order is retrieved successfully.
-[2025-03-03 20:31:01] INFO: Full Orders history is retrieved successfully.
+[2025-03-03 20:31:01] INFO: Full Orders history is retrieved successfully.[2025-03-04 19:42:56] ERROR: No orders history found for this user.
+[2025-03-04 19:46:17] ERROR: No orders history found for this user.
+[2025-03-04 19:47:11] ERROR: No orders history found for this user.
+[2025-03-04 19:48:39] INFO: Order is retrieved successfully.
+[2025-03-04 19:52:24] INFO: Order is retrieved successfully.
+[2025-03-04 19:52:47] INFO: Order is retrieved successfully.
+[2025-03-04 19:53:27] INFO: Order is retrieved successfully.
+[2025-03-04 19:55:22] INFO: Order is retrieved successfully.
+[2025-03-04 19:55:38] INFO: Order is retrieved successfully.
+[2025-03-04 19:59:11] INFO: Order is retrieved successfully.
+[2025-03-04 20:01:15] INFO: Order is retrieved successfully.
+[2025-03-04 20:02:22] INFO: Order is retrieved successfully.
+[2025-03-04 20:05:22] INFO: Order is retrieved successfully.
+[2025-03-04 20:10:57] INFO: Order is retrieved successfully.
+[2025-03-04 20:15:12] ERROR: You aren't authorized to view this order as it isn't yours.
+[2025-03-04 20:15:22] ERROR: No orders history found for this user.
+[2025-03-04 20:19:01] ERROR: You aren't authorized to view this order as it isn't yours.
+[2025-03-04 20:19:50] ERROR: You aren't authorized to view this order as it isn't yours.
+[2025-03-04 20:21:00] INFO: Order is retrieved successfully.
+[2025-03-04 20:24:38] INFO: Order is retrieved successfully.
+[2025-03-04 20:24:53] INFO: Order is retrieved successfully.
+[2025-03-04 20:25:51] INFO: Order is retrieved successfully.
+[2025-03-04 20:26:15] ERROR: You aren't authorized to view this order as it isn't yours.
