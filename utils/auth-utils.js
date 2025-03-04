@@ -6,7 +6,6 @@ export const generateJWT = (payload) => {
   return token;
 };
 
-export const checkPassword=async (user,password)=>{
-
+export const checkPassword = async (user, password) => {
   return user.comparePasswords(password);
-}
+};

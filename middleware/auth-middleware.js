@@ -1,4 +1,6 @@
+import process from 'node:process';
 import jwt from 'jsonwebtoken';
+import {asyncWrapper} from '../utils/async-wrapper.js';
 import httpStatusText from '../utils/http-status-text.js';
 import createLogger from '../utils/logger.js';
 
@@ -10,6 +12,9 @@ export const authorizeAdmin = (req, res, next) => {
   next();
 };
 
+
+// jwt.verify is sync fun so i cant wrap it using asynWrapper ,so i catch error using try-catch then passed error to errorHandler middleware
+
 export const verifyToken = (req, res, next) => {
   const token = req.headers.Authorization || req.headers.authorization;
   if (!token) {
@@ -19,15 +24,15 @@ export const verifyToken = (req, res, next) => {
     error.httpStatusText = httpStatusText.FAIL;
     return next(error);
   }
-  const decodedToken = jwt.verify(token, process.env.JWT_SECRETE_KEY);
-  req.user = decodedToken;
-  if (!decodedToken) {
+  try {
+    const decodedToken = jwt.verify(token, process.env.JWT_SECRETE_KEY);
+    req.user = decodedToken;
+    next();
+  } catch (err) {
     authLogger.error('❌ Unauthorized login ');
-    const error = new Error('❌ Unauthorized login ');
-    error.status = 400;
-    error.httpStatusText = httpStatusText.FAIL;
-    return next(error);
+    err.message = '❌ Unauthorized login ';
+    err.status = 400;
+    err.httpStatusText = httpStatusText.FAIL;
+    next(err);
   }
-  authLogger.info('✅ Token successfully verified for user.');
-  next();
 };

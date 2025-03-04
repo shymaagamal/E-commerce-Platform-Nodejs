@@ -1,12 +1,15 @@
+import MongoStore from 'connect-mongo';
 import express from 'express';
-// import  from "../controllers/.js" ;
+
+import {addBookToCart, removeBookFromCart, viewUserCart} from '../controllers/cart-controller.js';
+import {verifyToken} from '../middleware/auth-middleware.js';
 
 const cartRouter = express.Router();
 
 // Cart Routes
-// cartRouter.get('/', viewAllCarts);
-// cartRouter.get('/:id', viewCartById);
-// cartRouter.patch('/:id', AddBook);
-// cartRouter.delete('/:id', removeBook);
+
+cartRouter.post('/:id', verifyToken, addBookToCart);
+cartRouter.delete('/:id', verifyToken, removeBookFromCart);
+cartRouter.get('/', verifyToken, viewUserCart);
 
 export default cartRouter;

@@ -17,11 +17,9 @@ const createLogger = (serviceName) => {
     transports: [
       new winston.transports.Console({
         level: 'info',
-        format: winston.format.combine(winston.format.colorize(),
-        winston.format.printf(({ timestamp, level, message }) => {
-          return `${level}: ${message}`; 
-        })
-      )
+        format: winston.format.combine(winston.format.colorize(), winston.format.printf(({timestamp, level, message}) => {
+          return `${level}: ${message}`;
+        }))
       }),
       new winston.transports.File({filename: `logs/${serviceName}-combined.log`}),
       new winston.transports.File({filename: `logs/${serviceName}-error.log`, level: 'error'})

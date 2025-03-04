@@ -1383,3 +1383,1179 @@
 [2025-03-02 23:35:43] INFO: ✅ Successfully connected to MongoDB.
 [2025-03-02 23:36:03] INFO: 🚀 Server is running at: http://localhost:5000
 [2025-03-02 23:36:04] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 20:46:31] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 20:46:33] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 20:46:35] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 20:46:44] ERROR: ❌ 404 | Resource not found: POST /cart/id
+[2025-03-03 20:47:37] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 20:47:39] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 20:49:23] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 20:49:24] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 20:50:10] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 20:50:12] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 20:50:23] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 20:50:24] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 20:50:26] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 20:50:27] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 20:50:42] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 20:50:44] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 20:51:28] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 20:51:30] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 20:51:41] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 20:51:43] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 20:54:01] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 20:54:03] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 20:54:30] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 20:54:31] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 20:57:02] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 20:57:03] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 20:58:28] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 20:58:29] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:01:28] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:01:29] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:01:51] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:01:53] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:05:12] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:05:14] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:05:19] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:05:20] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:05:56] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:05:57] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:08:33] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:08:34] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:09:05] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:09:07] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:10:57] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:10:59] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:11:25] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:11:27] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:11:29] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:11:38] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:11:39] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:11:43] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:11:48] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:11:49] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:11:52] ERROR: ❌ 404 | Resource not found: POST /ca
+[2025-03-03 21:12:29] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:12:31] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:12:35] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:12:36] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:12:42] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:12:43] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:12:54] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:12:55] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:13:03] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:13:03] ERROR: ❌ 404 | Resource not found: POST /ca
+[2025-03-03 21:13:04] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:13:15] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:13:17] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:13:19] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:13:21] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:13:22] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:13:24] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:13:26] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:13:27] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:13:33] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:13:35] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:13:39] ERROR: ❌ 404 | Resource not found: POST /ca
+[2025-03-03 21:13:49] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:13:50] ERROR: ❌ 404 | Resource not found: POST /ca
+[2025-03-03 21:13:51] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:13:58] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:14:00] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:14:01] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:14:18] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:14:18] ERROR: ❌ 404 | Resource not found: POST /ca
+[2025-03-03 21:14:19] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:14:37] ERROR: ❌ 404 | Resource not found: POST /ca
+[2025-03-03 21:14:46] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:14:47] ERROR: ❌ 404 | Resource not found: POST /ca
+[2025-03-03 21:14:48] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:15:01] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:15:03] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:15:27] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:15:29] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:19:55] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:19:57] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:20:11] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:20:12] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:20:20] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:20:21] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:26:59] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:27:01] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:27:03] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:27:04] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:27:07] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:27:08] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:27:12] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:27:14] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:29:29] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:29:31] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:30:02] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:30:04] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:30:12] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:30:13] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:30:15] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:30:17] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:30:18] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:30:19] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:30:22] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:30:23] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:30:25] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:30:27] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:30:40] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:30:42] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:32:25] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:32:28] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:32:31] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:32:33] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:33:25] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:33:27] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:33:30] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:33:32] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:34:44] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:34:46] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:34:47] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:34:49] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:34:51] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:34:53] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:34:55] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:34:57] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:34:58] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:35:11] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:35:12] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:35:14] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:35:17] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:35:19] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:35:20] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:35:25] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:35:27] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:35:28] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:35:31] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:35:33] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:35:34] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:35:37] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:35:38] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:36:02] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:36:04] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:36:47] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:36:49] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:36:51] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:36:54] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:36:56] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:41:08] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:41:09] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:41:59] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:42:00] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:45:33] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:45:34] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:45:47] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:45:50] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:45:51] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:46:45] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:46:47] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:51:43] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:51:45] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:54:32] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:54:34] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:55:40] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:55:42] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:55:44] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 21:59:13] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 21:59:15] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:00:50] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:00:52] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:06:01] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:06:03] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:06:05] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:06:06] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:06:17] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:06:19] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:09:50] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:09:52] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:10:37] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:10:39] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:11:08] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:11:10] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:11:11] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:11:12] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:12:02] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:12:03] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:12:33] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:12:34] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:12:45] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:12:48] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:12:53] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:12:55] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:13:02] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:13:04] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:13:23] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:13:25] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:15:26] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:15:28] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:15:33] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:15:34] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:15:36] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:15:37] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:15:39] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:15:41] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:15:42] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:15:44] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:15:45] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:15:48] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:15:52] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:15:54] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:15:55] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:15:59] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:16:02] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:16:03] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:16:58] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:16:59] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:17:02] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:17:04] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:17:05] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:19:25] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:19:26] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:19:40] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:19:42] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:19:47] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:19:49] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:20:06] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:20:08] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:22:07] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:22:08] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:22:27] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:22:29] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:22:31] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:22:35] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:22:37] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:22:40] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:22:41] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:22:50] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:22:52] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:22:53] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:22:55] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:22:58] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:23:06] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:23:08] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:23:11] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:23:13] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:23:16] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:23:17] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:23:25] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:23:26] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:23:28] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:23:29] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:24:23] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:24:26] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:24:28] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:24:30] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:24:32] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:24:40] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:24:42] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:24:43] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:24:53] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:24:55] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:24:59] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:25:00] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:25:06] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:25:11] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:25:14] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:25:15] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:25:20] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:25:21] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:27:16] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:27:17] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:27:29] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:27:31] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:27:32] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:27:34] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:28:17] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:28:18] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:28:36] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:28:37] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:28:56] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:28:57] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:29:08] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:29:09] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:29:24] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:29:26] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:29:40] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:29:42] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:29:43] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:29:47] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:29:53] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:29:55] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:29:57] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:30:00] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:30:02] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:31:19] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:31:21] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:32:39] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:32:40] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:33:00] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:33:02] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:34:34] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:34:36] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:34:37] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:34:42] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:34:44] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:34:50] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:34:52] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:36:17] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:36:18] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:36:25] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:36:27] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:36:50] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:36:51] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:38:43] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:38:46] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:38:48] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:38:56] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:38:58] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:41:39] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:41:41] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:41:44] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:41:45] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:42:33] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:42:35] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:43:15] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:43:16] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:43:18] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:43:20] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:43:31] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:43:32] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:43:39] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:43:40] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:43:46] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:43:47] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:45:28] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:45:30] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:45:36] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:45:56] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:45:58] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:46:02] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:46:05] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:46:06] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:46:08] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:46:10] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:46:14] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:46:15] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:46:26] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:46:27] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:46:56] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:46:57] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:47:01] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:47:03] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:47:05] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:47:06] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:47:17] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:47:18] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:47:25] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:47:26] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:47:57] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:47:59] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:48:01] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:48:02] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:49:32] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:49:34] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:49:37] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:49:40] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:49:42] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:49:50] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:49:51] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:49:54] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:49:57] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:49:59] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:50:09] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:50:11] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:50:13] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:50:15] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:50:21] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:50:23] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:50:29] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:50:30] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:50:36] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:50:38] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:50:40] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:50:58] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:50:59] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:51:51] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:51:53] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:51:55] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:51:56] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:53:01] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:53:03] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:53:05] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:53:10] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:53:11] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:53:13] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:53:15] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:53:24] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:53:32] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:53:54] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:53:56] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:54:00] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:54:02] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:54:06] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:54:07] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:54:23] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:54:25] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:54:29] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:54:31] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:54:34] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:54:35] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:54:46] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:54:48] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:54:50] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:54:51] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:55:00] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:55:02] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:55:23] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:55:24] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 22:59:42] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 22:59:44] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:00:25] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:00:27] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:00:34] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:00:36] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:02:23] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:02:25] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:02:28] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:02:29] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:02:40] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:02:43] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:02:44] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:02:48] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:02:50] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:02:56] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:02:58] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:03:00] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:03:11] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:03:12] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:03:20] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:03:22] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:03:35] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:03:37] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:04:05] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:04:07] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:05:51] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:05:52] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:07:24] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:07:25] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:11:35] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:11:36] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:12:09] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:12:11] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:12:14] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:12:17] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:12:19] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:12:23] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:12:24] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:12:48] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:12:50] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:13:02] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:13:03] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:13:13] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:13:15] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:16:29] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:16:31] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:16:38] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:16:44] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:16:48] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:16:50] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:16:52] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:16:58] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:17:00] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:17:05] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:17:07] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:23:28] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:23:30] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:23:40] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:23:42] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:23:44] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:23:46] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:23:48] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:23:51] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:23:53] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:23:56] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:23:58] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:24:06] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:24:08] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:24:19] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:24:20] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:24:45] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:24:47] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:25:15] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:25:16] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:25:19] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:25:21] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:27:07] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:27:09] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:27:11] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:27:20] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:27:22] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:28:29] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:28:31] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:38:17] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:38:19] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:43:44] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:43:46] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:44:11] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:44:13] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:44:20] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:44:22] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:44:36] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:44:38] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:45:52] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:45:54] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:50:40] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:50:42] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:50:52] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:50:54] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:51:00] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:51:01] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:51:06] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:51:07] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:57:19] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:57:20] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:57:30] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:57:31] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:57:39] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:57:40] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:57:42] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:57:45] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:57:46] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:57:48] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:57:51] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:57:53] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:58:04] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:58:05] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:58:11] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:58:14] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:58:16] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:58:20] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:58:23] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:58:24] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:58:27] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:58:29] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:58:31] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:58:34] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:58:36] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:58:39] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:58:41] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:58:44] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:58:46] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:58:54] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:58:55] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:59:05] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:59:07] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:59:14] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:59:15] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-03 23:59:29] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:59:32] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-03 23:59:33] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:00:09] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:00:10] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:00:55] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:00:57] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:01:11] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:01:13] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:01:44] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:01:46] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:01:51] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:01:53] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:01:55] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:01:56] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:02:01] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:02:03] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:02:07] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:02:08] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:02:19] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:02:20] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:02:37] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:02:39] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:03:36] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:03:37] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:03:59] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:04:00] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:05:31] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:05:32] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:08:22] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:08:24] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:08:26] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:08:47] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:08:49] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:08:50] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:08:51] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:08:58] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:09:00] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:09:13] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:09:14] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:09:19] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:09:21] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:09:23] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:09:25] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:09:27] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:09:33] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:09:35] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:09:36] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:09:38] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:09:42] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:09:44] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:09:46] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:09:55] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:09:57] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:10:07] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:10:10] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:10:11] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:10:14] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:10:16] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:10:18] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:10:23] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:10:25] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:10:31] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:10:35] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:10:36] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:10:44] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:10:45] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:10:47] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:10:50] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:10:52] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:10:54] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:10:56] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:11:02] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:11:03] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:11:06] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:11:08] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:11:20] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:11:21] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:11:28] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:11:29] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:11:33] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:11:37] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:11:38] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:11:59] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:12:01] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:12:02] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:12:04] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:12:05] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:12:09] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:12:11] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:12:12] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:12:28] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:12:29] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:12:31] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:12:33] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:12:34] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:12:36] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:12:57] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:12:59] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:13:02] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:13:03] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:13:05] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:13:07] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:13:16] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:13:17] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:13:19] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:13:20] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:13:23] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:13:24] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:14:50] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:14:51] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:16:06] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:16:07] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:16:21] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:16:23] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:16:28] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:16:30] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:16:33] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:16:34] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:16:40] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:16:41] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:16:47] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:16:48] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:16:54] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:16:58] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:17:00] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:17:33] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:17:34] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:19:51] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:19:53] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:20:45] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:20:47] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:21:01] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:21:03] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:21:10] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:21:14] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:21:16] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:21:17] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:22:22] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:22:23] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:22:29] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:22:31] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:24:17] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:24:19] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:24:31] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:24:32] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:24:39] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:24:41] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:24:48] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:24:50] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:24:53] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:24:54] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:25:08] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:25:09] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:25:21] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:25:23] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:25:47] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:25:48] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:25:51] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:25:53] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:26:18] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:26:20] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:26:35] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:26:37] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:26:49] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:26:50] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:26:52] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:26:53] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:27:08] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:27:09] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:27:11] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:27:12] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:27:32] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:27:33] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:27:48] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:27:50] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:27:52] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:27:54] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:27:58] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:28:00] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:28:02] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:28:04] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:28:06] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:28:17] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:28:18] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:28:20] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:28:22] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:28:43] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:28:44] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:28:49] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:28:50] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:29:18] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:29:19] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:34:14] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:34:16] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:34:42] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:34:44] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:34:46] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:35:04] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:35:06] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:35:08] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:35:10] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:35:11] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:35:13] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:35:31] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:35:33] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:35:41] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:35:43] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:35:48] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:35:49] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:36:59] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:37:01] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:37:03] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:37:11] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:37:12] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:38:01] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:38:03] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:38:22] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:38:24] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:38:37] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:38:38] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:38:48] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:38:49] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:38:58] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:39:00] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:39:05] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:39:07] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:39:09] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:39:11] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:39:14] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:39:15] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:39:18] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:39:21] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:39:23] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:39:55] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:39:56] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:39:58] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:39:59] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:40:15] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:40:17] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:40:21] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:40:22] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:40:33] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:40:34] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:40:44] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:40:46] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:40:50] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:40:51] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:40:55] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:40:59] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:41:01] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:41:02] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:41:03] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:41:05] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:41:06] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:41:08] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:41:10] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:41:12] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:41:15] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:41:18] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:41:20] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:41:21] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:41:23] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:41:28] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:41:29] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:42:13] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:42:14] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:42:18] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:42:20] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:42:38] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:42:39] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:42:45] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:42:46] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:42:52] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:42:53] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:43:37] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:43:39] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:43:47] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:43:49] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:43:57] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:43:59] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:44:08] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:44:09] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:44:11] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:44:14] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:44:15] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:44:20] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:44:22] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:44:23] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:44:29] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:44:35] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:44:38] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:44:39] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:44:52] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:44:53] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:46:06] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:46:08] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:46:49] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:46:51] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:47:35] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:47:37] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:47:49] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:47:51] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:47:53] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:47:54] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:48:10] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:48:12] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:48:15] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:48:17] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:48:19] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:48:20] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:48:31] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:48:33] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:48:34] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:48:36] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:48:39] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:48:41] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:48:49] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:48:51] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:49:36] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:49:38] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:49:42] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:49:44] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:49:46] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:49:48] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:49:50] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:49:52] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:49:54] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:49:56] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:51:05] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:51:07] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:51:09] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:51:47] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:51:49] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:52:20] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:52:24] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:52:26] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:52:42] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:52:44] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:52:52] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:52:53] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:52:56] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:52:57] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:53:02] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:53:03] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:53:06] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:53:08] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:53:09] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:53:53] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:53:55] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:53:57] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:53:59] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:54:04] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:54:06] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:54:26] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:54:28] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:54:35] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:54:36] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:54:39] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:54:40] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:54:43] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:54:45] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:54:47] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:54:49] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:54:51] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:55:27] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:55:28] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 00:56:00] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:56:01] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 00:56:03] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:08:12] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:08:19] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:08:21] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:08:23] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:08:41] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:08:43] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:08:45] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:08:47] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:11:12] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:11:14] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:12:24] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:12:26] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:12:40] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:12:41] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:12:43] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:12:47] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:12:49] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:13:04] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:13:05] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:15:22] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:15:24] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:15:32] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:15:34] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:15:46] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:15:48] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:15:49] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:16:01] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:16:02] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:17:22] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:17:23] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:17:27] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:17:28] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:17:59] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:18:01] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:18:03] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:18:14] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:18:15] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:18:21] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:18:23] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:19:01] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:19:02] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:19:04] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:19:38] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:19:41] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:19:42] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:19:49] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:19:51] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:19:58] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:20:00] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:20:02] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:20:04] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:22:06] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:22:09] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:22:10] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:22:50] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:22:51] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:23:31] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:23:33] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:23:35] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:23:36] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:24:06] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:24:07] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:24:12] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:24:14] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:24:21] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:24:23] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:24:32] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:24:34] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:24:51] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:24:52] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:26:12] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:26:13] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:27:01] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:27:03] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:28:32] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:28:34] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:29:20] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:29:21] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:30:22] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:30:24] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:30:26] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:30:28] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:30:30] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:30:32] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:30:35] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:30:36] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:32:23] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:32:26] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:32:28] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:32:30] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:32:38] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:32:39] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:33:52] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:33:53] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:33:56] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:33:59] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:34:01] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:34:02] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:38:18] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:38:20] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:38:27] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:38:28] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:39:28] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:39:30] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:39:32] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:39:47] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:39:48] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:46:37] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:46:38] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:46:43] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:46:45] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:46:49] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:46:53] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:46:56] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:46:58] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:47:52] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:47:53] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:49:12] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:49:14] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:49:58] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:49:59] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:50:11] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:50:12] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:50:50] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:50:52] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:51:43] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:51:44] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:51:53] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:51:54] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:52:27] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:52:29] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:54:37] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:54:38] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:56:08] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:56:10] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:57:06] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:57:07] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:59:03] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:59:05] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 01:59:48] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 01:59:49] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:00:06] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:00:08] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:00:30] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:00:31] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:00:56] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:00:57] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:01:58] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:02:00] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:02:02] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:02:04] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:03:30] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:03:32] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:03:53] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:03:54] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:05:11] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:05:13] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:05:16] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:05:17] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:05:24] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:05:28] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:05:29] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:06:17] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:06:18] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:06:38] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:06:40] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:06:42] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:06:53] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:06:54] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:06:57] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:06:58] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:10:15] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:10:16] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:10:19] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:10:20] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:13:06] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:13:07] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:13:17] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:13:19] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:15:26] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:15:28] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:20:30] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:20:32] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:20:38] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:20:40] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:20:47] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:20:49] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:20:50] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:20:56] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:21:00] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:21:01] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:21:50] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:21:51] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:22:21] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:22:23] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:22:28] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:22:29] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:22:53] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:22:55] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:22:56] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:23:05] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:23:06] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:23:45] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:23:47] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:28:17] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:28:18] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:29:33] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:29:35] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:32:23] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:32:25] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:34:44] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:34:46] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:37:46] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:37:48] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:42:17] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:42:18] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:43:37] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:43:38] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:43:41] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:43:42] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:43:45] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:43:47] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:43:49] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:44:08] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:44:09] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:44:18] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:44:19] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:46:52] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:46:53] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:47:52] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:47:53] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:48:45] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:48:46] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:49:38] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:49:40] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 02:49:45] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 02:49:46] INFO: ✅ Successfully connected to MongoDB.
