@@ -93,6 +93,7 @@ export const UserLogOut = asyncWrapper(async (req, res, next) => {
   if (req.user.id !== req.session.userID) {
     const sessionCollection = mongoose.connection.collection('sessions');
     const sessionDoc = await sessionCollection.deleteOne({session: {$regex: `"userID":"${req.user.id}"`}});
+    console.log(sessionDoc);
     if (!sessionDoc) {
       userLogger.error('❌ logged-in user doesnt have data');
       const error = new Error('❌ logged-in user doesnt have data');
@@ -100,8 +101,11 @@ export const UserLogOut = asyncWrapper(async (req, res, next) => {
       error.httpStatusText = httpStatusText.FAIL;
       return next(error);
     }
+    userLogger.info(`✅ User [ID: ${req.user.id}] logged out successfully. Session destroyed from dataBase at ${new Date().toISOString()}`);
+    res.status(200).json({status: httpStatusText.SUCCESS, message: `✅ User [ID: ${req.user.id}] logged out successfully. Session destroyed from dataBase at ${new Date().toISOString()}`});
   }
   req.session.userID = req.user.id;
   req.session.destroy();
-  res.status(200).send('session is destroyed');
+  userLogger.info(`✅ User [ID: ${req.user.id}] logged out successfully. Session destroyed at ${new Date().toISOString()}`);
+  res.status(200).json({status: httpStatusText.SUCCESS, message: `✅ User [ID: ${req.user.id}] logged out successfully. Session destroyed at ${new Date().toISOString()}`});
 });
