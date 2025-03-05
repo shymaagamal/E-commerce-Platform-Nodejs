@@ -76,3 +76,9 @@
 [2025-03-04 21:42:24] ERROR: New data doesn't follow schema
 [2025-03-05 00:05:42] ERROR: No reviews found for book with id 67c474d46cd9d8ce879a2169
 >>>>>>> a079e39b31c59059da47ece24bf3c41e1eeccb38
+[2025-03-05 11:05:17] ERROR: New data doesn't follow schema
+[2025-03-05 11:06:08] ERROR: New data doesn't follow schema
+[2025-03-05 11:08:03] ERROR: New data doesn't follow schema
+[2025-03-05 11:08:05] ERROR: New data doesn't follow schema
+[2025-03-05 11:22:02] ERROR: Unauthorized: User 67c7fdf30ec72af60ff72f8f is not allowed to update review 67c757af60133f59661a0cc0
+[2025-03-05 11:42:51] ERROR: Unauthorized: User 67c7fdf30ec72af60ff72f8f is not allowed to update review 67c757af60133f59661a0cc0

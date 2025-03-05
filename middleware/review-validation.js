@@ -1,9 +1,11 @@
-import { body } from 'express-validator';
+import { body ,param} from 'express-validator';
+
+
+export const validateObjectId = [
+  param('id').isMongoId().withMessage('Invalid ID format'),
+];
 
 export const reviewValidation = [
-  body('user')
-  .notEmpty().withMessage('User ID is required')
-  .isMongoId().withMessage('Invalid User ID format'),
   body('book')
   .notEmpty().withMessage('Book ID is required')
   .isMongoId().withMessage('Invalid Book ID format'),
@@ -30,4 +32,3 @@ export const updateReviewValidation = [
     .withMessage('Review must be a string between 1 and 500 characters')
 ];
 
-;
