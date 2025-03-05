@@ -47,7 +47,6 @@ export const getBookById = asyncWrapper(async (req, res) => {
 
 // CREATE a new book (Admin only)
 export const createBook = asyncWrapper(async (req, res, next) => {
-  console.log('shaiamaaa');
   const error = validationResult(req);
   if (!error.isEmpty()) {
     bookLogger.error('New data doesn\'t follow schema');
