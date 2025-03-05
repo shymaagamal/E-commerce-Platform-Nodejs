@@ -1,0 +1,20 @@
+[2025-03-05 12:42:45] ERROR: Review with id 67c757af60133f59661a0cc0 not found or unauthorized
+[2025-03-05 14:28:53] ERROR: No reviews found for book with id 67c474d46cd9d8ce879a2165
+[2025-03-05 14:32:23] ERROR: Review with id 67c8148daf78610744b11e4f not found
+[2025-03-05 14:32:39] ERROR: No reviews found for book with id 67c474d46cd9d8ce879a2165
+[2025-03-05 20:15:40] ERROR: No reviews found for book with id undefined
+[2025-03-05 20:16:37] ERROR: No reviews found for book with id undefined
+[2025-03-05 20:17:11] ERROR: No reviews found for book with id undefined
+[2025-03-05 20:17:16] ERROR: No reviews found for book with id undefined
+[2025-03-05 20:17:29] ERROR: No reviews found for book with id undefined
+[2025-03-05 20:23:18] ERROR: No reviews found for book with id undefined
+[2025-03-05 20:34:01] ERROR: New data doesn't follow schema
+[2025-03-05 20:40:57] ERROR: Review with id 67c828b078ede7178c56a3e7 not found or unauthorized
+[2025-03-05 20:44:18] ERROR: New data doesn't follow schema
+[2025-03-05 20:44:32] ERROR: New data doesn't follow schema
+[2025-03-05 20:58:28] ERROR: Validation failed
+[2025-03-05 20:59:00] ERROR: Validation failed
+[2025-03-05 20:59:03] ERROR: Validation failed
+[2025-03-05 20:59:21] ERROR: Validation failed
+[2025-03-05 21:00:45] ERROR: Validation failed
+[2025-03-05 21:01:21] ERROR: Validation failed
