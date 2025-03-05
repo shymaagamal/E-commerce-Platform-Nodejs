@@ -37,9 +37,17 @@
 [2025-03-04 19:36:50] ERROR: ❌ Failed to connect to MongoDB: Server selection timed out after 30000 ms
 [2025-03-04 19:43:04] ERROR: ❌ 404 | Resource not found: GET /order/67c497c56cd9d8ce879a2al
 [2025-03-04 19:44:21] ERROR: ❌ 404 | Resource not found: GET /order/67c497c56cd9d8ce879a2abd
+<<<<<<< HEAD
 [2025-03-05 09:25:30] ERROR: ❌ 404 | Resource not found: GET /user/logout
 [2025-03-05 09:26:03] ERROR: ❌ 404 | Resource not found: GET /user/logout
 [2025-03-05 09:26:40] ERROR: ❌ 404 | Resource not found: GET /user/logout
 [2025-03-05 09:27:27] ERROR: ❌ 404 | Resource not found: GET /user/logout
 [2025-03-05 09:27:30] ERROR: ❌ 404 | Resource not found: GET /user/logout
 [2025-03-05 09:27:32] ERROR: ❌ 404 | Resource not found: GET /user/logout
+=======
+[2025-03-04 21:05:32] ERROR: ❌ 404 | Resource not found: GET /
+[2025-03-04 21:05:33] ERROR: ❌ 404 | Resource not found: GET /favicon.ico
+[2025-03-04 21:32:18] ERROR: ❌ 404 | Resource not found: PUT /review/?id=67c7510f3d48ba9636696dd7
+[2025-03-04 21:33:35] ERROR: ❌ 404 | Resource not found: PUT /review/?id=67c7510f3d48ba9636696dd7
+[2025-03-04 22:35:38] ERROR: ❌ 404 | Resource not found: PATCH /review/67c757af60133f59661a0cc0
+>>>>>>> a079e39b31c59059da47ece24bf3c41e1eeccb38

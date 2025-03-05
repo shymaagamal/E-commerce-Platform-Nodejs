@@ -1,6 +1,6 @@
 import { body } from 'express-validator';
 
-const reviewValidation = [
+export const reviewValidation = [
   body('user')
   .notEmpty().withMessage('User ID is required')
   .isMongoId().withMessage('Invalid User ID format'),
@@ -16,4 +16,18 @@ const reviewValidation = [
     .trim()
 ];
 
-export default reviewValidation;
+export const updateReviewValidation = [
+  body('rating')
+    .optional()
+    .isInt({ min: 1, max: 5 })
+    .withMessage('Rating must be an integer between 1 and 5'),
+
+  body('review')
+    .optional()
+    .isString()
+    .trim()
+    .isLength({ min: 1, max: 500 })
+    .withMessage('Review must be a string between 1 and 500 characters')
+];
+
+;
