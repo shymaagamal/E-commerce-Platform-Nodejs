@@ -218,3 +218,43 @@
 [2025-03-04 19:42:31] INFO: 🎉 New user registered successfully.
 [2025-03-04 19:46:08] INFO: 🎉 User login successful.
 [2025-03-04 19:48:06] INFO: 🎉 User login successful.
+[2025-03-05 00:20:22] INFO: 🎉 User login successful.
+[2025-03-05 00:51:09] INFO: 🎉 User login successful.
+[2025-03-05 00:53:17] INFO: 🎉 User login successful.
+[2025-03-05 00:56:51] INFO: 🎉 User login successful.
+[2025-03-05 00:59:56] INFO: 🎉 New user registered successfully.
+[2025-03-05 01:00:11] INFO: 🎉 User login successful.
+[2025-03-05 09:24:55] INFO: 🎉 User login successful.
+[2025-03-05 09:25:46] INFO: 🎉 User login successful.
+[2025-03-05 09:27:56] INFO: 🎉 User login successful.
+[2025-03-05 09:28:16] INFO: 🎉 User login successful.
+[2025-03-05 09:28:29] INFO: 🎉 User login successful.
+[2025-03-05 09:31:56] ERROR: ⚠️ Registration error: Email is already in use.
+[2025-03-05 09:32:03] INFO: 🎉 New user registered successfully.
+[2025-03-05 17:50:40] INFO: 🎉 User login successful.
+[2025-03-05 17:50:45] INFO: ✅ User [ID: 67c768bf763b4c62f33e1dd8] logged out successfully. Session destroyed at 2025-03-05T15:50:45.205Z
+[2025-03-05 17:52:07] INFO: 🎉 User login successful.
+[2025-03-05 17:52:23] INFO: 🎉 New user registered successfully.
+[2025-03-05 17:52:30] INFO: ✅ User [ID: 67c87337684b5ea071896736] logged out successfully. Session destroyed at 2025-03-05T15:52:30.793Z
+[2025-03-05 17:53:50] INFO: 🎉 User login successful.
+[2025-03-05 17:54:09] INFO: 🎉 New user registered successfully.
+[2025-03-05 17:54:14] INFO: ✅ User [ID: 67c873a0575c2f1fa138a04a] logged out successfully. Session destroyed at 2025-03-05T15:54:14.741Z
+[2025-03-05 17:54:50] INFO: ✅ User [ID: 67c873a0575c2f1fa138a04a] logged out successfully. Session destroyed at 2025-03-05T15:54:50.647Z
+[2025-03-05 17:54:59] INFO: ✅ User [ID: 67c873a0575c2f1fa138a04a] logged out successfully. Session destroyed at 2025-03-05T15:54:59.784Z
+[2025-03-05 17:55:08] INFO: 🎉 User login successful.
+[2025-03-05 17:55:13] INFO: ✅ User [ID: 67c768bf763b4c62f33e1dd8] logged out successfully. Session destroyed at 2025-03-05T15:55:13.886Z
+[2025-03-05 18:46:39] ERROR: ⚠️ Registration error: Email is already in use.
+[2025-03-05 18:46:50] INFO: 🎉 New user registered successfully.
+[2025-03-05 18:49:22] INFO: 🎉 New user registered successfully.
+[2025-03-05 19:12:32] INFO: 🎉 New user registered successfully.
+[2025-03-05 19:18:56] INFO: 🎉 User login successful.
+[2025-03-05 19:23:55] INFO: 🎉 New user registered successfully.
+[2025-03-05 19:26:13] INFO: 🎉 User login successful.
+[2025-03-05 19:26:34] INFO: 🎉 New user registered successfully.
+[2025-03-05 19:27:02] INFO: 🎉 User login successful.
+[2025-03-05 19:31:57] ERROR: ⚠️ Registration error: Email is already in use.
+[2025-03-05 19:32:02] INFO: 🎉 New user registered successfully.
+[2025-03-05 19:33:19] INFO: 🎉 User login successful.
+[2025-03-05 19:35:10] INFO: 🎉 New user registered successfully.
+[2025-03-05 19:35:34] INFO: 🎉 User login successful.
+[2025-03-05 20:15:30] INFO: 🎉 User login successful.

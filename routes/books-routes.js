@@ -9,6 +9,7 @@ import {userRoles} from '../utils/user-roles.js';
 
 export const bookRouter = express.Router();
 
+bookRouter.use(express.json());
 bookRouter.use(morganMiddleware);
 
 // Book Routes

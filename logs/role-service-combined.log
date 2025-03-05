@@ -1,2 +1,45 @@
-[2025-03-02 22:46:39] ERROR: ⚠️ Unauthorized attempt by role "user" to access /user/shaimaa@example.com
-[2025-03-02 22:57:53] ERROR: ⚠️ Unauthorized attempt by role "user" to access /user/shaimaa@example.com
+[2025-03-05 19:26:16] INFO: ✅ Authorized Access: Role "admin" accessed /book
+[2025-03-05 19:26:37] ERROR: ⚠️ Unauthorized attempt by role "user" to access /book
+[2025-03-05 19:27:07] INFO: ✅ Authorized Access: Role "admin" accessed /book
+[2025-03-05 19:31:40] INFO: ✅ Authorized Access: Role "admin" accessed /book
+[2025-03-05 19:31:49] INFO: ✅ Authorized Access: Role "admin" accessed /book
+[2025-03-05 19:32:07] ERROR: ⚠️ Unauthorized attempt by role "user" to access /book
+[2025-03-05 19:33:12] ERROR: ⚠️ Unauthorized attempt by role "user" to access /book/67c7477d3f9ccf65ac80f74b
+[2025-03-05 19:33:22] INFO: ✅ Authorized Access: Role "admin" accessed /book/67c7477d3f9ccf65ac80f74b
+[2025-03-05 19:34:54] INFO: ✅ Authorized Access: Role "admin" accessed /book/67c7477d3f9ccf65ac80f74b
+[2025-03-05 19:35:12] ERROR: ⚠️ Unauthorized attempt by role "user" to access /book/67c7477d3f9ccf65ac80f74b
+[2025-03-05 19:35:27] ERROR: ⚠️ Unauthorized attempt by role "user" to access /book/67c7477d3f9ccf65ac80f74b
+[2025-03-05 19:35:28] ERROR: ⚠️ Unauthorized attempt by role "user" to access /book/67c7477d3f9ccf65ac80f74b
+[2025-03-05 19:35:36] INFO: ✅ Authorized Access: Role "admin" accessed /book/67c7477d3f9ccf65ac80f74b
+[2025-03-05 20:16:01] INFO: ✅ Authorized Access: Role "admin" accessed /book
+[2025-03-05 20:18:08] INFO: ✅ Authorized Access: Role "admin" accessed /book
+[2025-03-05 20:19:47] INFO: ✅ Authorized Access: Role "admin" accessed /book
+[2025-03-05 20:20:37] INFO: ✅ Authorized Access: Role "admin" accessed /book
+[2025-03-05 20:21:52] INFO: ✅ Authorized Access: Role "admin" accessed /book
+[2025-03-05 20:22:42] INFO: ✅ Authorized Access: Role "admin" accessed /book
+[2025-03-05 20:22:52] INFO: ✅ Authorized Access: Role "admin" accessed /book
+[2025-03-05 20:24:00] INFO: ✅ Authorized Access: Role "admin" accessed /book
+[2025-03-05 20:24:34] INFO: ✅ Authorized Access: Role "admin" accessed /book
+[2025-03-05 20:24:50] INFO: ✅ Authorized Access: Role "admin" accessed /book
+[2025-03-05 20:28:45] INFO: ✅ Authorized Access: Role "admin" accessed /book
+[2025-03-05 20:29:13] INFO: ✅ Authorized Access: Role "admin" accessed /book
+[2025-03-05 20:30:01] INFO: ✅ Authorized Access: Role "admin" accessed /book
+[2025-03-05 20:30:16] INFO: ✅ Authorized Access: Role "admin" accessed /book
+[2025-03-05 20:30:30] INFO: ✅ Authorized Access: Role "admin" accessed /book
+[2025-03-05 20:30:39] INFO: ✅ Authorized Access: Role "admin" accessed /book
+[2025-03-05 20:31:17] INFO: ✅ Authorized Access: Role "admin" accessed /book
+[2025-03-05 20:31:24] INFO: ✅ Authorized Access: Role "admin" accessed /book
+[2025-03-05 20:31:45] INFO: ✅ Authorized Access: Role "admin" accessed /book
+[2025-03-05 20:33:11] INFO: ✅ Authorized Access: Role "admin" accessed /book
+[2025-03-05 20:34:28] INFO: ✅ Authorized Access: Role "admin" accessed /book
+[2025-03-05 20:34:53] INFO: ✅ Authorized Access: Role "admin" accessed /book
+[2025-03-05 20:35:00] INFO: ✅ Authorized Access: Role "admin" accessed /book
+[2025-03-05 20:35:21] INFO: ✅ Authorized Access: Role "admin" accessed /book
+[2025-03-05 20:35:24] INFO: ✅ Authorized Access: Role "admin" accessed /book
+[2025-03-05 20:36:07] INFO: ✅ Authorized Access: Role "admin" accessed /book
+[2025-03-05 20:37:56] INFO: ✅ Authorized Access: Role "admin" accessed /book
+[2025-03-05 20:38:03] INFO: ✅ Authorized Access: Role "admin" accessed /book
+[2025-03-05 20:38:05] INFO: ✅ Authorized Access: Role "admin" accessed /book
+[2025-03-05 20:38:16] INFO: ✅ Authorized Access: Role "admin" accessed /book
+[2025-03-05 20:38:28] INFO: ✅ Authorized Access: Role "admin" accessed /book
+[2025-03-05 20:42:56] INFO: ✅ Authorized Access: Role "admin" accessed /book/67c89a24bbf32dc5b64ae5f9

@@ -11,7 +11,7 @@ cartRouter.use(morganMiddleware);
 // Cart Routes
 
 cartRouter.post('/:id', verifyToken, addBookToCart);
-cartRouter.delete('/:id', verifyToken, removeBookFromCart);
 cartRouter.get('/', verifyToken, viewUserCart);
+cartRouter.delete('/:id', verifyToken, removeBookFromCart);
 
 export default cartRouter;

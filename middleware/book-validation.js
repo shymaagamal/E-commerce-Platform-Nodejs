@@ -19,6 +19,14 @@ export const validateCreateBook = [
     .withMessage('Author is required')
     .isLength({min: 3})
     .withMessage('Author must be at least 3 characters long'),
+  body('isbn')
+    .trim()
+    .notEmpty()
+    .withMessage('isbn is required')
+    .isLength({min: 10, max: 13})
+    .withMessage('ISBN must be between 10 and 13 characters')
+    .custom((value) => /^[0-9X-]+$/i.test(value))
+    .withMessage('Invalid ISBN format'),
 
   body('price')
     .notEmpty()
