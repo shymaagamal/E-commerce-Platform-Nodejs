@@ -1,3 +1,4 @@
+import {validationResult} from 'express-validator';
 import {bookModel} from '../models/book-model.js';
 import {asyncWrapper} from '../utils/async-wrapper.js';
 import httpStatusText from '../utils/http-status-text.js';
@@ -22,6 +23,8 @@ export const getBooks = asyncWrapper(async (req, res) => {
 
   // Check if no books were found
   if (books.length === 0) {
+    bookLogger.error(`❌ No books found matching the provided filters: ${JSON.stringify(req.query)}`);
+
     return res.status(404).json({status: httpStatusText.FAIL, message: 'No books found matching the provided filters.'});
   }
 
@@ -33,28 +36,52 @@ export const getBooks = asyncWrapper(async (req, res) => {
 export const getBookById = asyncWrapper(async (req, res) => {
   const book = await bookModel.findById(req.params.id);
   if (!book) {
-    bookLogger.error('Book is not found');
-    return res.status(404).json({status: httpStatusText.FAIL, message: 'Book not found'});
+    bookLogger.error(`❌ Book not found: The requested book with ID "${req.params.id}" does not exist or has been removed.`);
+
+    return res.status(404).json({status: httpStatusText.FAIL, message: `❌ Book not found: The requested book with ID "${req.params.id}" does not exist or has been removed.`});
   }
-  bookLogger.info('Book is sent successfully');
+  bookLogger.info(`📚 Book sent successfully: Book with ID "${req.params.id}" was retrieved and sent to the user.`);
+
   res.status(200).json({status: httpStatusText.SUCCESS, book});
 });
 
 // CREATE a new book (Admin only)
-export const createBook = asyncWrapper(async (req, res) => {
-  const {title, author, price, description, stock} = req.body;
+export const createBook = asyncWrapper(async (req, res, next) => {
+  console.log('shaiamaaa');
+  const error = validationResult(req);
+  if (!error.isEmpty()) {
+    bookLogger.error('New data doesn\'t follow schema');
+    return res.status(400).json({status: httpStatusText.FAIL, data: error});
+  }
+  const {title, author, isbn, price, description, stock} = req.body;
+
+  const checkISBN = await bookModel.findOne({isbn});
+  if (checkISBN) {
+    bookLogger.error('⚠️ This book is already exits.');
+    const error = new Error('⚠️ This book is already exits.');
+    error.status = 400;
+    error.httpStatusText = httpStatusText.FAIL;
+    return next(error);
+  }
 
   // Cloudinary automatically stores the image and returns a URL
   const coverImage = req.file ? req.file.path : null;
 
-  const book = await bookModel.create({title, author, price, description, stock, image: coverImage});
+  const book = await bookModel.create({title, author, isbn, price, description, stock, image: coverImage});
   bookLogger.info(`New book created: ${book.title}`);
   res.status(201).json({status: httpStatusText.SUCCESS, book});
 });
 
 // UPDATE a book (Admin only)
-export const updateBook = asyncWrapper(async (req, res) => {
-  const book = await bookModel.findByIdAndUpdate(req.params.id, req.body);
+export const updateBook = asyncWrapper(async (req, res, next) => {
+  if (req.body.isbn) {
+    bookLogger.error(`⚠️ Unauthorized attempt to modify ISBN detected. The ISBN field is immutable and cannot be changed.`);
+    const error = new Error('⚠️ Unauthorized attempt to modify ISBN detected. The ISBN field is immutable and cannot be changed.');
+    error.status = 400;
+    error.httpStatusText = httpStatusText.FAIL;
+    return next(error);
+  }
+  const book = await bookModel.findByIdAndUpdate(req.params.id, req.body, {new: true});
 
   if (!book) {
     return res.status(404).json({status: httpStatusText.FAIL, message: 'Book not found'});
