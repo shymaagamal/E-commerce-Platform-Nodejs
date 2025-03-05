@@ -30,24 +30,5 @@
 [2025-03-04 19:47:16] ERROR: ❌ Unauthorized request: Login required to access this resource.
 [2025-03-04 19:47:54] ERROR: ❌ Unauthorized request: Login required to access this resource.
 [2025-03-04 19:48:10] ERROR: ❌ Unauthorized request: Login required to access this resource.
-<<<<<<< HEAD
-[2025-03-05 09:27:46] ERROR: ❌ Unauthorized request: Login required to access this resource.
-[2025-03-05 09:27:50] ERROR: ❌ Unauthorized request: Login required to access this resource.
-[2025-03-05 09:28:02] ERROR: ❌ Unauthorized request: Login required to access this resource.
-[2025-03-05 09:28:34] ERROR: ❌ Unauthorized request: Login required to access this resource.
-[2025-03-05 17:50:27] ERROR: ❌ Unauthorized login 
-[2025-03-05 18:46:59] ERROR: ❌ Unauthorized request: Login required to access this resource.
-=======
 [2025-03-04 21:10:17] ERROR: ❌ Unauthorized request: Login required to access this resource.
 [2025-03-05 09:20:29] ERROR: ❌ Unauthorized login 
->>>>>>> a079e39b31c59059da47ece24bf3c41e1eeccb38
-[2025-03-05 10:14:21] ERROR: ❌ Unauthorized login 
-[2025-03-05 10:15:37] ERROR: ❌ Unauthorized request: Login required to access this resource.
-[2025-03-05 10:15:45] ERROR: ❌ Unauthorized login 
-[2025-03-05 10:48:43] ERROR: ❌ Unauthorized login 
-[2025-03-05 11:09:46] ERROR: ❌ Unauthorized request: Login required to access this resource.
-[2025-03-05 11:12:01] ERROR: ❌ Unauthorized request: Login required to access this resource.
-[2025-03-05 12:42:04] ERROR: ❌ Unauthorized login 
-[2025-03-05 12:42:23] ERROR: ❌ Unauthorized login 
-[2025-03-05 14:05:47] ERROR: ❌ Unauthorized login 
-[2025-03-05 20:15:25] ERROR: ❌ Unauthorized login 

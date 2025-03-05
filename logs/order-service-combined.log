@@ -39,3 +39,87 @@
 [2025-03-04 20:24:53] INFO: Order is retrieved successfully.
 [2025-03-04 20:25:51] INFO: Order is retrieved successfully.
 [2025-03-04 20:26:15] ERROR: You aren't authorized to view this order as it isn't yours.
+[2025-03-05 00:40:45] ERROR: You aren't authorized to view this order as it isn't yours.
+[2025-03-05 00:41:51] INFO: Full Orders history is retrieved successfully.
+[2025-03-05 00:43:32] INFO: Full Orders history is retrieved successfully.
+[2025-03-05 00:43:49] INFO: Full Orders history is retrieved successfully.
+[2025-03-05 00:45:17] INFO: Full Orders history is retrieved successfully.
+[2025-03-05 00:45:45] ERROR: No orders history found for this user
+[2025-03-05 00:46:10] INFO: Full Orders history is retrieved successfully.
+[2025-03-05 00:46:47] ERROR: No orders history found for this user
+[2025-03-05 00:47:13] ERROR: No orders history found for this user
+[2025-03-05 00:47:22] ERROR: You aren't authorized to view this order as it isn't yours.
+[2025-03-05 00:50:38] ERROR: You aren't authorized to view this order as it isn't yours.
+[2025-03-05 00:54:09] ERROR: You aren't authorized to view this order as it isn't yours.
+[2025-03-05 00:54:30] ERROR: You aren't authorized to view this order as it isn't yours.
+[2025-03-05 00:59:07] ERROR: You aren't authorized to view this order as it isn't yours.
+[2025-03-05 00:59:30] ERROR: You aren't authorized to view this order as it isn't yours.
+[2025-03-05 01:14:11] ERROR: You aren't authorized to view this order as it isn't yours.
+[2025-03-05 01:17:01] ERROR: You aren't authorized to view this order as it isn't yours.
+[2025-03-05 01:22:55] INFO: Order is retrieved successfully.
+[2025-03-05 01:25:35] INFO: Order is retrieved successfully.
+[2025-03-05 01:25:48] INFO: Order is retrieved successfully.
+[2025-03-05 01:40:50] ERROR: Order cannot be canceled as payment is already processed.
+[2025-03-05 01:41:15] INFO: Order is canceled successfully.
+[2025-03-05 01:41:53] ERROR: Order is already canceled.
+[2025-03-05 01:51:02] INFO: Order is retrieved successfully.
+[2025-03-05 01:51:16] INFO: Order is retrieved successfully.
+[2025-03-05 01:54:11] INFO: Order is retrieved successfully.
+[2025-03-05 01:54:52] INFO: Order is retrieved successfully.
+[2025-03-05 01:55:29] INFO: Order is retrieved successfully.
+[2025-03-05 01:55:58] INFO: Order is retrieved successfully.
+[2025-03-05 01:56:34] INFO: Order is retrieved successfully.
+[2025-03-05 01:57:29] INFO: Order is retrieved successfully.
+[2025-03-05 01:58:10] ERROR: Order is already canceled.
+[2025-03-05 01:58:35] INFO: Order is canceled successfully.
+[2025-03-05 09:29:34] ERROR: You aren't authorized to view this order as it isn't yours.
+[2025-03-05 10:59:16] ERROR: You aren't authorized to view this order as it isn't yours.
+[2025-03-05 11:28:08] ERROR: You aren't authorized to view this order as it isn't yours.
+[2025-03-05 11:28:08] INFO: ✅ Order is retrieved successfully.
+[2025-03-05 19:57:02] ERROR: Order cannot be canceled as payment is already processed.
+[2025-03-05 19:57:14] INFO: ✅ Order is retrieved successfully.
+[2025-03-05 20:20:23] ERROR: Payment failed. Please try again.
+[2025-03-05 20:20:36] ERROR: Payment failed. Please try again.
+[2025-03-05 20:24:14] ERROR: Payment successful, order completed!
+[2025-03-05 20:27:10] INFO: ✅ Order is retrieved successfully.
+[2025-03-05 20:27:37] ERROR: Order cannot be canceled as payment is already processed.
+[2025-03-05 20:29:21] ERROR: Order cannot be canceled as payment is already processed.
+[2025-03-05 20:30:33] ERROR: Order cannot be canceled as payment is already processed.
+[2025-03-05 20:31:01] ERROR: Order cannot be canceled as payment is already processed.
+[2025-03-05 20:32:31] ERROR: Order cannot be canceled as payment is already processed.
+[2025-03-05 20:33:40] ERROR: Order cannot be canceled as payment is already processed.
+[2025-03-05 20:37:46] INFO: ✅ Order is retrieved successfully.
+[2025-03-05 20:41:35] INFO: ✅ Order is retrieved successfully.
+[2025-03-05 20:43:52] INFO: ✅ Order is retrieved successfully.
+[2025-03-05 20:47:53] INFO: ✅ Order is retrieved successfully.
+[2025-03-05 20:52:47] INFO: ✅ Order is retrieved successfully.
+[2025-03-05 20:53:38] INFO: ✅ Order is retrieved successfully.
+[2025-03-05 21:14:28] INFO: ✅ Order is retrieved successfully.
+[2025-03-05 21:15:44] INFO: ✅ Payment successful, order completed!
+[2025-03-05 21:35:22] ERROR: Payment failed. Please try again.
+[2025-03-05 21:35:40] INFO: ✅ Payment successful, order completed!
+[2025-03-05 21:40:20] ERROR: Payment failed. Please try again.
+[2025-03-05 22:13:07] INFO: The Payment Intent Id is stored successfully in this order.
+[2025-03-05 22:13:07] INFO: ✅ Payment successful, order completed!
+[2025-03-05 22:14:42] INFO: The Payment Intent Id is stored successfully in this order.
+[2025-03-05 22:14:42] INFO: ✅ Payment successful, order completed!
+[2025-03-05 22:17:46] INFO: The Payment Intent Id is stored successfully in this order.
+[2025-03-05 22:17:46] INFO: ✅ Payment successful, order completed!
+[2025-03-05 22:23:39] INFO: The Payment Intent Id is stored successfully in this order.
+[2025-03-05 22:23:39] INFO: ✅ Payment successful, order completed!
+[2025-03-05 22:25:12] INFO: ✅ The refund process is completed  & the order is canceled successfully.
+[2025-03-05 22:29:08] ERROR: Order is already canceled.
+[2025-03-05 22:29:22] INFO: The Payment Intent Id is stored successfully in this order.
+[2025-03-05 22:29:22] INFO: ✅ Payment successful, order completed!
+[2025-03-05 22:29:30] INFO: ✅ The refund process is completed  & the order is canceled successfully.
+[2025-03-05 22:30:47] ERROR: Order is already canceled.
+[2025-03-05 22:31:34] INFO: The Payment Intent Id is stored successfully in this order.
+[2025-03-05 22:33:44] INFO: The Payment Intent Id is stored successfully in this order.
+[2025-03-05 22:33:44] INFO: ✅ Payment successful, order completed!
+[2025-03-05 22:33:51] INFO: ✅ The refund process is completed  & the order is canceled successfully.
+[2025-03-05 22:37:15] INFO: The Payment Intent Id is stored successfully in this order.
+[2025-03-05 22:37:15] INFO: ✅ Payment successful, order completed!
+[2025-03-05 22:37:33] INFO: ✅ The Payment Intent Id is stored successfully in this order.
+[2025-03-05 22:37:33] ERROR: Ypu already paid for this order before.
+[2025-03-05 22:38:45] INFO: ✅ The Payment Intent Id is stored successfully in this order.
+[2025-03-05 22:38:45] ERROR: You already paid for this order before.

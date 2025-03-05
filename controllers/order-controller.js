@@ -1,7 +1,12 @@
+import Stripe from "stripe";
 import Order from '../models/order-model.js';
+import {UserModel} from '../models/user-model.js'; 
 import {asyncWrapper} from '../utils/async-wrapper.js';
 import httpStatusText from '../utils/http-status-text.js';
 import createLogger from '../utils/logger.js';
+import 'dotenv/config';
+import process from 'process' ;
+
 
 const orderLogger = createLogger('order-service');
 
@@ -31,7 +36,7 @@ export const getOrdersHistory = asyncWrapper ( async (req, res , next) => {
         return res.status(404).json({ status: httpStatusText.FAIL, message: msg });
     }
 
-    msg = "Full Orders history is retrieved successfully.";
+    msg = "✅ Full Orders history is retrieved successfully.";
     orderLogger.info(msg);
     // Return orders
     return res.status(200).json({status: httpStatusText.SUCCESS, message: msg, orders});
@@ -59,7 +64,7 @@ Sample Output :
             ...
         }]
 
- **********/
+**********/
 
 
 
@@ -74,8 +79,8 @@ const orderValidation = async (req, res, next ) => {
 
     // Find the order by ID and populate book details
     const order = await Order.findById({ _id: orderId}).populate({
-        path: "books.bookId",
-        select: "title price" // Fetch only title and price from Book collection
+        path: "books.bookId", // Populate the bookId field inside books array
+    select: "title price" // Select only title and price from the Book model
     })
 
     // If order not found
@@ -94,7 +99,6 @@ const orderValidation = async (req, res, next ) => {
         return res.status(404).json({ status: httpStatusText.FAIL, message: msg });
     }
 
-    console.log(order) ;
     return order ;
 };
 
@@ -104,11 +108,9 @@ const orderValidation = async (req, res, next ) => {
 
 export const getOrderById = asyncWrapper(async (req, res, next) => {
     const order = await orderValidation(req , res , next) ;
-    console.log(order) ;
-    msg = "Order is retrieved successfully.";
+    msg = "✅ Order is retrieved successfully.";
     orderLogger.info(msg);
     return res.status(200).json({status: httpStatusText.SUCCESS, message: msg, order});
-    
 });
 
 
@@ -122,7 +124,21 @@ export const cancelOrder = asyncWrapper(async (req, res, next) => {
     // Check if order is eligible for cancellation
     if (order.status == "completed") 
     {
-        msg = "Order cannot be canceled as payment is already processed.";
+        if ( order.paymentIntentId )
+        {
+            const refund = await stripe.refunds.create({
+                payment_intent: order.paymentIntentId,
+            });
+    
+            order.status = "canceled";
+            await order.save();
+            msg = "✅ The refund process is completed  & the order is canceled successfully.";
+            return res.status(200).json({ status: httpStatusText.SUCCESS, message: msg , order});
+        }
+
+        msg = "Payment not found for this order to refund.";
+        order.status = "canceled";
+        await order.save();
         orderLogger.error(msg);
         return res.status(400).json({ status: httpStatusText.FAIL, message: msg });
     }
@@ -137,7 +153,64 @@ export const cancelOrder = asyncWrapper(async (req, res, next) => {
     order.status = "canceled";
     await order.save();
 
-    msg = "Order is canceled successfully.";
+    msg = "✅ Order is canceled successfully.";
     orderLogger.info(msg);
     return res.status(200).json({ status: httpStatusText.SUCCESS, message: msg , order});
+});
+
+
+
+/***************************** Order Chechout/Payment using Stripe ( online payment method ) *****************************/
+
+// Using Stripe SDK ( Software Development Kit ) & initializing it using my fixed secret key ( required to authenticate requests to Stripe ) 
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+
+export const orderPayment = asyncWrapper(async (req, res, next) => {
+
+    const userId = req.user.id;
+    // Fetch user details
+    const user = await UserModel.findById(userId);
+
+    const order = await orderValidation(req , res , next) ;
+
+    // Convert to cents ( smallest unit )
+    const totalAmount = order.totalPrice * 100; 
+
+    // Create a Stripe payment intent
+    const paymentIntent = await stripe.paymentIntents.create({
+        amount: totalAmount,
+        currency: "usd",
+        payment_method_types: ["card"],
+        payment_method: "pm_card_visa",
+        confirm: true,   // Auto-confirm the payment
+        metadata: { orderId: order._id.toString(), userId: user._id.toString() }
+    });
+
+    order.paymentIntentId = paymentIntent.id ;
+    await order.save();
+    orderLogger.info("✅ The Payment Intent Id is stored successfully in this order.") ;
+
+    // Update order status based on payment outcome
+    if (paymentIntent.status === "succeeded") 
+    {
+        if ( order.status == "completed")
+        {
+            paymentIntent.confirm = false ;
+            msg = "You already paid for this order before." ;
+            orderLogger.error(msg) ;
+            return res.status(400).json({ status: httpStatusText.FAIL, message: msg });
+        }
+
+        order.status = "completed";
+        await order.save();
+        msg = "✅ Payment successful, order completed!" ;
+        orderLogger.info(msg) ;
+        return res.status(400).json({ status: httpStatusText.SUCCESS, message: error.message });
+    }
+
+    order.status = "pending";
+    await order.save();
+    msg = "Payment failed. Please try again." ;
+    orderLogger.error(msg) ;
+    return res.status(400).json({ status: httpStatusText.FAIL, message: error.message });
 });
