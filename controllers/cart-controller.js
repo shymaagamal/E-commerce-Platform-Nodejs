@@ -105,7 +105,11 @@ export const addBookToCart = asyncWrapper(async (req, res, next) => {
   return res.status(200).json({status: httpStatusText.SUCCESS, sessionID: req.sessionID, data: req.session.cart});
 });
 
-export const removeBookFromCart = asyncWrapper(async(req, res, next) => {
+// ========================================================================================
+//                         remove book from cart
+// ===========================================================================================
+
+export const removeBookFromCart = asyncWrapper(async (req, res, next) => {
   if (req.user.id !== req.session.userID) {
     const sessionCollection = mongoose.connection.collection('sessions');
     const sessionDoc = await sessionCollection.findOne({session: {$regex: `"userID":"${req.user.id}"`}});
@@ -116,13 +120,30 @@ export const removeBookFromCart = asyncWrapper(async(req, res, next) => {
       error.httpStatusText = httpStatusText.FAIL;
       return next(error);
     }
+    const userData = JSON.parse(sessionDoc.session);
 
-    const sessionData = JSON.parse(sessionDoc.session.cart);
+    const updatedBooks = userData.cart.filter((book, index) => index !== userData.cart.findIndex((b) => b._id === req.params.id));
+    userData.cart = updatedBooks;
+    const result = await sessionCollection.updateOne({_id: sessionDoc._id}, {$set: {session: JSON.stringify(userData)}});
 
-    // cartLogger.info('🎉 Retrived data from database successfully');
-    // return res.status(200).json({status: httpStatusText.SUCCESS, data: sessionData.cart});
+    if (result.modifiedCount === 0) {
+      cartLogger.error('❌ ❌ Session found, but there is no data to remove.');
+      return next(new Error('❌ Session found, but there is no data to remove.'));
+    }
+
+    cartLogger.info('🎉 Removed this book  from database successfully');
+    return res.status(200).json({status: httpStatusText.SUCCESS, data: userData.cart});
   }
+  req.session.userID = req.user.id;
+
+  req.session.cart = req.session.cart.filter((book, index) => index !== req.session.cart.findIndex((b) => b._id === req.params.id));
+  cartLogger.info('🎉 Removed this book  from session successfully');
+  return res.status(200).json({status: httpStatusText.SUCCESS, data: req.session.cart});
 });
+
+// ========================================================================================
+//                          view user cart
+// ===========================================================================================
 
 export const viewUserCart = asyncWrapper(async (req, res, next) => {
   if (req.user.id !== req.session.userID) {
@@ -139,6 +160,8 @@ export const viewUserCart = asyncWrapper(async (req, res, next) => {
     const sessionData = JSON.parse(sessionDoc.session);
     return res.status(200).json({status: httpStatusText.SUCCESS, data: sessionData.cart});
   }
+  req.session.userID = req.user.id;
+
   cartLogger.info('🎉 Retrived data successfully');
   return res.status(200).json({status: httpStatusText.SUCCESS, data: req.session.cart});
 });

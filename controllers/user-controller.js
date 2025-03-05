@@ -1,4 +1,5 @@
 import {validationResult} from 'express-validator';
+import mongoose from 'mongoose';
 import {UserModel} from '../models/user-model.js';
 import {asyncWrapper} from '../utils/async-wrapper.js';
 import {checkPassword, generateJWT} from '../utils/auth-utils.js';
@@ -89,5 +90,18 @@ export const UserUpdateProfile = asyncWrapper(async (req, res, next) => {
 // ==========================================================================
 
 export const UserLogOut = asyncWrapper(async (req, res, next) => {
-
+  if (req.user.id !== req.session.userID) {
+    const sessionCollection = mongoose.connection.collection('sessions');
+    const sessionDoc = await sessionCollection.deleteOne({session: {$regex: `"userID":"${req.user.id}"`}});
+    if (!sessionDoc) {
+      userLogger.error('❌ logged-in user doesnt have data');
+      const error = new Error('❌ logged-in user doesnt have data');
+      error.status = 400;
+      error.httpStatusText = httpStatusText.FAIL;
+      return next(error);
+    }
+  }
+  req.session.userID = req.user.id;
+  req.session.destroy();
+  res.status(200).send('session is destroyed');
 });
