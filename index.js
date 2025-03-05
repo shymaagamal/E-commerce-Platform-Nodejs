@@ -12,6 +12,7 @@ import orderRouter from './routes/orders-routes.js';
 import {userRouter} from './routes/users-routes.js';
 import httpStatusText from './utils/http-status-text.js';
 import createLogger from './utils/logger.js';
+import reviewRouter from './routes/reviews-routes.js';
 
 import 'dotenv/config';
 
@@ -31,6 +32,7 @@ app.use('/user', userRouter);
 app.use('/book', bookRouter);
 app.use('/order', orderRouter);
 app.use('/cart', cartRouter);
+app.use('/review', reviewRouter);
 
 // Use Middlewares
 app.use(errorHandler);

@@ -60,6 +60,10 @@
 [2025-03-04 01:26:14] ERROR: ⚠️ Registration error: Email is already in use.
 [2025-03-04 01:30:54] ERROR: ⚠️ Registration error: Email is already in use.
 [2025-03-04 01:47:17] ERROR: ⚠️ Registration error: Email is already in use.
-[2025-03-04 13:25:04] ERROR: New data doesn't follow schema
-[2025-03-04 13:26:02] ERROR: New data doesn't follow schema
-[2025-03-04 19:42:17] ERROR: ⚠️ Registration error: Email is already in use.
+[2025-03-04 21:06:56] ERROR: New data doesn't follow schema
+[2025-03-04 21:10:40] ERROR: New data doesn't follow schema
+[2025-03-04 21:20:56] ERROR: No reviews found for book with id 67c474d46cd9d8ce879a2169
+[2025-03-04 21:41:54] ERROR: New data doesn't follow schema
+[2025-03-04 21:42:09] ERROR: New data doesn't follow schema
+[2025-03-04 21:42:24] ERROR: New data doesn't follow schema
+[2025-03-05 00:05:42] ERROR: No reviews found for book with id 67c474d46cd9d8ce879a2169
