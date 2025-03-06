@@ -70,3 +70,7 @@
 [2025-03-06 15:21:33] INFO: ✅ Cache HIT: Retrieved 3 reviews from Node cache 🏷️ at 2025-03-06T13:21:33.150Z
 [2025-03-06 15:21:34] INFO: ✅ Cache HIT: Retrieved 3 reviews from Node cache 🏷️ at 2025-03-06T13:21:34.498Z
 [2025-03-06 15:21:36] INFO: ✅ Cache HIT: Retrieved 3 reviews from Node cache 🏷️ at 2025-03-06T13:21:36.919Z
+[2025-03-06 21:45:38] ERROR: Validation failed
+[2025-03-06 21:45:49] INFO: New review created successfully
+[2025-03-06 21:46:27] INFO: New review created successfully
+[2025-03-06 21:49:23] INFO: New review created successfully

@@ -25,8 +25,7 @@ export const sendEmail = asyncWrapper(async (email, subject, text, next) => {
 
   try {
     const info = await sender.sendMail(mailOptions);
-    emailLogger.info(`📧 Email sent successfully to ${email}`, {response: info.response});
-
+    emailLogger.info(`Email sent successfully to ${email}`, {response: info.response});
     return {status: 'success', message: `Email sent to ${email}`};
   } catch (error) {
     emailLogger.error(`Email sending failed for ${email}`, {error: error.message});
