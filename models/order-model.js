@@ -24,7 +24,11 @@ const orderSchema = new mongoose.Schema({
     type: String,
     enum: ['pending', 'completed', 'canceled'],
     default: 'pending'
+  },
+  paymentIntentId:
+  {
+    type : String 
   }
-}, {timestamps: true});
+}, {timestamps: true }); 
 
 export default mongoose.model('Order', orderSchema);

@@ -1,3 +1,13 @@
-[2025-03-04 20:26:43] INFO: New book created: The Pragmatic Programmer
-[2025-03-04 20:33:33] INFO: New book created: atomic habits
-[2025-03-04 20:52:15] INFO: New book created: 5Am Club
+[2025-03-05 19:26:16] INFO: New book created: Clean Code
+[2025-03-05 19:27:07] INFO: New book created: Clean Code
+[2025-03-05 19:28:04] INFO: 📚 Book sent successfully: Book with ID "67c7477d3f9ccf65ac80f74b" was retrieved and sent to the user.
+[2025-03-05 19:28:10] ERROR: ❌ Book not found: The requested book with ID "67c7477d3f9ccf65ac80f74c" does not exist or has been removed.
+[2025-03-05 19:28:44] ERROR: ❌ Book not found: The requested book with ID "67c7477d3f9ccf65ac80f74c" does not exist or has been removed.
+[2025-03-05 19:30:30] ERROR: ❌ No books found matching the provided filters: {"page":"2","limit":"3"}
+[2025-03-05 19:31:40] INFO: New book created: Clean Code
+[2025-03-05 19:31:49] INFO: New book created: Clean Code2
+[2025-03-05 20:37:57] INFO: New book created: Operating System Concepts
+[2025-03-05 20:38:03] ERROR: ⚠️ This book is already exits.
+[2025-03-05 20:38:05] ERROR: ⚠️ This book is already exits.
+[2025-03-05 20:38:28] INFO: New book created: Operating System Concepts
+[2025-03-05 20:42:56] ERROR: ⚠️ Unauthorized attempt to modify ISBN detected. The ISBN field is immutable and cannot be changed.

@@ -2,11 +2,15 @@ import express from 'express';
 import {createBook, deleteBook, getBookById, getBooks, updateBook} from '../controllers/book-controller.js';
 import {verifyToken} from '../middleware/auth-middleware.js';
 import {validateCreateBook, validateUpdateBook} from '../middleware/book-validation.js';
+import {morganMiddleware} from '../middleware/morgan-middleware.js';
 import {allowedTo} from '../middleware/role-access.js';
 import upload from '../middleware/uploadMiddleware.js';
 import {userRoles} from '../utils/user-roles.js';
 
 export const bookRouter = express.Router();
+
+bookRouter.use(express.json());
+bookRouter.use(morganMiddleware);
 
 // Book Routes
 bookRouter.get('/', verifyToken, getBooks);

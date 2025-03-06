@@ -214,3 +214,8 @@
 [2025-03-04 13:26:23] INFO: 🎉 New user registered successfully.
 [2025-03-04 13:26:41] INFO: 🎉 User login successful.
 [2025-03-04 14:15:54] INFO: 🎉 User login successful.
+[2025-03-04 19:42:17] ERROR: ⚠️ Registration error: Email is already in use.
+[2025-03-04 19:42:31] INFO: 🎉 New user registered successfully.
+[2025-03-04 19:46:08] INFO: 🎉 User login successful.
+[2025-03-04 19:48:06] INFO: 🎉 User login successful.
+[2025-03-06 08:11:15] INFO: 🎉 New user registered successfully.

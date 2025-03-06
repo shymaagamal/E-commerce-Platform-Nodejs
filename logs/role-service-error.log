@@ -1,2 +1,6 @@
-[2025-03-02 22:46:39] ERROR: ⚠️ Unauthorized attempt by role "user" to access /user/shaimaa@example.com
-[2025-03-02 22:57:53] ERROR: ⚠️ Unauthorized attempt by role "user" to access /user/shaimaa@example.com
+[2025-03-05 19:26:37] ERROR: ⚠️ Unauthorized attempt by role "user" to access /book
+[2025-03-05 19:32:07] ERROR: ⚠️ Unauthorized attempt by role "user" to access /book
+[2025-03-05 19:33:12] ERROR: ⚠️ Unauthorized attempt by role "user" to access /book/67c7477d3f9ccf65ac80f74b
+[2025-03-05 19:35:12] ERROR: ⚠️ Unauthorized attempt by role "user" to access /book/67c7477d3f9ccf65ac80f74b
+[2025-03-05 19:35:27] ERROR: ⚠️ Unauthorized attempt by role "user" to access /book/67c7477d3f9ccf65ac80f74b
+[2025-03-05 19:35:28] ERROR: ⚠️ Unauthorized attempt by role "user" to access /book/67c7477d3f9ccf65ac80f74b

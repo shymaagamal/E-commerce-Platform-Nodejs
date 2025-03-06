@@ -5,7 +5,8 @@ const roleLogger = createLogger('role-service');
 
 export const allowedTo = (...roles) => {
   return (req, res, next) => {
-    const isInclude = roles.includes(req.user.role);
+    const flatRoles = roles.flat();
+    const isInclude = flatRoles.includes(req.user.role);
     if (!isInclude) {
       roleLogger.error(`⚠️ Unauthorized attempt by role "${req.user.role}" to access ${req.originalUrl}`);
       const error = new Error(`Unauthorized attempt by role "${req.user.role}`);

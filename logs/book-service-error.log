@@ -1,0 +1,6 @@
+[2025-03-05 19:28:10] ERROR: ❌ Book not found: The requested book with ID "67c7477d3f9ccf65ac80f74c" does not exist or has been removed.
+[2025-03-05 19:28:44] ERROR: ❌ Book not found: The requested book with ID "67c7477d3f9ccf65ac80f74c" does not exist or has been removed.
+[2025-03-05 19:30:30] ERROR: ❌ No books found matching the provided filters: {"page":"2","limit":"3"}
+[2025-03-05 20:38:03] ERROR: ⚠️ This book is already exits.
+[2025-03-05 20:38:05] ERROR: ⚠️ This book is already exits.
+[2025-03-05 20:42:56] ERROR: ⚠️ Unauthorized attempt to modify ISBN detected. The ISBN field is immutable and cannot be changed.

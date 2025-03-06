@@ -12,6 +12,7 @@ import orderRouter from './routes/orders-routes.js';
 import {userRouter} from './routes/users-routes.js';
 import httpStatusText from './utils/http-status-text.js';
 import createLogger from './utils/logger.js';
+import reviewRouter from './routes/reviews-routes.js';
 
 import 'dotenv/config';
 
@@ -23,14 +24,15 @@ const logger = createLogger('main-service');
 app.use(express.urlencoded({extended: true}));
 // A Middleware for parsing incoming JSON request bodies to be converted to JavaScript object accessible in "req.body"
 app.use(sessionMiddleware);
-app.use(express.json());
 app.use(cookieParser(process.env.COOKIE_SECRET_KEY));
+app.use(express.json());
 
 // Defining API Routes Handlers
 app.use('/user', userRouter);
 app.use('/book', bookRouter);
 app.use('/order', orderRouter);
 app.use('/cart', cartRouter);
+app.use('/review', reviewRouter);
 
 // Use Middlewares
 app.use(errorHandler);

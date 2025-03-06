@@ -1,10 +1,12 @@
 import {validationResult} from 'express-validator';
+import mongoose from 'mongoose';
 import {UserModel} from '../models/user-model.js';
 import {asyncWrapper} from '../utils/async-wrapper.js';
 import {checkPassword, generateJWT} from '../utils/auth-utils.js';
 import httpStatusText from '../utils/http-status-text.js';
 import createLogger from '../utils/logger.js';
 import {userRoles} from '../utils/user-roles.js';
+import { sendEmail } from '../utils/email-service.js';
 
 const userLogger = createLogger('user-service');
 
@@ -28,6 +30,7 @@ export const UserRegister = asyncWrapper(async (req, res, next) => {
   const addedUser = await UserModel.create(req.body);
   const token = generateJWT({role: addedUser.role, email: addedUser.email, id: addedUser._id});
   addedUser.token = token;
+  await sendEmail(addedUser.email, 'Welcome to our Book store system', 'You have successfully registered to our BookStore! This is just a confirmation email :)  You can now login to our platform and start using our services. Thank you for joining us! Have a great day ahead! :)');
   userLogger.info('🎉 New user registered successfully.');
   return res.status(200).json({status: httpStatusText.SUCCESS, data: addedUser});
 });
@@ -82,4 +85,29 @@ export const UserUpdateProfile = asyncWrapper(async (req, res, next) => {
   }
   userLogger.info(`📝 User "${email}" updated successfully by "${req.user.email}"`);
   res.status(200).json({status: httpStatusText.SUCCESS, data: isUserExist});
+});
+
+// ========================================================================
+//                        user logout
+// ==========================================================================
+
+export const UserLogOut = asyncWrapper(async (req, res, next) => {
+  if (req.user.id !== req.session.userID) {
+    const sessionCollection = mongoose.connection.collection('sessions');
+    const sessionDoc = await sessionCollection.deleteOne({session: {$regex: `"userID":"${req.user.id}"`}});
+    console.log(sessionDoc);
+    if (!sessionDoc) {
+      userLogger.error('❌ logged-in user doesnt have data');
+      const error = new Error('❌ logged-in user doesnt have data');
+      error.status = 400;
+      error.httpStatusText = httpStatusText.FAIL;
+      return next(error);
+    }
+    userLogger.info(`✅ User [ID: ${req.user.id}] logged out successfully. Session destroyed from dataBase at ${new Date().toISOString()}`);
+    res.status(200).json({status: httpStatusText.SUCCESS, message: `✅ User [ID: ${req.user.id}] logged out successfully. Session destroyed from dataBase at ${new Date().toISOString()}`});
+  }
+  req.session.userID = req.user.id;
+  req.session.destroy();
+  userLogger.info(`✅ User [ID: ${req.user.id}] logged out successfully. Session destroyed at ${new Date().toISOString()}`);
+  res.status(200).json({status: httpStatusText.SUCCESS, message: `✅ User [ID: ${req.user.id}] logged out successfully. Session destroyed at ${new Date().toISOString()}`});
 });
