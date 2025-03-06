@@ -123,3 +123,9 @@
 [2025-03-05 22:37:33] ERROR: Ypu already paid for this order before.
 [2025-03-05 22:38:45] INFO: ✅ The Payment Intent Id is stored successfully in this order.
 [2025-03-05 22:38:45] ERROR: You already paid for this order before.
+[2025-03-06 15:27:15] WARN: ⚠️ Cache MISS: Fetching orders from the database 🗄️ at 2025-03-06T13:27:15.195Z
+[2025-03-06 15:27:15] INFO: ✅ Full Orders history is retrieved successfully.
+[2025-03-06 15:27:15] INFO: 📚 Cache SET: Stored 0 books in cache ⏳ TTL=3600s 🕒 at 2025-03-06T13:27:15.346Z
+[2025-03-06 15:27:20] INFO: ✅ Cache HIT: Retrieved 0 orders from Node cache 🏷️ at 2025-03-06T13:27:20.408Z
+[2025-03-06 15:27:21] INFO: ✅ Cache HIT: Retrieved 0 orders from Node cache 🏷️ at 2025-03-06T13:27:21.633Z
+[2025-03-06 15:27:22] INFO: ✅ Cache HIT: Retrieved 0 orders from Node cache 🏷️ at 2025-03-06T13:27:22.868Z
