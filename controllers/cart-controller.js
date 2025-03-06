@@ -9,6 +9,32 @@ const cartLogger = createLogger('cart-service');
 // ========================================================================================
 //                          helper Function (generate new session)
 // ===========================================================================================
+const isBookInSessionCart = (sessionCart, requiredBook, next) => {
+  if (!sessionCart) {
+    cartLogger.error('❌ Attempted to add a null book to the cart.');
+    sessionCart = [];
+  }
+  const bookExists = sessionCart.find((book) => {
+    console.log('book._id', book._id);
+    console.log('requiredBook._id', requiredBook._id);
+
+    return book._id === requiredBook._id.toString();
+  });
+
+  if (bookExists) {
+    if (bookExists.quantity === requiredBook.stock) {
+      cartLogger.error(`❌ Stock limit reached: Cannot add more of "${bookExists.title}" (ID: ${bookExists._id}) to the cart. Available stock: ${bookExists.stock}`);
+
+      const error = new Error(`❌ Stock limit reached: Cannot add more of "${bookExists.title}" to the cart.`);
+      error.status = 400;
+      error.httpStatusText = httpStatusText.FAIL;
+      return next(error);
+    }
+    bookExists.quantity += 1;
+    return bookExists;
+  }
+  return requiredBook;
+};
 const fetchRequiredBook = async (req, res, next) => {
   const id = req.params.id;
   const requiredBook = await bookModel.findOne({_id: id}, {title: 1, _id: 1, price: 1, stock: 1});
@@ -21,11 +47,11 @@ const fetchRequiredBook = async (req, res, next) => {
   }
   cartLogger.info(`📚 Book found in the database: ${requiredBook.title}`);
 
-  return requiredBook;
+  return {...requiredBook.toObject(), quantity: 0};
 };
 
 const addToCartSession = asyncWrapper(async (req, res, next) => {
-  const requiredBook = await fetchRequiredBook(req, res, next);
+  let requiredBook = await fetchRequiredBook(req, res, next);
   const sessionCollection = mongoose.connection.collection('sessions');
 
   // This searches for a session where the "userID" field matches the logged-in user's ID using a regex pattern.
@@ -37,6 +63,8 @@ const addToCartSession = asyncWrapper(async (req, res, next) => {
       const sessionData = JSON.parse(sessionDoc.session);
 
       sessionData.cart = sessionData.cart || [];
+      requiredBook = isBookInSessionCart(sessionData.cart, requiredBook, next);
+      console.log('=======================================first check', requiredBook);
       sessionData.cart.push(requiredBook);
 
       const result = await sessionCollection.updateOne({_id: sessionDoc._id}, {$set: {session: JSON.stringify(sessionData)}});
@@ -100,7 +128,9 @@ export const addBookToCart = asyncWrapper(async (req, res, next) => {
     req.session.cart = [];
   }
 
-  const requiredBook = await fetchRequiredBook(req, res, next);
+  let requiredBook = await fetchRequiredBook(req, res, next);
+  requiredBook = isBookInSessionCart(req.session.cart, requiredBook, next);
+
   req.session.cart.push(requiredBook);
   return res.status(200).json({status: httpStatusText.SUCCESS, sessionID: req.sessionID, data: req.session.cart});
 });
