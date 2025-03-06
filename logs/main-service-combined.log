@@ -2601,3 +2601,11 @@
 [2025-03-04 20:50:00] INFO: ✅ Successfully connected to MongoDB.
 [2025-03-04 20:51:54] INFO: 🚀 Server is running at: http://localhost:5000
 [2025-03-04 20:51:57] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 20:53:08] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 20:53:14] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-04 21:43:02] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 21:43:59] ERROR: ❌ Failed to connect to MongoDB: querySrv ECONNREFUSED _mongodb._tcp.bookstore.gfs6u.mongodb.net
+[2025-03-04 21:44:16] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-04 21:44:20] INFO: ✅ Successfully connected to MongoDB.
+[2025-03-05 13:59:52] INFO: 🚀 Server is running at: http://localhost:5000
+[2025-03-05 13:59:56] INFO: ✅ Successfully connected to MongoDB.

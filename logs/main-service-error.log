@@ -34,3 +34,4 @@
 [2025-03-03 21:14:37] ERROR: ❌ 404 | Resource not found: POST /ca
 [2025-03-03 21:14:47] ERROR: ❌ 404 | Resource not found: POST /ca
 [2025-03-04 14:38:33] ERROR: ❌ 404 | Resource not found: GET /order/67c497c56cd9d8ce879a2al
+[2025-03-04 21:43:59] ERROR: ❌ Failed to connect to MongoDB: querySrv ECONNREFUSED _mongodb._tcp.bookstore.gfs6u.mongodb.net
