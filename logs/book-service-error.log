@@ -4,3 +4,8 @@
 [2025-03-05 20:38:03] ERROR: ⚠️ This book is already exits.
 [2025-03-05 20:38:05] ERROR: ⚠️ This book is already exits.
 [2025-03-05 20:42:56] ERROR: ⚠️ Unauthorized attempt to modify ISBN detected. The ISBN field is immutable and cannot be changed.
+[2025-03-06 14:53:12] ERROR: Cache HIT: Retrieved 2 books from Node cache at 2025-03-06T12:53:12.931Z
+[2025-03-06 14:54:46] ERROR: Cache HIT: Retrieved 5 books from Node cache at 2025-03-06T12:54:46.059Z
+[2025-03-06 14:55:43] ERROR: Cache HIT: Retrieved 5 books from Node cache at 2025-03-06T12:55:43.352Z
+[2025-03-06 14:56:39] ERROR: Cache HIT: Retrieved 5 books from Node cache at 2025-03-06T12:56:39.797Z
+[2025-03-06 14:56:56] ERROR: Cache HIT: Retrieved 5 books from Node cache at 2025-03-06T12:56:56.923Z

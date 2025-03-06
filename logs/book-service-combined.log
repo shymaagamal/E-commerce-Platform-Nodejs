@@ -11,3 +11,35 @@
 [2025-03-05 20:38:05] ERROR: ⚠️ This book is already exits.
 [2025-03-05 20:38:28] INFO: New book created: Operating System Concepts
 [2025-03-05 20:42:56] ERROR: ⚠️ Unauthorized attempt to modify ISBN detected. The ISBN field is immutable and cannot be changed.
+[2025-03-06 14:53:12] ERROR: Cache HIT: Retrieved 2 books from Node cache at 2025-03-06T12:53:12.931Z
+[2025-03-06 14:53:12] WARN: Cache MISS: Fetching books from the database at 2025-03-06T12:53:12.933Z
+[2025-03-06 14:53:13] INFO: Cache SET: Stored 5 books in cache with TTL=3600s at 2025-03-06T12:53:13.078Z
+[2025-03-06 14:54:34] WARN: Cache MISS: Fetching books from the database at 2025-03-06T12:54:34.538Z
+[2025-03-06 14:54:35] INFO: Cache SET: Stored 5 books in cache with TTL=3600s at 2025-03-06T12:54:35.336Z
+[2025-03-06 14:54:46] ERROR: Cache HIT: Retrieved 5 books from Node cache at 2025-03-06T12:54:46.059Z
+[2025-03-06 14:54:46] WARN: Cache MISS: Fetching books from the database at 2025-03-06T12:54:46.061Z
+[2025-03-06 14:54:46] INFO: Cache SET: Stored 5 books in cache with TTL=3600s at 2025-03-06T12:54:46.239Z
+[2025-03-06 14:55:32] WARN: Cache MISS: Fetching books from the database at 2025-03-06T12:55:32.399Z
+[2025-03-06 14:55:32] INFO: Cache SET: Stored 5 books in cache with TTL=3600s at 2025-03-06T12:55:32.568Z
+[2025-03-06 14:55:43] ERROR: Cache HIT: Retrieved 5 books from Node cache at 2025-03-06T12:55:43.352Z
+[2025-03-06 14:55:43] WARN: Cache MISS: Fetching books from the database at 2025-03-06T12:55:43.354Z
+[2025-03-06 14:55:43] INFO: Cache SET: Stored 5 books in cache with TTL=3600s at 2025-03-06T12:55:43.501Z
+[2025-03-06 14:56:39] ERROR: Cache HIT: Retrieved 5 books from Node cache at 2025-03-06T12:56:39.797Z
+[2025-03-06 14:56:39] WARN: Cache MISS: Fetching books from the database at 2025-03-06T12:56:39.798Z
+[2025-03-06 14:56:39] INFO: Cache SET: Stored 5 books in cache with TTL=3600s at 2025-03-06T12:56:39.944Z
+[2025-03-06 14:56:54] WARN: Cache MISS: Fetching books from the database at 2025-03-06T12:56:54.595Z
+[2025-03-06 14:56:54] INFO: Cache SET: Stored 5 books in cache with TTL=3600s at 2025-03-06T12:56:54.757Z
+[2025-03-06 14:56:56] ERROR: Cache HIT: Retrieved 5 books from Node cache at 2025-03-06T12:56:56.923Z
+[2025-03-06 14:56:56] WARN: Cache MISS: Fetching books from the database at 2025-03-06T12:56:56.924Z
+[2025-03-06 14:56:57] INFO: Cache SET: Stored 5 books in cache with TTL=3600s at 2025-03-06T12:56:57.086Z
+[2025-03-06 14:58:06] WARN: Cache MISS: Fetching books from the database at 2025-03-06T12:58:06.072Z
+[2025-03-06 14:58:06] INFO: Cache SET: Stored 5 books in cache with TTL=3600s at 2025-03-06T12:58:06.224Z
+[2025-03-06 14:58:15] INFO: Cache HIT: Retrieved 5 books from Node cache at 2025-03-06T12:58:15.024Z
+[2025-03-06 15:00:25] WARN: ⚠️ Cache MISS: Fetching books from the database 🗄️ at 2025-03-06T13:00:25.658Z
+[2025-03-06 15:00:25] INFO: 📚 Cache SET: Stored 5 books in cache ⏳ TTL=3600s 🕒 at 2025-03-06T13:00:25.996Z
+[2025-03-06 15:00:36] INFO: ✅ Cache HIT: Retrieved 5 books from Node cache 🏷️ at 2025-03-06T13:00:36.095Z
+[2025-03-06 15:01:19] INFO: ✅ Cache HIT: Retrieved 5 books from Node cache 🏷️ at 2025-03-06T13:01:19.742Z
+[2025-03-06 15:21:44] WARN: ⚠️ Cache MISS: Fetching books from the database 🗄️ at 2025-03-06T13:21:44.983Z
+[2025-03-06 15:21:45] INFO: 📚 Cache SET: Stored 5 books in cache ⏳ TTL=3600s 🕒 at 2025-03-06T13:21:45.126Z
+[2025-03-06 15:21:46] INFO: ✅ Cache HIT: Retrieved 5 books from Node cache 🏷️ at 2025-03-06T13:21:46.385Z
+[2025-03-06 15:21:47] INFO: ✅ Cache HIT: Retrieved 5 books from Node cache 🏷️ at 2025-03-06T13:21:47.739Z

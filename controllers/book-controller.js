@@ -1,6 +1,7 @@
 import {validationResult} from 'express-validator';
 import {bookModel} from '../models/book-model.js';
 import {asyncWrapper} from '../utils/async-wrapper.js';
+import {getCache, setCache} from '../utils/cache-service.js';
 import httpStatusText from '../utils/http-status-text.js';
 import createLogger from '../utils/logger.js';
 
@@ -16,6 +17,13 @@ export const getBooks = asyncWrapper(async (req, res) => {
   if (title) query.title = new RegExp(title, 'i');
   if (author) query.author = new RegExp(author, 'i');
 
+  // ==================try to retrive first from cache===========
+  const cachedBooks = getCache('books');
+  if (cachedBooks) {
+    bookLogger.info(`✅ Cache HIT: Retrieved ${cachedBooks.length} books from Node cache 🏷️ at ${new Date().toISOString()}`);
+    return res.status(200).json({status: httpStatusText.SUCCESS, cachedBooks});
+  }
+  bookLogger.warn(`⚠️ Cache MISS: Fetching books from the database 🗄️ at ${new Date().toISOString()}`);
   // Fetch books from the database with pagination
   const books = await bookModel.find(query)
     .limit(Number(limit))
@@ -27,7 +35,9 @@ export const getBooks = asyncWrapper(async (req, res) => {
 
     return res.status(404).json({status: httpStatusText.FAIL, message: 'No books found matching the provided filters.'});
   }
+  bookLogger.info(`📚 Cache SET: Stored ${books.length} books in cache ⏳ TTL=${3600}s 🕒 at ${new Date().toISOString()}`);
 
+  setCache('books', books);
   // Send a success response with the fetched books
   res.status(200).json({status: httpStatusText.SUCCESS, books});
 });

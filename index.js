@@ -1,7 +1,6 @@
 import process from 'node:process';
 import cookieParser from 'cookie-parser';
 import express from 'express';
-import session from 'express-session';
 import mongoose from 'mongoose';
 import {errorHandler} from './middleware/error-handler.js';
 import {morganMiddleware} from './middleware/morgan-middleware.js';
@@ -9,11 +8,10 @@ import sessionMiddleware from './middleware/session-middleware.js';
 import bookRouter from './routes/books-routes.js';
 import cartRouter from './routes/carts-routes.js';
 import orderRouter from './routes/orders-routes.js';
+import reviewRouter from './routes/reviews-routes.js';
 import {userRouter} from './routes/users-routes.js';
 import httpStatusText from './utils/http-status-text.js';
 import createLogger from './utils/logger.js';
-import reviewRouter from './routes/reviews-routes.js';
-
 import 'dotenv/config';
 
 // Creates an Express app for building the REST APIs

@@ -42,3 +42,4 @@
 [2025-03-04 21:32:18] ERROR: ❌ 404 | Resource not found: PUT /review/?id=67c7510f3d48ba9636696dd7
 [2025-03-04 21:33:35] ERROR: ❌ 404 | Resource not found: PUT /review/?id=67c7510f3d48ba9636696dd7
 [2025-03-04 22:35:38] ERROR: ❌ 404 | Resource not found: PATCH /review/67c757af60133f59661a0cc0
+[2025-03-06 15:09:40] ERROR: ❌ 404 | Resource not found: GET /review/67c757af60133f59661a0cc0
