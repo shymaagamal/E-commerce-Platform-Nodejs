@@ -1,8 +1,8 @@
 import nodemailer from 'nodemailer';
 import dotenv from 'dotenv';
-import createLogger
- from './logger';
-import { asyncWrapper } from './async-wrapper';
+import createLogger from './logger.js';
+import { asyncWrapper } from './async-wrapper.js';
+
 
 dotenv.config();
 const emailLogger = createLogger('email-service');
