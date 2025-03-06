@@ -14,79 +14,6 @@ const orderLogger = createLogger('order-service');
 let msg = '';
 
 
-/***************************** Place/Add an Order *****************************/
-
-// The user will only be able to write the books list with their quantities 
-// As Status , Total Price will be handled automatically by the platform system
-export const placeOrder = asyncWrapper( async (req, res , next) => {
-
-    // Check if the request body contains either 'status' or 'totalPrice' field as it is being intialized automatically by the user
-    if ('status' in req.body) 
-    {
-        msg = "You cannot initialize the status of the order. It is handled automatically by the system." ;
-        orderLogger.error(msg)
-        return res.status(400).json({ status: httpStatusText.FAIL, message: msg});
-    }
-    if ('totalPrice' in req.body) 
-    {
-        msg = "You don't have to enter the order total price ( to prevent incorrect data ) as it is been automatically calculated by the system." ;
-        orderLogger.error(msg)
-        return res.status(400).json({ status: httpStatusText.FAIL, message: msg });
-    }
-    if ('paymentIntentId' in req.body) 
-    {
-        msg = "Accessing the paymentintend Id is Restricted." ;
-        orderLogger.error(msg)
-        return res.status(400).json({ status: httpStatusText.FAIL, message: msg });
-    }
-
-    const { userId, books} = req.body;
-
-    // Ensure books is correctly formatted as an array of objects
-    if (!Array.isArray(books) || books.some(book => !book.bookId || !book.quantity)) 
-    {
-        msg = "Invalid books format. Each book must have bookId and quantity." ;
-        orderLogger.error(msg)
-        return res.status(400).json({ status: httpStatusText.FAIL, message: msg });
-    }
-
-    // Fetch bookIds from books array in the Order collection
-    const booksIds = books.map(book => book.bookId);
-    // MongoDB Query to fetch all books from the Book database that match those bookIds in Order collection
-    const bookRecords = await bookModel.find({ _id: { $in: booksIds } });
-
-    // Ensure all bookIds exist in the database
-    if (bookRecords.length !== books.length) 
-    {
-        msg = "One or more books are invalid or not found." ;
-        orderLogger.error(msg)
-        return res.status(400).json({ status: httpStatusText.FAIL,message: msg});
-    }
-
-    // Calculate order total price
-    let totalPrice = 0;
-    books.forEach(book => {
-        const bookData = bookRecords.find(b => b._id.toString() === book.bookId);
-        if (bookData) 
-        {
-            totalPrice += bookData.price * book.quantity;
-        }
-    });
-
-    // Create the order
-    const order = new Order({ userId, books,
-        totalPrice,  // Auto-calculated
-        status: "pending" // Auto-updated
-    });
-
-    await order.save();
-    msg = "Order is placed successfully!" ;
-    orderLogger.info(msg)
-    res.status(200).json({ status: httpStatusText.SUCCESS, message: msg}); 
-});
-
-
-
 /***************************** Get/View All Orders History For the logged-in user *****************************/
 
 export const getOrdersHistory = asyncWrapper ( async (req, res , next) => {
@@ -102,7 +29,7 @@ export const getOrdersHistory = asyncWrapper ( async (req, res , next) => {
  
 
     // If order not found
-    if (orders.length == 0) 
+    if (!orders) 
     {
         msg = "No orders history found for this user" ;
         orderLogger.error(msg) ;
@@ -195,7 +122,7 @@ export const cancelOrder = asyncWrapper(async (req, res, next) => {
     const order = await orderValidation(req , res , next) ;
 
     // Check if order is eligible for cancellation
-    if (order.status == "completed") 
+    if (order.status === "completed") 
     {
         if ( order.paymentIntentId )
         {
@@ -216,7 +143,7 @@ export const cancelOrder = asyncWrapper(async (req, res, next) => {
         return res.status(400).json({ status: httpStatusText.FAIL, message: msg });
     }
     
-    if ( order.status == "canceled")
+    if ( order.status === "canceled")
     {
         msg = "Order is already canceled.";
         orderLogger.error(msg);
@@ -266,7 +193,7 @@ export const orderPayment = asyncWrapper(async (req, res, next) => {
     // Update order status based on payment outcome
     if (paymentIntent.status === "succeeded") 
     {
-        if ( order.status == "completed")
+        if ( order.status === "completed")
         {
             paymentIntent.confirm = false ;
             msg = "You already paid for this order before." ;
