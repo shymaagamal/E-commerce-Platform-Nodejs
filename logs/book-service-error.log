@@ -9,3 +9,6 @@
 [2025-03-06 14:55:43] ERROR: Cache HIT: Retrieved 5 books from Node cache at 2025-03-06T12:55:43.352Z
 [2025-03-06 14:56:39] ERROR: Cache HIT: Retrieved 5 books from Node cache at 2025-03-06T12:56:39.797Z
 [2025-03-06 14:56:56] ERROR: Cache HIT: Retrieved 5 books from Node cache at 2025-03-06T12:56:56.923Z
+[2025-03-07 16:49:35] ERROR: ⚠️ This book is already exits.
+[2025-03-07 17:11:35] ERROR: ⚠️ This book is already exits.
+[2025-03-07 17:11:44] ERROR: ⚠️ This book is already exits.

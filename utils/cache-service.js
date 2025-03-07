@@ -1,6 +1,6 @@
 import NodeCache from 'node-cache';
 
-const cache = new NodeCache({stdTTL: 60});
+const cache = new NodeCache({stdTTL: 3600});
 export const setCache = (key, value, ttl = 60) => {
   const plainValue = JSON.parse(JSON.stringify(value));
   cache.set(key, plainValue, ttl);

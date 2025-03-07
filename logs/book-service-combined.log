@@ -43,3 +43,14 @@
 [2025-03-06 15:21:45] INFO: 📚 Cache SET: Stored 5 books in cache ⏳ TTL=3600s 🕒 at 2025-03-06T13:21:45.126Z
 [2025-03-06 15:21:46] INFO: ✅ Cache HIT: Retrieved 5 books from Node cache 🏷️ at 2025-03-06T13:21:46.385Z
 [2025-03-06 15:21:47] INFO: ✅ Cache HIT: Retrieved 5 books from Node cache 🏷️ at 2025-03-06T13:21:47.739Z
+[2025-03-07 16:39:11] WARN: ⚠️ Cache MISS: Fetching books from the database 🗄️ at 2025-03-07T14:39:11.071Z
+[2025-03-07 16:39:11] INFO: 📚 Cache SET: Stored 5 books in cache ⏳ TTL=3600s 🕒 at 2025-03-07T14:39:11.228Z
+[2025-03-07 16:39:22] INFO: ✅ Cache HIT: Retrieved 5 books from Node cache 🏷️ at 2025-03-07T14:39:22.193Z
+[2025-03-07 16:49:35] ERROR: ⚠️ This book is already exits.
+[2025-03-07 16:50:30] INFO: New book created: Operating System Concepts
+[2025-03-07 17:01:59] INFO: New book created: Book Title
+[2025-03-07 17:02:37] INFO: New book created: Book Title
+[2025-03-07 17:11:13] INFO: New book created: Book Title
+[2025-03-07 17:11:35] ERROR: ⚠️ This book is already exits.
+[2025-03-07 17:11:44] ERROR: ⚠️ This book is already exits.
+[2025-03-07 17:11:52] INFO: New book created: Book Title

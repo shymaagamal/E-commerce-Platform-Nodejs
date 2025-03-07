@@ -17,10 +17,9 @@ bookRouter.get('/', verifyToken, getBooks);
 bookRouter.get('/:id', verifyToken, getBookById);
 
 // Admin Only
-bookRouter.post('/', verifyToken, allowedTo([userRoles.ADMIN]), validateCreateBook, upload.single('coverImage'), createBook);
+bookRouter.post('/', verifyToken, allowedTo([userRoles.ADMIN]), upload.single('coverImage'), validateCreateBook, createBook);
 bookRouter.patch('/:id', verifyToken, allowedTo([userRoles.ADMIN]), validateUpdateBook, updateBook);
 bookRouter.delete('/:id', verifyToken, allowedTo([userRoles.ADMIN]), deleteBook);
 
-// bookRouter.delete('/:id', verifyToken, allowedTo[userRoles.ADMIN], deleteBook);
 
 export default bookRouter;
