@@ -30,7 +30,14 @@ export const UserRegister = asyncWrapper(async (req, res, next) => {
   const addedUser = await UserModel.create(req.body);
   const token = generateJWT({role: addedUser.role, email: addedUser.email, id: addedUser._id});
   addedUser.token = token;
-  await sendEmail(addedUser.email, 'Welcome to our Book store system', 'You have successfully registered to our BookStore! This is just a confirmation email :)  You can now login to our platform and start using our services. Thank you for joining us! Have a great day ahead! :)');
+  const emailRes=await sendEmail(addedUser.email, 'Welcome to our Book store system', 'You have successfully registered to our BookStore! This is just a confirmation email :)  You can now login to our platform and start using our services. Thank you for joining us! Have a great day ahead! :)');
+  if(!emailRes.success){
+    userLogger.error('⚠️ Registration error: Email sending failed.');
+    const error = new Error('⚠️ Registration error: Email sending failed.');
+    error.status = 400;
+    error.httpStatusText = httpStatusText.FAIL;
+    return next(error);
+  }
   userLogger.info('🎉 New user registered successfully.');
   return res.status(200).json({status: httpStatusText.SUCCESS, data: addedUser});
 });
