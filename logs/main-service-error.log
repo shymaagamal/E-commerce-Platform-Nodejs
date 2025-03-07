@@ -43,3 +43,5 @@
 [2025-03-04 21:33:35] ERROR: ❌ 404 | Resource not found: PUT /review/?id=67c7510f3d48ba9636696dd7
 [2025-03-04 22:35:38] ERROR: ❌ 404 | Resource not found: PATCH /review/67c757af60133f59661a0cc0
 [2025-03-07 12:52:16] ERROR: ❌ Failed to connect to MongoDB: Socket 'secureConnect' timed out after 30175ms (connectTimeoutMS: 30000)
+[2025-03-07 13:14:14] ERROR: ❌ Failed to connect to MongoDB: Server selection timed out after 30000 ms
+[2025-03-07 13:39:49] ERROR: ❌ Failed to connect to MongoDB: Server selection timed out after 30000 ms

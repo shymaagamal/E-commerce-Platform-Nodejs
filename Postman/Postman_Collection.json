@@ -3,7 +3,8 @@
 		"_postman_id": "37fc9706-495d-4a39-b5b3-87e29196d8fa",
 		"name": "ITI_NodeJS_Project",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
-		"_exporter_id": "42547995"
+		"_exporter_id": "42547995",
+		"_collection_link": "https://galactic-astronaut-63581.postman.co/workspace/My-Workspace~32d4301f-843d-4e6b-8984-7c8631110aa6/collection/42547995-37fc9706-495d-4a39-b5b3-87e29196d8fa?action=share&source=collection_link&creator=42547995"
 	},
 	"item": [
 		{
@@ -34,7 +35,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\" : \"Nagham\" ,\r\n    \"email\" : \"nagham1@example.com\",\r\n    \"password\" : \"#123456#\"\r\n}",
+							"raw": "{\r\n    \"name\" : \"Nagham\" ,\r\n    \"email\" : \"naghamfakhrledin@gmail.com\",\r\n    \"password\" : \"#123456#\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -70,7 +71,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\" : \"Nagham\" ,\r\n    \"email\" : \"nagham@example.com\",\r\n    \"password\" : \"#123456#\"\r\n}",
+							"raw": "{\r\n    \"email\" : \"nagham2@example.com\",\r\n    \"password\" : \"#123456#\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -148,9 +149,15 @@
 				{
 					"name": "Add Book",
 					"request": {
-						"method": "PATCH",
-						"header": [],
-						"url": "{{base_url}}cart/id"
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{JWT}}",
+								"type": "text"
+							}
+						],
+						"url": "{{base_url}}cart/67c89a05bbf32dc5b64ae5f2"
 					},
 					"response": []
 				},
@@ -158,8 +165,14 @@
 					"name": "Remove Book",
 					"request": {
 						"method": "DELETE",
-						"header": [],
-						"url": "{{base_url}}cart/id"
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{JWT}}",
+								"type": "text"
+							}
+						],
+						"url": "{{base_url}}cart/67c89248f78ebd9b668cd1af"
 					},
 					"response": []
 				},
@@ -167,7 +180,13 @@
 					"name": "View All",
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{JWT}}",
+								"type": "text"
+							}
+						],
 						"url": "{{base_url}}cart"
 					},
 					"response": []
@@ -176,7 +195,13 @@
 					"name": "View By ID",
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{JWT}}",
+								"type": "text"
+							}
+						],
 						"url": "{{base_url}}cart/id"
 					},
 					"response": []
@@ -187,7 +212,7 @@
 			"name": "Orders",
 			"item": [
 				{
-					"name": "Add/Place",
+					"name": "Add/Place Order",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -248,7 +273,7 @@
 								}
 							}
 						},
-						"url": "{{base_url}}order/67c497c56cd9d8ce879a2abd"
+						"url": "{{base_url}}order/67caf8e5b7dd8ad7918e572d"
 					},
 					"response": []
 				},
@@ -275,14 +300,14 @@
 								"type": "text"
 							}
 						],
-						"url": "{{base_url}}order/cancel/67c497c56cd9d8ce879a2abd"
+						"url": "{{base_url}}order/cancel/67caf8e5b7dd8ad7918e572d"
 					},
 					"response": []
 				},
 				{
 					"name": "Order payment",
 					"request": {
-						"method": "GET",
+						"method": "POST",
 						"header": [
 							{
 								"key": "Authorization",
@@ -290,7 +315,16 @@
 								"type": "text"
 							}
 						],
-						"url": "{{base_url}}order/payment/67c497c56cd9d8ce879a2abd"
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}order/payment/67caf8e5b7dd8ad7918e572d"
 					},
 					"response": []
 				}
@@ -303,7 +337,22 @@
 					"name": "Submit",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{JWT}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"book\":\"67c474d46cd9d8ce879a2163\",\n    \"rating\":3,\n    \"review\":\"Nice!!\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": "{{base_url}}review"
 					},
 					"response": []
@@ -312,17 +361,14 @@
 					"name": "View All",
 					"request": {
 						"method": "GET",
-						"header": [],
-						"url": "{{base_url}}review"
-					},
-					"response": []
-				},
-				{
-					"name": "View By ID",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": "{{base_url}}review/id"
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{JWT}}",
+								"type": "text"
+							}
+						],
+						"url": "{{base_url}}review/book/123xyz"
 					},
 					"response": []
 				},
@@ -330,8 +376,23 @@
 					"name": "Update",
 					"request": {
 						"method": "PATCH",
-						"header": [],
-						"url": "{{base_url}}review/id"
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{JWT}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"rating\":5\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}review/67c828b078ede7178c56a3e"
 					},
 					"response": []
 				},
@@ -339,12 +400,19 @@
 					"name": "Delete",
 					"request": {
 						"method": "DELETE",
-						"header": [],
-						"url": "{{base_url}}review/id"
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{JWT}}",
+								"type": "text"
+							}
+						],
+						"url": "{{base_url}}review/128xrt"
 					},
 					"response": []
 				}
-			]
+			],
+			"description": "in this collection all these apis are used for review service  \n\\- submit review by adding bookid and rating and review in the body of the request  \n\\-get reviews of the book by sending book id as parameter in the url  \n\\-user can update his review by passing review id as parameter in the url and edit rating and/or review in the request body  \n\\-user can delete his own review by sending review id in the url as a parameter"
 		}
 	]
 }

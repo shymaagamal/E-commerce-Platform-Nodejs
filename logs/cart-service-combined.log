@@ -635,3 +635,30 @@
 [2025-03-07 12:19:18] INFO: 📚 Book found in the database: Design Patterns
 [2025-03-07 12:19:44] INFO: 📚 Book found in the database: Clean Code
 [2025-03-07 12:20:05] INFO: 🎉 Removed this book  from session successfully
+[2025-03-07 15:42:10] INFO: 📚 Book found in the database: Clean Code
+[2025-03-07 15:42:10] INFO: 🎉 Item successfully added to the existing cart!
+[2025-03-07 15:42:54] INFO: 📚 Book found in the database: Clean Code
+[2025-03-07 15:42:54] INFO: 🎉 Item successfully added to the existing cart!
+[2025-03-07 15:44:06] INFO: 📚 Book found in the database: Clean Code
+[2025-03-07 15:44:06] INFO: 🎉 Item successfully added to the existing cart!
+[2025-03-07 15:44:14] INFO: 📚 Book found in the database: Design Patterns
+[2025-03-07 15:44:14] INFO: 🎉 Item successfully added to the existing cart!
+[2025-03-07 15:44:59] INFO: 🎉 Removed this book  from database successfully
+[2025-03-07 15:45:03] INFO: 🎉 Removed this book  from database successfully
+[2025-03-07 15:45:05] INFO: 🎉 Removed this book  from database successfully
+[2025-03-07 15:45:18] INFO: 📚 Book found in the database: Design Patterns
+[2025-03-07 15:45:18] INFO: 🎉 Item successfully added to the existing cart!
+[2025-03-07 15:45:21] INFO: 📚 Book found in the database: Design Patterns
+[2025-03-07 15:45:21] ERROR: ❌ Stock limit reached: Cannot add more of "Design Patterns" (ID: 67c89248f78ebd9b668cd1af) to the cart. Available stock: 0
+[2025-03-07 15:45:22] INFO: 🎉 Item successfully added to the existing cart!
+[2025-03-07 15:45:22] ERROR: ❌ Error parsing session data: Cannot set headers after they are sent to the client
+[2025-03-07 15:45:56] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-07 15:45:56] ERROR: ❌ Error parsing session data: Cannot read properties of null (reading '_id')
+[2025-03-07 15:46:54] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-07 15:46:54] INFO: ⚠️ No session found for this user. Creating a new session...
+[2025-03-07 15:46:54] INFO: 🎉 New session created and book added to cart!
+[2025-03-07 15:47:00] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-07 15:47:04] INFO: 📚 Book found in the database: Clean Code
+[2025-03-07 15:47:08] INFO: 📚 Book found in the database: Clean Code
+[2025-03-07 15:52:17] INFO: 📚 Book found in the database: Operating System Concepts
+[2025-03-07 15:52:24] INFO: 📚 Book found in the database: Operating System Concepts

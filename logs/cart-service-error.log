@@ -3,3 +3,6 @@
 [2025-03-05 00:53:28] ERROR: ❌ ❌ Session found, but there is no data to remove.
 [2025-03-06 17:22:18] ERROR: ❌ Stock limit reached: Cannot add more of "Design Patterns" (ID: 67c89248f78ebd9b668cd1af) to the cart. Available stock: 1
 [2025-03-06 17:26:56] ERROR: ❌ Stock limit reached: Cannot add more of "Design Patterns" (ID: 67c89248f78ebd9b668cd1af) to the cart. Available stock: 1
+[2025-03-07 15:45:21] ERROR: ❌ Stock limit reached: Cannot add more of "Design Patterns" (ID: 67c89248f78ebd9b668cd1af) to the cart. Available stock: 0
+[2025-03-07 15:45:22] ERROR: ❌ Error parsing session data: Cannot set headers after they are sent to the client
+[2025-03-07 15:45:56] ERROR: ❌ Error parsing session data: Cannot read properties of null (reading '_id')
