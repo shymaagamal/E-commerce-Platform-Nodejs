@@ -585,3 +585,53 @@
 [2025-03-05 09:25:57] INFO: 🎉 Item successfully added to the existing cart!
 [2025-03-05 09:25:59] INFO: 📚 Book found in the database: The Pragmatic Programmer
 [2025-03-05 09:25:59] INFO: 🎉 Item successfully added to the existing cart!
+[2025-03-05 23:40:52] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-05 23:40:52] INFO: ⚠️ No session found for this user. Creating a new session...
+[2025-03-05 23:40:53] INFO: 🎉 New session created and book added to cart!
+[2025-03-06 00:57:52] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-06 00:57:52] INFO: 🎉 Item successfully added to the existing cart!
+[2025-03-06 01:00:00] INFO: 📚 Book found in the database: Design Patterns
+[2025-03-06 01:00:00] INFO: 🎉 Item successfully added to the existing cart!
+[2025-03-06 02:16:57] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-06 02:16:57] INFO: 🎉 Item successfully added to the existing cart!
+[2025-03-06 02:18:13] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-06 02:18:13] INFO: ⚠️ No session found for this user. Creating a new session...
+[2025-03-06 02:18:13] INFO: 🎉 New session created and book added to cart!
+[2025-03-06 02:25:52] INFO: 📚 Book found in the database: Clean Code
+[2025-03-06 02:25:57] INFO: 📚 Book found in the database: Design Patterns
+[2025-03-06 02:49:22] INFO: 📚 Book found in the database: Design Patterns
+[2025-03-06 02:49:22] INFO: ⚠️ No session found for this user. Creating a new session...
+[2025-03-06 02:49:22] INFO: 🎉 New session created and book added to cart!
+[2025-03-06 02:49:27] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-06 02:49:30] INFO: 📚 Book found in the database: Clean Code
+[2025-03-06 02:58:24] INFO: 🎉 Removed this book  from session successfully
+[2025-03-06 02:58:30] INFO: 🎉 Removed this book  from session successfully
+[2025-03-06 02:58:38] INFO: 🎉 Removed this book  from session successfully
+[2025-03-06 03:00:02] INFO: 📚 Book found in the database: Refactoring
+[2025-03-06 03:00:11] INFO: 📚 Book found in the database: Operating System Concepts
+[2025-03-06 03:01:18] INFO: 📚 Book found in the database: Operating System Concepts
+[2025-03-06 17:16:31] INFO: 📚 Book found in the database: Operating System Concepts
+[2025-03-06 17:16:31] INFO: 🎉 Item successfully added to the existing cart!
+[2025-03-06 17:22:04] INFO: 📚 Book found in the database: Operating System Concepts
+[2025-03-06 17:22:05] INFO: ⚠️ No session found for this user. Creating a new session...
+[2025-03-06 17:22:05] INFO: 🎉 New session created and book added to cart!
+[2025-03-06 17:22:12] INFO: 📚 Book found in the database: Design Patterns
+[2025-03-06 17:22:15] INFO: 📚 Book found in the database: Design Patterns
+[2025-03-06 17:22:18] INFO: 📚 Book found in the database: Design Patterns
+[2025-03-06 17:22:18] ERROR: ❌ Stock limit reached: Cannot add more of "Design Patterns" (ID: 67c89248f78ebd9b668cd1af) to the cart. Available stock: 1
+[2025-03-06 17:22:54] INFO: 📚 Book found in the database: Operating System Concepts
+[2025-03-06 17:26:26] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-06 17:26:33] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-06 17:26:36] INFO: 📚 Book found in the database: The Pragmatic Programmer
+[2025-03-06 17:26:43] INFO: 📚 Book found in the database: Clean Code
+[2025-03-06 17:26:47] INFO: 📚 Book found in the database: Clean Code
+[2025-03-06 17:26:56] INFO: 📚 Book found in the database: Design Patterns
+[2025-03-06 17:26:56] ERROR: ❌ Stock limit reached: Cannot add more of "Design Patterns" (ID: 67c89248f78ebd9b668cd1af) to the cart. Available stock: 1
+[2025-03-06 17:28:43] INFO: 📚 Book found in the database: Design Patterns
+[2025-03-07 12:19:13] INFO: 📚 Book found in the database: Design Patterns
+[2025-03-07 12:19:13] INFO: ⚠️ No session found for this user. Creating a new session...
+[2025-03-07 12:19:14] INFO: 🎉 New session created and book added to cart!
+[2025-03-07 12:19:16] INFO: 📚 Book found in the database: Design Patterns
+[2025-03-07 12:19:18] INFO: 📚 Book found in the database: Design Patterns
+[2025-03-07 12:19:44] INFO: 📚 Book found in the database: Clean Code
+[2025-03-07 12:20:05] INFO: 🎉 Removed this book  from session successfully
