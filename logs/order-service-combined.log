@@ -178,3 +178,60 @@
 [2025-03-07 12:54:01] INFO: No cancelled orders to be deleted.
 [2025-03-07 12:54:33] INFO: ✅ Scheduled job to delete old cancelled orders is running.
 [2025-03-07 12:54:35] INFO: No cancelled orders to be deleted.
+[2025-03-07 13:04:10] INFO: ✅ Scheduled job to delete old cancelled orders is running.
+[2025-03-07 13:04:15] INFO: No cancelled orders to be deleted.
+[2025-03-07 13:05:46] INFO: ✅ Scheduled job to delete old cancelled orders is running.
+[2025-03-07 13:05:49] INFO: No cancelled orders to be deleted.
+[2025-03-07 13:08:05] INFO: ✅ Scheduled job to delete old cancelled orders is running.
+[2025-03-07 13:08:08] INFO: No cancelled orders to be deleted.
+[2025-03-07 13:10:14] INFO: ✅ Scheduled job to delete old cancelled orders is running.
+[2025-03-07 13:10:18] ERROR: ❌ Error deleting old cancelled orders : result is not defined
+[2025-03-07 13:13:04] INFO: ✅ Scheduled job to delete old cancelled orders is running.
+[2025-03-07 13:13:15] ERROR: ❌ Error deleting old cancelled orders : Operation `orders.find()` buffering timed out after 10000ms
+[2025-03-07 13:13:44] INFO: ✅ Scheduled job to delete old cancelled orders is running.
+[2025-03-07 13:13:54] ERROR: ❌ Error deleting old cancelled orders : Operation `orders.find()` buffering timed out after 10000ms
+[2025-03-07 13:14:31] ERROR: ❌ Error deleting old cancelled orders : result is not defined
+[2025-03-07 13:14:32] INFO: ✅ Scheduled job to delete old cancelled orders is running...
+[2025-03-07 13:15:07] ERROR: ❌ Error deleting old cancelled orders : result is not defined
+[2025-03-07 13:15:07] INFO: ✅ Scheduled job to delete old cancelled orders is running...
+[2025-03-07 13:15:49] ERROR: ❌ Error deleting old cancelled orders : result is not defined
+[2025-03-07 13:15:49] INFO: ✅ Scheduled job to delete old cancelled orders is running...
+[2025-03-07 13:27:25] ERROR: ❌ Error deleting old cancelled orders : result is not defined
+[2025-03-07 13:27:25] INFO: ✅ Scheduled job to delete old cancelled orders is running...
+[2025-03-07 13:29:07] ERROR: ❌ Error deleting old cancelled orders : oneDayAgo is not defined
+[2025-03-07 13:29:07] INFO: ✅ Scheduled job to delete old cancelled orders is running...
+[2025-03-07 13:32:04] ERROR: ❌ Error deleting old cancelled orders : oneDayAgo is not defined
+[2025-03-07 13:32:04] INFO: ✅ Scheduled job to delete old cancelled orders is running...
+[2025-03-07 13:33:02] INFO: ✅ Scheduled job to delete old cancelled orders is running...
+[2025-03-07 13:33:05] INFO: No cancelled orders to be deleted.
+[2025-03-07 13:33:46] INFO: ✅ Scheduled job to delete old cancelled orders is running...
+[2025-03-07 13:33:48] INFO: No cancelled orders to be deleted.
+[2025-03-07 13:34:25] INFO: ✅ Scheduled job to delete old cancelled orders is running...
+[2025-03-07 13:34:27] INFO: No cancelled orders to be deleted.
+[2025-03-07 13:37:36] INFO: ✅ Scheduled job to delete old cancelled orders is running...
+[2025-03-07 13:37:38] INFO: No cancelled orders to be deleted.
+[2025-03-07 13:39:19] INFO: ✅ Scheduled job to delete old cancelled orders is running...
+[2025-03-07 13:39:29] ERROR: ❌ Error deleting old cancelled orders : Operation `orders.deleteMany()` buffering timed out after 10000ms
+[2025-03-07 13:41:05] INFO: ✅ Scheduled job to delete old cancelled orders is running...
+[2025-03-07 13:41:08] INFO: No cancelled orders to be deleted.
+[2025-03-07 13:45:23] INFO: ✅ Scheduled job to delete old cancelled orders is running...
+[2025-03-07 13:45:34] ERROR: ❌ Error deleting old cancelled orders : Operation `orders.deleteMany()` buffering timed out after 10000ms
+[2025-03-07 13:46:39] INFO: ✅ Scheduled job to delete old cancelled orders is running...
+[2025-03-07 13:46:41] INFO: 🗑️  Deleted 2 cancelled orders.
+[2025-03-07 15:41:39] INFO: ✅ Scheduled job to delete old cancelled orders is running...
+[2025-03-07 15:41:41] INFO: No cancelled orders to be deleted.
+[2025-03-07 15:43:45] ERROR: ❌ Your cart is empty nothing to place an order.
+[2025-03-07 15:44:20] ERROR: ❌ Your cart is empty nothing to place an order.
+[2025-03-07 15:45:11] ERROR: ❌ Your cart is empty nothing to place an order.
+[2025-03-07 15:46:49] INFO: ✅ Scheduled job to delete old cancelled orders is running...
+[2025-03-07 15:46:51] INFO: No cancelled orders to be deleted.
+[2025-03-07 15:47:18] INFO: ✅ Order placed successfully!
+[2025-03-07 15:47:42] WARN: ⚠️ Cache MISS: Fetching orders from the database 🗄️ at 2025-03-07T13:47:42.980Z
+[2025-03-07 15:47:43] INFO: ✅ Full Orders history is retrieved successfully.
+[2025-03-07 15:47:43] INFO: 📚 Cache SET: Stored 1 books in cache ⏳ TTL=3600s 🕒 at 2025-03-07T13:47:43.346Z
+[2025-03-07 15:48:06] INFO: ✅ The Payment Intent Id is stored successfully in this order.
+[2025-03-07 15:48:06] INFO: ✅ Payment successful, order completed!
+[2025-03-07 15:48:30] INFO: ✅ Order is retrieved successfully.
+[2025-03-07 15:49:20] INFO: ✅ Scheduled job to delete old cancelled orders is running...
+[2025-03-07 15:49:23] INFO: 🗑️  Deleted 2 cancelled orders.
+[2025-03-07 15:52:51] ERROR: ❌ Not enough stock for 'The Pragmatic Programmer'. Available: 0, Ordered: 2.
