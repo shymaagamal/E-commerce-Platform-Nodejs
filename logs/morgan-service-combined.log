@@ -292,3 +292,7 @@
 [2025-03-06 15:27:20] INFO: GET /order 200 - 4.088 ms
 [2025-03-06 15:27:21] INFO: GET /order 200 - 1.534 ms
 [2025-03-06 15:27:22] INFO: GET /order 200 - 2.224 ms
+[2025-03-07 22:34:03] INFO: POST /user/register 400 - 1137.291 ms
+[2025-03-07 22:38:03] INFO: POST /user/register 400 - 1124.467 ms
+[2025-03-07 22:45:38] INFO: POST /user/register 400 - 185.505 ms
+[2025-03-07 22:45:47] INFO: POST /user/register 400 - 1657.403 ms
