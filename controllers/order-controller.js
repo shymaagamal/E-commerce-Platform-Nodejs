@@ -19,7 +19,6 @@ let msg = '';
 
 /***************************** Place/Add an order Transaction from Carts *****************************/
 
-
 export const placeOrder = asyncWrapper( async (req, res , next) => {
 
     const orderCart = req.session.cart ;
@@ -52,7 +51,6 @@ export const placeOrder = asyncWrapper( async (req, res , next) => {
     // Process each unique bookId
     for (const [bookId, quantity] of bookQuantityMap) 
     {
-        // console.log("iiiiiiiiiiiiiiiiiii : " , bookId) ;
         // Fetch latest stock from DB within the session
         const currentBookFromDB = await bookModel.findById( {_id: bookId}).session(session);
 
