@@ -15,7 +15,7 @@ const sender = nodemailer.createTransport({
   }
 });
 
-export const sendEmail = asyncWrapper(async (email, subject, text, next) => {
+export const sendEmail = async (email, subject, text) => {
   const mailOptions = {
     from: process.env.EMAIL_USER,
     to: email,
@@ -29,10 +29,6 @@ export const sendEmail = asyncWrapper(async (email, subject, text, next) => {
     return {status: 'success', message: `Email sent to ${email}`};
   } catch (error) {
     emailLogger.error(`Email sending failed for ${email}`, {error: error.message});
-
-    const err = new Error(`Failed to send email: ${error.message}`);
-    err.status = 500;
-    err.httpStatusText = 'FAIL';
-    return next(err);
+    return {status: 'error', message: `Email sending failed for ${email}`};
   }
-});
+};

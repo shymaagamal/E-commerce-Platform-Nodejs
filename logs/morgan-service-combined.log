@@ -333,3 +333,9 @@
 [2025-03-07 17:11:35] INFO: POST /book 400 - 1867.424 ms
 [2025-03-07 17:11:44] INFO: POST /book 400 - 2224.997 ms
 [2025-03-07 17:11:52] INFO: POST /book 201 - 3099.140 ms
+[2025-03-07 17:03:12] INFO: POST /user/register 200 - 646.155 ms
+[2025-03-07 17:06:18] INFO: POST /user/register 400 - 259.523 ms
+[2025-03-07 17:09:46] INFO: POST /user/register 500 - 2099.140 ms
+[2025-03-07 17:09:55] INFO: POST /user/register 400 - 231.207 ms
+[2025-03-07 17:12:48] INFO: POST /user/register 200 - 638.059 ms
+[2025-03-07 17:15:30] INFO: POST /user/register 200 - 595.653 ms

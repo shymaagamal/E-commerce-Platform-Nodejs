@@ -82,3 +82,5 @@
 [2025-03-05 11:08:05] ERROR: New data doesn't follow schema
 [2025-03-05 11:22:02] ERROR: Unauthorized: User 67c7fdf30ec72af60ff72f8f is not allowed to update review 67c757af60133f59661a0cc0
 [2025-03-05 11:42:51] ERROR: Unauthorized: User 67c7fdf30ec72af60ff72f8f is not allowed to update review 67c757af60133f59661a0cc0
+[2025-03-07 17:06:18] ERROR: ⚠️ Registration error: Email is already in use.
+[2025-03-07 17:09:55] ERROR: ⚠️ Registration error: Email is already in use.
