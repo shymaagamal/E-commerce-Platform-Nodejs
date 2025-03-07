@@ -10,6 +10,7 @@ import {getCache, setCache} from '../utils/cache-service.js';
 import createLogger from '../utils/logger.js';
 import 'dotenv/config';
 import {io} from '../index.js';
+import { sendEmail } from '../utils/email-service.js';
 
 const orderLogger = createLogger('order-service');
 
@@ -91,6 +92,7 @@ export const placeOrder = asyncWrapper( async (req, res , next) => {
         { session }
     );
 
+    await sendEmail(req.session.email, 'Order Confirmation', `Your order has been placed successfully. `);
     // Commit transaction
     await session.commitTransaction();
     session.endSession();
@@ -234,6 +236,8 @@ export const cancelOrder = asyncWrapper(async (req, res, next) => {
             order.status = "cancelled";
             await order.save();
             msg = "✅ The refund process is completed  & the order is cancelled successfully.";
+            orderLogger.info(msg);
+            await sendEmail(req.session.email, 'Order Refund', `Your order has been refunded and cancelled successfully. `);
             return res.status(200).json({ status: httpStatusText.SUCCESS, message: msg , refund});
         }
 
@@ -241,6 +245,7 @@ export const cancelOrder = asyncWrapper(async (req, res, next) => {
         order.status = "cancelled";
         await order.save();
         orderLogger.error(msg);
+        await sendEmail(req.session.email, 'Order cancelled', `Your order has been cancelled successfully. `);
         return res.status(400).json({ status: httpStatusText.FAIL, message: msg });
     }
     
@@ -256,6 +261,7 @@ export const cancelOrder = asyncWrapper(async (req, res, next) => {
 
     msg = "✅ Order is cancelled successfully.";
     orderLogger.info(msg);
+    await sendEmail(req.session.email, 'Order cancelled', `Your order has been cancelled successfully. `);
     return res.status(200).json({ status: httpStatusText.SUCCESS, message: msg , order});
 });
 
@@ -306,6 +312,7 @@ export const orderPayment = asyncWrapper(async (req, res, next) => {
         await order.save();
         msg = "✅ Payment successful, order completed!" ;
         orderLogger.info(msg) ;
+        await sendEmail(req.session.email, 'Order Confirmation', `Your order has been placed successfully. `);
         return res.status(200).json({ status: httpStatusText.SUCCESS, message: msg , order });
     }
 
@@ -313,5 +320,6 @@ export const orderPayment = asyncWrapper(async (req, res, next) => {
     await order.save();
     msg = "Payment failed. Please try again." ;
     orderLogger.error(msg) ;
+    await sendEmail(req.session.email, 'Order Payment Failed', `Your order payment has been failed. `);
     return res.status(400).json({ status: httpStatusText.FAIL, message: msg });
 });
