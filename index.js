@@ -15,6 +15,8 @@ import createLogger from './utils/logger.js';
 import 'dotenv/config';
 import {Server} from 'socket.io';
 import{createServer} from 'http';
+// To run the cron job automatically when the server starts
+import "./jobs/cron-job.js"; 
 
 // Creates an Express app for building the REST APIs
 const app = express();
