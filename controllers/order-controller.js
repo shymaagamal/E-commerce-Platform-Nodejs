@@ -9,7 +9,7 @@ import httpStatusText from '../utils/http-status-text.js';
 import {getCache, setCache} from '../utils/cache-service.js';
 import createLogger from '../utils/logger.js';
 import 'dotenv/config';
-
+import {io} from '../index.js';
 
 const orderLogger = createLogger('order-service');
 
@@ -96,6 +96,7 @@ export const placeOrder = asyncWrapper( async (req, res , next) => {
     session.endSession();
 
     msg = "✅ Order placed successfully!";
+    io.emit('newOrder', order);
     orderLogger.info(msg);
     return res.status(200).json({ status: httpStatusText.SUCCESS, message: msg, order });
 
