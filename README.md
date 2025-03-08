@@ -70,13 +70,26 @@ JWT_SECRET=your_secret_key
 STRIPE_SECRET_KEY=your_stripe_key
 ```
 
-### 🔹 Start the Server
+### 🔹 Running the Project Locally (Without Docker)
 ```sh
 npm start
 ```
 
 The server will run on **http://localhost:5000**.
 
+### 🔹 Running with Docker 🐳
+1️⃣ Build the Docker Image
+```sh
+docker build -t your-dockerhub-username/ecommerce-bookstore .
+```
+2️⃣ Run the Container
+```sh
+docker run -d --name book-ecommerce -p 5000:5000 --env-file .env your-dockerhub-username/ecommerce-bookstore
+```
+3️⃣ Push the Image to dockerhub
+```sh
+docker push your-dockerhub-username/book-store-node-project
+```
 ---
 
 ## 5. Database Schema
@@ -131,11 +144,91 @@ The server will run on **http://localhost:5000**.
 
 ---
 
-## 6. Deployment Instructions ( write about AWS )
-- Deploy the backend using **AWS**.
-- Use **MongoDB Atlas** for cloud database storage.
-- Set up **Docker** for containerization (if needed).
+## **6. Deployment Instructions** 🌍  
 
+### **🔹 Deploying the Backend on AWS EC2**  
+
+Follow these steps to deploy the backend using **AWS EC2**:  
+
+---
+
+### **1️⃣ Create an EC2 Instance**  
+1. Go to the **AWS Management Console** and open **EC2**.  
+2. Click **Launch Instance** and configure:  
+   - **Amazon Machine Image (AMI)**: Choose **Ubuntu 22.04 LTS**.  
+   - **Instance Type**: Select **t2.micro** (Free Tier eligible).  
+   - **Security Group**:  
+     - Allow **Inbound Rules**:  
+       - **Port 22** (SSH) – Your IP only  
+       - **Port 5000** (App) – Anywhere  
+   - **Key Pair**: Create or select an existing **.pem** key.  
+3. Click **Launch**.  
+
+---
+
+### **2️⃣ Connect to the EC2 Instance**  
+Using SSH, connect to the instance:  
+```sh
+ssh -i your-key.pem ubuntu@your-ec2-public-ip
+```
+### **3️⃣ Install Required Dependencies**
+On the EC2 instance, install Docker and other dependencies:
+```sh
+sudo apt update -y
+sudo apt install -y docker.io
+sudo systemctl enable docker
+sudo systemctl start docker
+```
+### **4️⃣ Pull & Run the Docker Container**
+Login to Docker Hub (if private repo)
+```sh
+docker login
+```
+Pull the image from Docker Hub
+```sh
+docker pull your-dockerhub-username/ecommerce-bookstore:latest
+```
+Run the container
+```sh
+docker run -d --name book-ecommerce -p 5000:5000 --env-file .env your-dockerhub-username/ecommerce-bookstore:latest
+```
+Ensure the container is running
+```sh
+docker ps
+```
+### **5️⃣ (Optional) Deploy Using Docker Compose**
+Create a docker-compose.yml file on EC2
+```sh
+version: '3'
+services:
+  app:
+    image: your-dockerhub-username/ecommerce-bookstore:latest
+    container_name: book-ecommerce
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - "5000:5000"
+```
+Run Docker Compose:
+```sh
+docker-compose up -d
+```
+### **6️⃣  Keep the EC2 Public IP Permanente**
+To prevent your EC2 Public IP from changing:
+
+1. Allocate an Elastic IP in AWS EC2.
+2. Associate it with your EC2 instance.
+3. Use the Elastic IP instead of the default public IP.
+### **🎯 Your Backend is Now Live! 🎯e**
+Access your API at:
+```sh
+http://your-ec2-public-ip:5000
+```
+or
+```sh
+http://your-elastic-ip:5000
+```
 ---
 
 ## 7. RESTful APIs Documentation
