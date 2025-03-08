@@ -1,5 +1,6 @@
 import{io} from 'socket.io-client';
-const socket = io('http://localhost:5000');
+import 'dotenv/config';
+const socket = io(`http://localhost:${process.env.PORT}`);
 socket.on('connect', () => {
   console.log('Connected to the server as Admin ');
 });

@@ -23,6 +23,8 @@ const app = express();
 // For monitoring the server's behavior and debugging issues
 const logger = createLogger('main-service');
 
+app.use(express.json());
+
 const server = createServer(app);
 const io = new Server(server, {
   cors: {
@@ -40,7 +42,7 @@ app.use('/user', userRouter);
 app.use('/book', bookRouter);
 app.use('/order', orderRouter);
 app.use('/cart', cartRouter);
-app.use('/review', reviewRouter);
+app.use('/review',reviewRouter);
 
 // Use Middlewares
 app.use(errorHandler);

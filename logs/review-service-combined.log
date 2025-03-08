@@ -74,3 +74,34 @@
 [2025-03-06 21:45:49] INFO: New review created successfully
 [2025-03-06 21:46:27] INFO: New review created successfully
 [2025-03-06 21:49:23] INFO: New review created successfully
+[2025-03-08 02:21:22] ERROR: Validation failed
+[2025-03-08 02:21:36] ERROR: Validation failed
+[2025-03-08 02:22:24] ERROR: Validation failed
+[2025-03-08 02:23:33] ERROR: Validation failed
+[2025-03-08 02:26:38] WARN: ⚠️ Cache MISS: Fetching reviews from the database 🗄️ at 2025-03-08T00:26:38.187Z
+[2025-03-08 02:26:45] WARN: ⚠️ Cache MISS: Fetching reviews from the database 🗄️ at 2025-03-08T00:26:45.828Z
+[2025-03-08 02:26:46] INFO: No reviews found for book with id 67c89248f78ebd9b668cd1ad
+[2025-03-08 02:29:06] WARN: ⚠️ Cache MISS: Fetching reviews from the database 🗄️ at 2025-03-08T00:29:06.518Z
+[2025-03-08 02:29:06] INFO: No reviews found for book with id 67c89248f78ebd9b668cd1ad
+[2025-03-08 02:29:52] WARN: ⚠️ Cache MISS: Fetching reviews from the database 🗄️ at 2025-03-08T00:29:52.279Z
+[2025-03-08 02:29:52] INFO: No reviews found for book with id 67c89248f78ebd9b668cd1ad
+[2025-03-08 02:29:58] WARN: ⚠️ Cache MISS: Fetching reviews from the database 🗄️ at 2025-03-08T00:29:58.101Z
+[2025-03-08 02:29:58] INFO: No reviews found for book with id 67c89248f78ebd9b668cd1ad
+[2025-03-08 02:36:21] WARN: ⚠️ Cache MISS: Fetching reviews from the database 🗄️ at 2025-03-08T00:36:21.911Z
+[2025-03-08 02:36:22] INFO: No reviews found for book with id 67c89248f78ebd9b668cd1ad
+[2025-03-08 02:38:01] INFO: New review created successfully
+[2025-03-08 02:38:33] WARN: ⚠️ Cache MISS: Fetching reviews from the database 🗄️ at 2025-03-08T00:38:33.169Z
+[2025-03-08 02:38:33] INFO: 📚 Cache SET: Stored 1 reviews in cache ⏳ TTL=3600s 🕒 at 2025-03-08T00:38:33.674Z
+[2025-03-08 02:38:33] INFO: Reviews for book with id 67c89248f78ebd9b668cd1ad fetched
+[2025-03-08 02:39:02] WARN: ⚠️ Cache MISS: Fetching reviews from the database 🗄️ at 2025-03-08T00:39:02.458Z
+[2025-03-08 02:39:02] INFO: 📚 Cache SET: Stored 1 reviews in cache ⏳ TTL=3600s 🕒 at 2025-03-08T00:39:02.854Z
+[2025-03-08 02:39:02] INFO: Reviews for book with id 67c89248f78ebd9b668cd1ad fetched
+[2025-03-08 02:39:52] WARN: ⚠️ Cache MISS: Fetching reviews from the database 🗄️ at 2025-03-08T00:39:52.712Z
+[2025-03-08 02:39:53] INFO: 📚 Cache SET: Stored 1 reviews in cache ⏳ TTL=3600s 🕒 at 2025-03-08T00:39:53.021Z
+[2025-03-08 02:39:53] INFO: Reviews for book with id 67c89248f78ebd9b668cd1ad fetched
+[2025-03-08 02:40:54] WARN: ⚠️ Cache MISS: Fetching reviews from the database 🗄️ at 2025-03-08T00:40:54.866Z
+[2025-03-08 02:40:55] INFO: 📚 Cache SET: Stored 1 reviews in cache ⏳ TTL=3600s 🕒 at 2025-03-08T00:40:55.517Z
+[2025-03-08 02:40:55] INFO: Reviews for book with id 67c89248f78ebd9b668cd1ad fetched
+[2025-03-08 02:42:01] WARN: ⚠️ Cache MISS: Fetching reviews from the database 🗄️ at 2025-03-08T00:42:01.673Z
+[2025-03-08 02:42:02] INFO: 📚 Cache SET: Stored 1 reviews in cache ⏳ TTL=3600s 🕒 at 2025-03-08T00:42:02.043Z
+[2025-03-08 02:42:02] INFO: Reviews for book with id 67c89248f78ebd9b668cd1ad fetched
