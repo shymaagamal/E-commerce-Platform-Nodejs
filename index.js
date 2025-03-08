@@ -23,7 +23,7 @@ const app = express();
 // For monitoring the server's behavior and debugging issues
 const logger = createLogger('main-service');
 
-app.use(express.json());
+
 
 const server = createServer(app);
 const io = new Server(server, {
@@ -34,6 +34,7 @@ const io = new Server(server, {
 
 app.use(express.urlencoded({extended: true}));
 // A Middleware for parsing incoming JSON request bodies to be converted to JavaScript object accessible in "req.body"
+app.use(express.json());
 app.use(sessionMiddleware);
 app.use(cookieParser(process.env.COOKIE_SECRET_KEY));
 
@@ -56,10 +57,10 @@ app.all('*', (req, res) => {
 });
 
 io.on('connection', (socket) => {
-  logger.info(' Admin  connected ', socket.id);
+  logger.info(` Admin  connected (${socket.id})`);
 
   socket.on('disconnect', () => {
-    logger.info('Admin disconnected ', socket.id);
+    logger.info(`Admin disconnected (${socket.id})`);
   });
 });
 
