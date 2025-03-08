@@ -3,10 +3,10 @@ import mongoose from 'mongoose';
 import {UserModel} from '../models/user-model.js';
 import {asyncWrapper} from '../utils/async-wrapper.js';
 import {checkPassword, generateJWT} from '../utils/auth-utils.js';
+import {sendEmail} from '../utils/email-service.js';
 import httpStatusText from '../utils/http-status-text.js';
 import createLogger from '../utils/logger.js';
 import {userRoles} from '../utils/user-roles.js';
-import { sendEmail } from '../utils/email-service.js';
 
 const userLogger = createLogger('user-service');
 
@@ -30,8 +30,8 @@ export const UserRegister = asyncWrapper(async (req, res, next) => {
   const addedUser = await UserModel.create(req.body);
   const token = generateJWT({role: addedUser.role, email: addedUser.email, id: addedUser._id});
   addedUser.token = token;
-  const emailRes=await sendEmail(addedUser.email, 'Welcome to our Book store system', 'You have successfully registered to our BookStore! This is just a confirmation email :)  You can now login to our platform and start using our services. Thank you for joining us! Have a great day ahead! :)');
-  if(!emailRes.success){
+  const emailRes = await sendEmail(addedUser.email, 'Welcome to our Book store system', 'You have successfully registered to our BookStore! This is just a confirmation email :)  You can now login to our platform and start using our services. Thank you for joining us! Have a great day ahead! :)');
+  if (!emailRes.success) {
     userLogger.error(`⚠️ Registration error: Email sending failed. ${emailRes.message}`);
     const error = new Error(`⚠️ Registration error: Email sending failed. ${emailRes.message}`);
     error.status = 400;
