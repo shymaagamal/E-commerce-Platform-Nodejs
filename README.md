@@ -1,7 +1,7 @@
 # 📚 E-Commerce Bookstore Online Platform
 
 ## 1. Project Title & Description
-**Title :** E-Commerce Bookstore  
+**Title :** E-Commerce Book Store  
 **Short Description :**  
 An online platform for purchasing books with user authentication, order management, and payment processing. Users can browse books, add them to a cart, place orders, and track their order history. Admins can manage books and orders efficiently.
 
@@ -188,3 +188,4 @@ The server will run on **http://localhost:5000**.
 ---
 
 ## 9. Live Demo Link : 
+🔗 https://drive.google.com/drive/folders/1ENwDlfNMlbPcDw4Ci1NvUYYNEO3KHFaV?usp=sharing
