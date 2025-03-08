@@ -37,11 +37,11 @@ An online platform for purchasing books with user authentication, order manageme
 - **Jobs/Tasks Scheduler :** cron-job ( For deleting the canceled orders a day ago )
 - **Email Notifications for Orders & Updates :**  nodemailer
 - **Caching :** node-cache
-- **User's session upon Register/Log in :** express-session
+- **User's session upon adding books in cart :** express-session
 
 ---
 
-## 4. Installation & Setup  ( write about docker )
+## 4. Installation & Setup
 
 ### 🔹 Prerequisites
 Ensure you have the following installed :
@@ -70,14 +70,15 @@ JWT_SECRET=your_secret_key
 STRIPE_SECRET_KEY=your_stripe_key
 ```
 
-### 🔹 Running the Project Locally (Without Docker)
+### Running the Project Locally (Without Docker)
 ```sh
 npm start
 ```
 
 The server will run on **http://localhost:5000**.
 
-### 🔹 Running with Docker 🐳
+### 🐳 Running with Docker 
+
 1️⃣ Build the Docker Image
 ```sh
 docker build -t your-dockerhub-username/ecommerce-bookstore .
@@ -274,12 +275,5 @@ http://your-elastic-ip:5000
 | DELETE | `/api/cart/:id` | Remove a book from the cart ( Authenticated Users )
 ---
 
-## 8. How to Run This Project ( and how to try and use this project locally )
-- Install dependencies using `npm install`
-- Run the development server: `npm start`
-- Access API endpoints via Postman or frontend integration.
-
----
-
-## 9. Live Demo Link : 
+## 8. Live Demo Link : 
 🔗 https://drive.google.com/drive/folders/1ENwDlfNMlbPcDw4Ci1NvUYYNEO3KHFaV?usp=sharing
