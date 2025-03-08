@@ -282,15 +282,6 @@
 								"type": "text"
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"userId\" : \"67c428a81118a1f6f0391f96\" ,\r\n    \"books\" :\r\n    [\r\n        {\r\n            \"bookId\" : \"67c4a54c22dbbed8e3b5c80f\" ,\r\n            \"quantity\" : 2\r\n        },\r\n        {\r\n            \"bookId\" : \"67c476c26cd9d8ce879a21dc\" ,\r\n            \"quantity\" : 1\r\n        }\r\n    ],\r\n    \"status\" : \"pending\"\r\n}\r\n",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": "{{base_url}}order"
 					},
 					"response": []
