@@ -296,3 +296,19 @@
 [2025-03-07 22:38:03] INFO: POST /user/register 400 - 1124.467 ms
 [2025-03-07 22:45:38] INFO: POST /user/register 400 - 185.505 ms
 [2025-03-07 22:45:47] INFO: POST /user/register 400 - 1657.403 ms
+<<<<<<< Updated upstream
+=======
+[2025-03-07 23:10:17] INFO: POST /user/register 200 - 2524.959 ms
+[2025-03-07 23:13:01] INFO: POST /user/register 200 - 2036.745 ms
+[2025-03-07 23:22:20] INFO: POST /user/register 400 - 445.126 ms
+[2025-03-07 23:22:40] INFO: POST /order 400 - 10.114 ms
+[2025-03-08 02:21:08] INFO: POST /user/register 200 - 2685.395 ms
+[2025-03-08 02:23:27] INFO: POST /user/register 200 - 1517.445 ms
+[2025-03-08 21:25:24] INFO: POST /user/login 200 - 271.561 ms
+[2025-03-08 21:25:29] INFO: POST /cart/67c89a05bbf32dc5b64ae5f2 200 - 436.041 ms
+[2025-03-08 21:25:37] INFO: POST /order 400 - 2.689 ms
+[2025-03-08 21:25:57] INFO: POST /user/register 200 - 1658.988 ms
+[2025-03-08 21:26:02] INFO: POST /cart/67c89a05bbf32dc5b64ae5f2 200 - 680.758 ms
+[2025-03-08 21:26:04] INFO: POST /cart/67c89a05bbf32dc5b64ae5f2 200 - 555.272 ms
+[2025-03-08 21:26:12] INFO: POST /order 200 - 2319.414 ms
+>>>>>>> Stashed changes

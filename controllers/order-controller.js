@@ -84,17 +84,17 @@ export const placeOrder = asyncWrapper(async (req, res, next) => {
     {session}
   );
 
-  const emailRes = await sendEmail(req.session.email, 'Order Confirmation', `Your order has been placed successfully. `);
-  if (!emailRes.success) {
-    orderLogger.error(`⚠️ Order confirmation email sending failed. ${emailRes.message}`);
-    const error = new Error(`⚠️ Order confirmation email sending failed. ${emailRes.message} `);
-    error.status = 400;
-    error.httpStatusText = httpStatusText.FAIL;
-    return next(error);
-  }
-  // Commit transaction
-  await session.commitTransaction();
-  session.endSession();
+    const emailRes = await sendEmail(req.user.email ,'Order Confirmation', `Your order has been placed successfully. `);
+    if(!emailRes.success){
+        orderLogger.error(`⚠️ Order confirmation email sending failed. ${emailRes.message}`);
+        const error = new Error(`⚠️ Order confirmation email sending failed. ${emailRes.message} `);
+        error.status = 400;
+        error.httpStatusText = httpStatusText.FAIL;
+        return next(error);
+    }
+    // Commit transaction
+    await session.commitTransaction();
+    session.endSession();
 
   msg = '✅ Order placed successfully!';
   io.emit('newOrder', order);
@@ -209,63 +209,66 @@ export const getOrderById = asyncWrapper(async (req, res, next) => {
 export const cancelOrder = asyncWrapper(async (req, res, next) => {
   const order = await orderValidation(req, res, next);
 
-  // Check if order is eligible for cancellation
-  if (order.status === 'completed') {
-    if (order.paymentIntentId) {
-      const refund = await stripe.refunds.create({
-        payment_intent: order.paymentIntentId
-      });
+    // Check if order is eligible for cancellation
+    if (order.status === "completed") 
+    {
+        if ( order.paymentIntentId )
+        {
+            const refund = await stripe.refunds.create({
+                payment_intent: order.paymentIntentId
+            });
+    
+            order.status = "cancelled";
+            await order.save();
+            msg = "✅ The refund process is completed  & the order is cancelled successfully.";
+            orderLogger.info(msg);
+            const emailRes = await sendEmail(req.user.email, 'Order Refund', `Your order has been refunded and cancelled successfully. `);
+            if(!emailRes.success){
+                orderLogger.error(`⚠️ Order refund email sending failed. ${emailRes.message}`);
+                const error = new Error(`⚠️ Order refund email sending failed. ${emailRes.message}`);
+                error.status = 400;
+                error.httpStatusText = httpStatusText.FAIL;
+                return next(error);
+            }
+            return res.status(200).json({ status: httpStatusText.SUCCESS, message: msg , refund});
+        }
 
-      order.status = 'cancelled';
-      await order.save();
-      msg = '✅ The refund process is completed  & the order is cancelled successfully.';
-      orderLogger.info(msg);
-      const emailRes = await sendEmail(req.session.email, 'Order Refund', `Your order has been refunded and cancelled successfully. `);
-      if (!emailRes.success) {
-        orderLogger.error(`⚠️ Order refund email sending failed. ${emailRes.message}`);
-        const error = new Error(`⚠️ Order refund email sending failed. ${emailRes.message}`);
-        error.status = 400;
-        error.httpStatusText = httpStatusText.FAIL;
-        return next(error);
-      }
-      return res.status(200).json({status: httpStatusText.SUCCESS, message: msg, refund});
+        msg = "Payment not found for this order to refund.";
+        order.status = "cancelled";
+        await order.save();
+        orderLogger.error(msg);
+        const emailRes = await sendEmail(req.user.email, 'Order cancelled', `Your order has been cancelled successfully. `);
+        if(!emailRes.success){
+            orderLogger.error(`⚠️ Order cancellation email sending failed. ${emailRes.message}`);
+            const error = new Error(`⚠️ Order cancellation email sending failed. ${emailRes.message}`);
+            error.status = 400;
+            error.httpStatusText = httpStatusText.FAIL;
+            return next(error);
+        }
+        return res.status(400).json({ status: httpStatusText.FAIL, message: msg });
     }
-
-    msg = 'Payment not found for this order to refund.';
-    order.status = 'cancelled';
-    await order.save();
-    orderLogger.error(msg);
-    const emailRes = await sendEmail(req.session.email, 'Order cancelled', `Your order has been cancelled successfully. `);
-    if (!emailRes.success) {
-      orderLogger.error(`⚠️ Order cancellation email sending failed. ${emailRes.message}`);
-      const error = new Error(`⚠️ Order cancellation email sending failed. ${emailRes.message}`);
-      error.status = 400;
-      error.httpStatusText = httpStatusText.FAIL;
-      return next(error);
+    
+    if ( order.status === "cancelled")
+    {
+        msg = "Order is already cancelled.";
+        orderLogger.error(msg);
+        return res.status(400).json({ status: httpStatusText.FAIL, message: msg });
     }
-    return res.status(400).json({status: httpStatusText.FAIL, message: msg});
-  }
-
-  if (order.status === 'cancelled') {
-    msg = 'Order is already cancelled.';
-    orderLogger.error(msg);
-    return res.status(400).json({status: httpStatusText.FAIL, message: msg});
-  }
 
   order.status = 'cancelled';
   await order.save();
 
-  msg = '✅ Order is cancelled successfully.';
-  orderLogger.info(msg);
-  const emailRes = await sendEmail(req.session.email, 'Order cancelled', `Your order has been cancelled successfully. `);
-  if (!emailRes.success) {
-    orderLogger.error(`⚠️ Order cancellation email sending failed. ${emailRes.message}`);
-    const error = new Error(`⚠️ Order cancellation email sending failed. ${emailRes.message}`);
-    error.status = 400;
-    error.httpStatusText = httpStatusText.FAIL;
-    return next(error);
-  }
-  return res.status(200).json({status: httpStatusText.SUCCESS, message: msg, order});
+    msg = "✅ Order is cancelled successfully.";
+    orderLogger.info(msg);
+    const emailRes = await sendEmail(req.user.email, 'Order cancelled', `Your order has been cancelled successfully. `);
+    if(!emailRes.success){
+        orderLogger.error(`⚠️ Order cancellation email sending failed. ${emailRes.message}`);
+        const error = new Error(`⚠️ Order cancellation email sending failed. ${emailRes.message}`);
+        error.status = 400;
+        error.httpStatusText = httpStatusText.FAIL;
+        return next(error);
+    }
+    return res.status(200).json({ status: httpStatusText.SUCCESS, message: msg , order});
 });
 
 /** *************************** Order Chechout/Payment using Stripe ( online payment method ) */
@@ -306,32 +309,32 @@ export const orderPayment = asyncWrapper(async (req, res, next) => {
       return res.status(400).json({status: httpStatusText.FAIL, message: msg});
     }
 
-    order.status = 'completed';
-    await order.save();
-    msg = '✅ Payment successful, order completed!';
-    orderLogger.info(msg);
-    const emailRes = await sendEmail(req.session.email, 'Order Confirmation', `Your order has been placed successfully. `);
-    if (!emailRes.success) {
-      orderLogger.error(`⚠️ Order confirmation email sending failed. ${emailRes.message}`);
-      const error = new Error(`⚠️ Order confirmation email sending failed. ${emailRes.message}`);
-      error.status = 400;
-      error.httpStatusText = httpStatusText.FAIL;
-      return next(error);
+        order.status = "completed";
+        await order.save();
+        msg = "✅ Payment successful, order completed!" ;
+        orderLogger.info(msg) ;
+        const emailRes = await sendEmail(req.user.email, 'Order Confirmation', `Your order has been placed successfully. `);
+        if(!emailRes.success){
+            orderLogger.error(`⚠️ Order confirmation email sending failed. ${emailRes.message}`);
+            const error = new Error(`⚠️ Order confirmation email sending failed. ${emailRes.message}`);
+            error.status = 400;
+            error.httpStatusText = httpStatusText.FAIL;
+            return next(error);
+        }
+        return res.status(200).json({ status: httpStatusText.SUCCESS, message: msg , order });
     }
-    return res.status(200).json({status: httpStatusText.SUCCESS, message: msg, order});
-  }
 
-  order.status = 'pending';
-  await order.save();
-  msg = 'Payment failed. Please try again.';
-  orderLogger.error(msg);
-  const emailRes = await sendEmail(req.session.email, 'Order Payment Failed', `Your order payment has been failed. `);
-  if (!emailRes.success) {
-    orderLogger.error(`⚠️ Order payment failed email sending failed. ${emailRes.message}`);
-    const error = new Error(`⚠️ Order payment failed email sending failed. ${emailRes.message}`);
-    error.status = 400;
-    error.httpStatusText = httpStatusText.FAIL;
-    return next(error);
-  }
-  return res.status(400).json({status: httpStatusText.FAIL, message: msg});
+    order.status = "pending";
+    await order.save();
+    msg = "Payment failed. Please try again." ;
+    orderLogger.error(msg) ;
+    const emailRes = await sendEmail(req.user.email, 'Order Payment Failed', `Your order payment has been failed. `);
+    if(!emailRes.success){
+        orderLogger.error(`⚠️ Order payment failed email sending failed. ${emailRes.message}`);
+        const error = new Error(`⚠️ Order payment failed email sending failed. ${emailRes.message}`);
+        error.status = 400;
+        error.httpStatusText = httpStatusText.FAIL;
+        return next(error);
+    }
+    return res.status(400).json({ status: httpStatusText.FAIL, message: msg });
 });

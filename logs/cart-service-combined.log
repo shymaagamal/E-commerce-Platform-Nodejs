@@ -662,3 +662,9 @@
 [2025-03-07 15:47:08] INFO: 📚 Book found in the database: Clean Code
 [2025-03-07 15:52:17] INFO: 📚 Book found in the database: Operating System Concepts
 [2025-03-07 15:52:24] INFO: 📚 Book found in the database: Operating System Concepts
+[2025-03-08 21:25:29] INFO: 📚 Book found in the database: Operating System Concepts
+[2025-03-08 21:25:29] INFO: 🎉 Item successfully added to the existing cart!
+[2025-03-08 21:26:01] INFO: 📚 Book found in the database: Operating System Concepts
+[2025-03-08 21:26:01] INFO: ⚠️ No session found for this user. Creating a new session...
+[2025-03-08 21:26:02] INFO: 🎉 New session created and book added to cart!
+[2025-03-08 21:26:04] INFO: 📚 Book found in the database: Operating System Concepts
