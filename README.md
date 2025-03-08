@@ -22,21 +22,22 @@ An online platform for purchasing books with user authentication, order manageme
 ---
 
 ## 3. Tech Stack
-- **Backend :** Node
-- **RESTful API with Secure Endpoints :** Express  
-- **Database :** Mongo Atlas    
+- **Backend :** Node.JS
+- **RESTful API with Secure Endpoints :** Express.JS  
+- **Database :** Mongo Atlas  , Mongoose 
 - **Authentication :** JWT ( JSON Web Tokens )  
-- **Validation :** Express Validator  
-- **Payment Gateway :** Stripe  
+- **Passwords Hashing :** bcrypt  
+- **Validation :** express-validator  
+- **Payment Gateway :** stripe  
 - **Deployment :** Docker, AWS   
-- **Logging :** Winston , Morgan  
-- **Books Cover Images :** Multer , Cloudinary  
-- **Cookies :** Cookie Parser  
-- **WebSockets For Real-Time Updates :** Socket.io  
-- **Jobs/Tasks Scheduler :** Cron Job ( For deleting the canceled orders a day ago )
-- **Email Notifications for Orders & Updates**  : nodemailer
-- **Caching :** nodescache
-- **User's session upon Register/Log in :** Express Session
+- **Logging :** winston , morgan  
+- **Books Cover Images :** multer , cloudinary  
+- **Cookies :** cookie-parser  
+- **WebSockets For Real-Time Updates :** socket.io  
+- **Jobs/Tasks Scheduler :** cron-job ( For deleting the canceled orders a day ago )
+- **Email Notifications for Orders & Updates :**  nodemailer
+- **Caching :** node-cache
+- **User's session upon Register/Log in :** express-session
 
 ---
 
