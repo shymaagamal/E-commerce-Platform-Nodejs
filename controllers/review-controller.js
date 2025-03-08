@@ -9,7 +9,7 @@ const reviewLogger = createLogger('review-service');
 
 export const createReview = asyncWrapper(async (req, res, next) => {
   req.body.user = req.user.id;
-  const errors = validationResult(req);
+  const errors = validationResult(req.body);
   if (!errors.isEmpty()) {
     const errorMessage = errors.array().map((err) => err.msg).join(', ');
     reviewLogger.error('Validation failed', {errors: errors.array()});
@@ -26,7 +26,7 @@ export const createReview = asyncWrapper(async (req, res, next) => {
 
 export const updateReview = asyncWrapper(async (req, res, next) => {
   const review = await Review.findById(req.params.id);
-  const errors = validationResult(req);
+  const errors = validationResult(req.body);
   if (!errors.isEmpty()) {
     const errorMessage = errors.array().map((err) => err.msg).join(', ');
     reviewLogger.error('Validation failed', {errors: errors.array()});
@@ -63,7 +63,7 @@ export const updateReview = asyncWrapper(async (req, res, next) => {
 });
 
 export const deleteReview = asyncWrapper(async (req, res, next) => {
-  const errors = validationResult(req);
+  const errors = validationResult(req.body);
   if (!errors.isEmpty()) {
     const errorMessage = errors.array().map((err) => err.msg).join(', ');
     reviewLogger.error('Validation failed', {errors: errors.array()});
@@ -90,7 +90,7 @@ export const deleteReview = asyncWrapper(async (req, res, next) => {
 });
 
 export const getReviews = asyncWrapper(async (req, res, next) => {
-  const errors = validationResult(req);
+  const errors = validationResult(req.body);
   if (!errors.isEmpty()) {
     const errorMessage = errors.array().map((err) => err.msg).join(', ');
     reviewLogger.error('Validation failed', {errors: errors.array()});
