@@ -296,9 +296,3 @@
 [2025-03-07 22:38:03] INFO: POST /user/register 400 - 1124.467 ms
 [2025-03-07 22:45:38] INFO: POST /user/register 400 - 185.505 ms
 [2025-03-07 22:45:47] INFO: POST /user/register 400 - 1657.403 ms
-[2025-03-07 23:10:17] INFO: POST /user/register 200 - 2524.959 ms
-[2025-03-07 23:13:01] INFO: POST /user/register 200 - 2036.745 ms
-[2025-03-07 23:22:20] INFO: POST /user/register 400 - 445.126 ms
-[2025-03-07 23:22:40] INFO: POST /order 400 - 10.114 ms
-[2025-03-08 02:21:08] INFO: POST /user/register 200 - 2685.395 ms
-[2025-03-08 02:23:27] INFO: POST /user/register 200 - 1517.445 ms

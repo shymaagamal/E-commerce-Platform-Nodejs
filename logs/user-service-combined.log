@@ -227,8 +227,3 @@
 [2025-03-07 22:45:38] ERROR: ⚠️ Registration error: Email is already in use.
 [2025-03-07 22:45:47] ERROR: ⚠️ Registration error: Email sending failed. Email sending failed for try@yahoo.com : Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
 535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-43bd435cd8csm92066845e9.40 - gsmtp
-[2025-03-07 23:10:17] INFO: 🎉 New user registered successfully.
-[2025-03-07 23:13:01] INFO: 🎉 New user registered successfully.
-[2025-03-07 23:22:20] ERROR: ⚠️ Registration error: Email is already in use.
-[2025-03-08 02:21:08] INFO: 🎉 New user registered successfully.
-[2025-03-08 02:23:27] INFO: 🎉 New user registered successfully.
