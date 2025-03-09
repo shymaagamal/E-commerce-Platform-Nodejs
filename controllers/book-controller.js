@@ -12,13 +12,13 @@ const bookLogger = createLogger('book-service');
 export const getBooks = asyncWrapper(async (req, res) => {
   const {title, author, page = 1, limit = 10} = req.query;
   const query = {};
-
   // Add case-insensitive filters for title and author if provided
   if (title) query.title = new RegExp(title, 'i');
   if (author) query.author = new RegExp(author, 'i');
 
   // ==================try to retrive first from cache===========
-  const cachedBooks = getCache('books');
+  const cacheKey = `books-${page}_${limit}_${title}_${author}`;
+  const cachedBooks = getCache(cacheKey);
   if (cachedBooks) {
     bookLogger.info(`✅ Cache HIT: Retrieved ${cachedBooks.length} books from Node cache 🏷️ at ${new Date().toISOString()}`);
     return res.status(200).json({status: httpStatusText.SUCCESS, cachedBooks});
@@ -37,7 +37,7 @@ export const getBooks = asyncWrapper(async (req, res) => {
   }
   bookLogger.info(`📚 Cache SET: Stored ${books.length} books in cache ⏳ TTL=${3600}s 🕒 at ${new Date().toISOString()}`);
 
-  setCache('books', books);
+  setCache(cacheKey, books);
   // Send a success response with the fetched books
   res.status(200).json({status: httpStatusText.SUCCESS, books});
 });
